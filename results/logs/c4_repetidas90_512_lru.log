@@ -1,0 +1,492 @@
+1792354505.358936 start workers=2 producers=2 queue=32
+1792354505.369860 cache qid=0 result=miss
+1792354505.370086 cache qid=2 result=miss
+1792354505.378148 retrieve qid=0 chunks=2 ctx_bytes=1623 approx_tokens=405
+1792354505.380608 retrieve qid=2 chunks=2 ctx_bytes=1668 approx_tokens=417
+1792354505.422428 generate qid=0 ms=44.23 answer=#53e587e6
+1792354505.422523 cache qid=4 result=hit
+1792354505.422560 cache qid=6 result=hit
+1792354505.422579 cache qid=8 result=miss
+1792354505.430221 generate qid=2 ms=49.58 answer=#68fd259d
+1792354505.432507 retrieve qid=8 chunks=2 ctx_bytes=1668 approx_tokens=417
+1792354505.432608 cache qid=10 result=hit
+1792354505.432646 cache qid=12 result=hit
+1792354505.432667 cache qid=14 result=hit
+1792354505.432684 cache qid=16 result=hit
+1792354505.432701 cache qid=18 result=hit
+1792354505.432717 cache qid=20 result=hit
+1792354505.432734 cache qid=22 result=hit
+1792354505.432750 cache qid=24 result=hit
+1792354505.432766 cache qid=26 result=miss
+1792354505.434854 retrieve qid=26 chunks=2 ctx_bytes=1697 approx_tokens=424
+1792354505.500735 generate qid=8 ms=68.19 answer=#68fd259d
+1792354505.500862 cache qid=28 result=hit
+1792354505.500912 cache qid=30 result=miss
+1792354505.505672 generate qid=26 ms=70.78 answer=#4e626a23
+1792354505.505743 cache qid=32 result=miss
+1792354505.508271 retrieve qid=30 chunks=2 ctx_bytes=1717 approx_tokens=429
+1792354505.510254 retrieve qid=32 chunks=2 ctx_bytes=1717 approx_tokens=429
+1792354505.579316 generate qid=30 ms=71.01 answer=#098377a6
+1792354505.579404 cache qid=34 result=hit
+1792354505.579456 cache qid=36 result=miss
+1792354505.582279 retrieve qid=36 chunks=2 ctx_bytes=1722 approx_tokens=430
+1792354505.585936 generate qid=32 ms=75.65 answer=#098377a6
+1792354505.586044 cache qid=38 result=miss
+1792354505.588177 retrieve qid=38 chunks=2 ctx_bytes=1722 approx_tokens=430
+1792354505.618217 generate qid=36 ms=35.90 answer=#516b1719
+1792354505.630864 cache qid=40 result=hit
+1792354505.630900 cache qid=42 result=hit
+1792354505.630920 cache qid=44 result=hit
+1792354505.630938 cache qid=46 result=hit
+1792354505.630955 cache qid=48 result=hit
+1792354505.630972 cache qid=50 result=hit
+1792354505.630988 cache qid=52 result=hit
+1792354505.631035 cache qid=54 result=hit
+1792354505.631061 cache qid=56 result=hit
+1792354505.631080 cache qid=58 result=hit
+1792354505.631096 cache qid=60 result=hit
+1792354505.631112 cache qid=62 result=hit
+1792354505.631127 cache qid=64 result=hit
+1792354505.631143 cache qid=1 result=hit
+1792354505.631158 cache qid=66 result=hit
+1792354505.631175 cache qid=68 result=miss
+1792354505.633226 retrieve qid=68 chunks=2 ctx_bytes=1717 approx_tokens=429
+1792354505.637100 generate qid=38 ms=48.89 answer=#516b1719
+1792354505.637222 cache qid=70 result=hit
+1792354505.637259 cache qid=72 result=hit
+1792354505.637279 cache qid=74 result=hit
+1792354505.637296 cache qid=76 result=hit
+1792354505.637312 cache qid=78 result=hit
+1792354505.637329 cache qid=80 result=hit
+1792354505.637346 cache qid=82 result=hit
+1792354505.637362 cache qid=84 result=hit
+1792354505.637377 cache qid=86 result=hit
+1792354505.637393 cache qid=88 result=miss
+1792354505.639642 retrieve qid=88 chunks=2 ctx_bytes=1727 approx_tokens=431
+1792354505.690776 generate qid=68 ms=57.52 answer=#22674ffb
+1792354505.690867 cache qid=90 result=hit
+1792354505.690906 cache qid=92 result=hit
+1792354505.690926 cache qid=94 result=hit
+1792354505.690943 cache qid=96 result=hit
+1792354505.690958 cache qid=98 result=hit
+1792354505.690975 cache qid=100 result=hit
+1792354505.690991 cache qid=3 result=hit
+1792354505.691008 cache qid=5 result=hit
+1792354505.691024 cache qid=7 result=hit
+1792354505.691039 cache qid=9 result=hit
+1792354505.691054 cache qid=11 result=hit
+1792354505.691071 cache qid=13 result=hit
+1792354505.691085 cache qid=15 result=hit
+1792354505.691100 cache qid=17 result=hit
+1792354505.691115 cache qid=19 result=hit
+1792354505.691129 cache qid=21 result=hit
+1792354505.691144 cache qid=23 result=hit
+1792354505.691160 cache qid=25 result=hit
+1792354505.691175 cache qid=27 result=hit
+1792354505.691190 cache qid=29 result=hit
+1792354505.691206 cache qid=31 result=hit
+1792354505.691271 cache qid=33 result=hit
+1792354505.691301 cache qid=102 result=miss
+1792354505.694740 generate qid=88 ms=55.07 answer=#7cc7ecfb
+1792354505.694793 cache qid=104 result=miss
+1792354505.697796 retrieve qid=102 chunks=2 ctx_bytes=1695 approx_tokens=423
+1792354505.699932 retrieve qid=104 chunks=2 ctx_bytes=1695 approx_tokens=423
+1792354505.770011 generate qid=104 ms=70.04 answer=#99764677
+1792354505.770173 cache qid=106 result=hit
+1792354505.770234 cache qid=108 result=hit
+1792354505.770266 cache qid=110 result=hit
+1792354505.770297 cache qid=112 result=hit
+1792354505.770325 cache qid=114 result=hit
+1792354505.770353 cache qid=116 result=hit
+1792354505.770380 cache qid=118 result=hit
+1792354505.770406 cache qid=120 result=hit
+1792354505.770438 cache qid=122 result=hit
+1792354505.770464 cache qid=124 result=hit
+1792354505.770646 generate qid=102 ms=72.83 answer=#99764677
+1792354505.770759 cache qid=128 result=hit
+1792354505.770820 cache qid=130 result=hit
+1792354505.770859 cache qid=132 result=hit
+1792354505.770917 cache qid=134 result=hit
+1792354505.770952 cache qid=136 result=hit
+1792354505.770979 cache qid=138 result=hit
+1792354505.771005 cache qid=140 result=hit
+1792354505.771031 cache qid=142 result=miss
+1792354505.773862 retrieve qid=142 chunks=2 ctx_bytes=1699 approx_tokens=424
+1792354505.770703 cache qid=126 result=miss
+1792354505.776446 retrieve qid=126 chunks=2 ctx_bytes=1667 approx_tokens=416
+1792354505.847373 generate qid=142 ms=73.46 answer=#a2a9b7b8
+1792354505.849985 cache qid=144 result=miss
+1792354505.855908 generate qid=126 ms=79.41 answer=#53b2a577
+1792354505.856041 cache qid=146 result=hit
+1792354505.856078 cache qid=148 result=hit
+1792354505.856114 cache qid=150 result=hit
+1792354505.856148 cache qid=152 result=hit
+1792354505.856182 cache qid=154 result=miss
+1792354505.859193 retrieve qid=144 chunks=3 ctx_bytes=1994 approx_tokens=498
+1792354505.862094 retrieve qid=154 chunks=3 ctx_bytes=1994 approx_tokens=498
+1792354505.940040 generate qid=144 ms=80.80 answer=#19f1e1a2
+1792354505.940191 cache qid=156 result=miss
+1792354505.953425 retrieve qid=156 chunks=2 ctx_bytes=1188 approx_tokens=297
+1792354505.954099 generate qid=154 ms=91.96 answer=#19f1e1a2
+1792354505.954232 cache qid=158 result=hit
+1792354505.954296 cache qid=160 result=hit
+1792354505.954329 cache qid=162 result=miss
+1792354505.957148 retrieve qid=162 chunks=2 ctx_bytes=1619 approx_tokens=404
+1792354505.998273 generate qid=156 ms=44.77 answer=#d738af33
+1792354506.011103 cache qid=164 result=hit
+1792354506.011146 cache qid=166 result=hit
+1792354506.011178 cache qid=168 result=hit
+1792354506.011209 cache qid=170 result=hit
+1792354506.011236 cache qid=172 result=hit
+1792354506.011263 cache qid=174 result=hit
+1792354506.011290 cache qid=176 result=miss
+1792354506.013369 retrieve qid=176 chunks=2 ctx_bytes=1619 approx_tokens=404
+1792354506.017566 generate qid=162 ms=60.38 answer=#5f06e05e
+1792354506.017643 cache qid=178 result=hit
+1792354506.017687 cache qid=180 result=miss
+1792354506.019716 retrieve qid=180 chunks=2 ctx_bytes=1662 approx_tokens=415
+1792354506.048707 generate qid=176 ms=35.31 answer=#5f06e05e
+1792354506.048797 cache qid=182 result=hit
+1792354506.048965 cache qid=184 result=hit
+1792354506.049092 cache qid=186 result=hit
+1792354506.049130 cache qid=188 result=miss
+1792354506.061429 retrieve qid=188 chunks=2 ctx_bytes=1637 approx_tokens=409
+1792354506.079839 generate qid=180 ms=60.09 answer=#d0e96c01
+1792354506.079972 cache qid=190 result=miss
+1792354506.082529 retrieve qid=190 chunks=2 ctx_bytes=1675 approx_tokens=418
+1792354506.105118 generate qid=188 ms=43.64 answer=#981cf81e
+1792354506.105269 cache qid=192 result=hit
+1792354506.105320 cache qid=194 result=hit
+1792354506.105350 cache qid=196 result=hit
+1792354506.105378 cache qid=198 result=hit
+1792354506.105405 cache qid=200 result=hit
+1792354506.105432 cache qid=202 result=hit
+1792354506.105458 cache qid=204 result=miss
+1792354506.117287 retrieve qid=204 chunks=2 ctx_bytes=1675 approx_tokens=418
+1792354506.136086 generate qid=190 ms=53.51 answer=#772db481
+1792354506.136684 cache qid=206 result=hit
+1792354506.136729 cache qid=208 result=miss
+1792354506.146890 retrieve qid=208 chunks=2 ctx_bytes=1687 approx_tokens=421
+1792354506.153824 generate qid=204 ms=36.51 answer=#772db481
+1792354506.153892 cache qid=210 result=hit
+1792354506.153928 cache qid=212 result=hit
+1792354506.153949 cache qid=214 result=hit
+1792354506.153967 cache qid=216 result=hit
+1792354506.153985 cache qid=218 result=hit
+1792354506.154002 cache qid=220 result=miss
+1792354506.155960 retrieve qid=220 chunks=2 ctx_bytes=1635 approx_tokens=408
+1792354506.199890 generate qid=208 ms=52.97 answer=#cd017ffb
+1792354506.200003 cache qid=35 result=hit
+1792354506.200057 cache qid=37 result=hit
+1792354506.200089 cache qid=39 result=hit
+1792354506.200115 cache qid=222 result=hit
+1792354506.200141 cache qid=224 result=hit
+1792354506.200166 cache qid=226 result=miss
+1792354506.212250 retrieve qid=226 chunks=2 ctx_bytes=1635 approx_tokens=408
+1792354506.213444 generate qid=220 ms=57.46 answer=#97d2eb51
+1792354506.213514 cache qid=228 result=hit
+1792354506.213549 cache qid=230 result=hit
+1792354506.213568 cache qid=232 result=hit
+1792354506.213585 cache qid=234 result=hit
+1792354506.213602 cache qid=236 result=hit
+1792354506.213617 cache qid=238 result=hit
+1792354506.213633 cache qid=240 result=miss
+1792354506.215532 retrieve qid=240 chunks=2 ctx_bytes=1694 approx_tokens=423
+1792354506.259300 generate qid=226 ms=47.02 answer=#97d2eb51
+1792354506.259372 cache qid=242 result=hit
+1792354506.259406 cache qid=244 result=miss
+1792354506.264447 generate qid=240 ms=48.90 answer=#c1769036
+1792354506.264513 cache qid=246 result=hit
+1792354506.264546 cache qid=248 result=miss
+1792354506.264767 retrieve qid=244 chunks=2 ctx_bytes=1640 approx_tokens=410
+1792354506.266641 retrieve qid=248 chunks=2 ctx_bytes=1640 approx_tokens=410
+1792354506.307676 generate qid=244 ms=42.89 answer=#6a870614
+1792354506.307762 cache qid=41 result=hit
+1792354506.307796 cache qid=43 result=hit
+1792354506.307816 cache qid=45 result=hit
+1792354506.307832 cache qid=47 result=hit
+1792354506.307847 cache qid=49 result=hit
+1792354506.307863 cache qid=51 result=hit
+1792354506.307880 cache qid=53 result=hit
+1792354506.307894 cache qid=55 result=hit
+1792354506.307910 cache qid=57 result=hit
+1792354506.307924 cache qid=59 result=hit
+1792354506.307938 cache qid=61 result=hit
+1792354506.307954 cache qid=63 result=hit
+1792354506.307968 cache qid=65 result=hit
+1792354506.307982 cache qid=67 result=hit
+1792354506.307997 cache qid=69 result=hit
+1792354506.308011 cache qid=71 result=hit
+1792354506.308026 cache qid=73 result=hit
+1792354506.308040 cache qid=75 result=hit
+1792354506.308056 cache qid=77 result=hit
+1792354506.308070 cache qid=79 result=hit
+1792354506.308084 cache qid=81 result=hit
+1792354506.308098 cache qid=83 result=hit
+1792354506.308113 cache qid=85 result=hit
+1792354506.308127 cache qid=87 result=hit
+1792354506.308141 cache qid=89 result=hit
+1792354506.308156 cache qid=91 result=hit
+1792354506.308170 cache qid=93 result=hit
+1792354506.308185 cache qid=95 result=hit
+1792354506.308199 cache qid=97 result=hit
+1792354506.308224 cache qid=99 result=hit
+1792354506.308250 cache qid=250 result=hit
+1792354506.308268 cache qid=252 result=hit
+1792354506.314933 generate qid=248 ms=48.27 answer=#6a870614
+1792354506.315141 cache qid=254 result=hit
+1792354506.315164 cache qid=256 result=miss
+1792354506.317087 retrieve qid=256 chunks=2 ctx_bytes=1690 approx_tokens=422
+1792354506.317200 cache qid=258 result=hit
+1792354506.317238 cache qid=260 result=hit
+1792354506.317257 cache qid=262 result=miss
+1792354506.319654 retrieve qid=262 chunks=2 ctx_bytes=1690 approx_tokens=422
+1792354506.363895 generate qid=256 ms=46.78 answer=#380b9fe5
+1792354506.363979 cache qid=264 result=hit
+1792354506.364059 cache qid=266 result=hit
+1792354506.364082 cache qid=268 result=hit
+1792354506.364099 cache qid=270 result=hit
+1792354506.364115 cache qid=272 result=hit
+1792354506.364130 cache qid=274 result=hit
+1792354506.364145 cache qid=276 result=hit
+1792354506.364161 cache qid=278 result=hit
+1792354506.364175 cache qid=280 result=hit
+1792354506.364192 cache qid=282 result=hit
+1792354506.364207 cache qid=284 result=hit
+1792354506.364223 cache qid=286 result=hit
+1792354506.364238 cache qid=288 result=miss
+1792354506.366899 generate qid=262 ms=47.23 answer=#380b9fe5
+1792354506.366951 cache qid=290 result=hit
+1792354506.366971 cache qid=292 result=hit
+1792354506.366987 cache qid=294 result=hit
+1792354506.367003 cache qid=296 result=hit
+1792354506.367018 cache qid=298 result=hit
+1792354506.367073 cache qid=300 result=hit
+1792354506.367095 cache qid=302 result=hit
+1792354506.367114 cache qid=304 result=hit
+1792354506.367130 cache qid=306 result=hit
+1792354506.367145 cache qid=308 result=hit
+1792354506.367161 cache qid=310 result=hit
+1792354506.367176 cache qid=312 result=hit
+1792354506.367190 cache qid=314 result=hit
+1792354506.367205 cache qid=316 result=miss
+1792354506.369225 retrieve qid=288 chunks=2 ctx_bytes=1696 approx_tokens=424
+1792354506.371564 retrieve qid=316 chunks=2 ctx_bytes=1696 approx_tokens=424
+1792354506.416082 generate qid=288 ms=46.83 answer=#2b071bfb
+1792354506.416194 cache qid=101 result=hit
+1792354506.416237 cache qid=103 result=hit
+1792354506.416263 cache qid=105 result=hit
+1792354506.416286 cache qid=107 result=hit
+1792354506.416308 cache qid=109 result=hit
+1792354506.416330 cache qid=111 result=hit
+1792354506.416352 cache qid=113 result=hit
+1792354506.416374 cache qid=115 result=hit
+1792354506.416395 cache qid=117 result=hit
+1792354506.416417 cache qid=119 result=hit
+1792354506.416439 cache qid=121 result=hit
+1792354506.416461 cache qid=123 result=hit
+1792354506.416482 cache qid=125 result=hit
+1792354506.416504 cache qid=127 result=hit
+1792354506.416526 cache qid=129 result=hit
+1792354506.416548 cache qid=131 result=hit
+1792354506.416569 cache qid=133 result=hit
+1792354506.416590 cache qid=135 result=hit
+1792354506.416613 cache qid=318 result=hit
+1792354506.416635 cache qid=320 result=hit
+1792354506.416658 cache qid=322 result=hit
+1792354506.416680 cache qid=324 result=hit
+1792354506.416703 cache qid=326 result=hit
+1792354506.416727 cache qid=328 result=hit
+1792354506.416750 cache qid=330 result=hit
+1792354506.416775 cache qid=332 result=hit
+1792354506.416797 cache qid=334 result=hit
+1792354506.416819 cache qid=336 result=hit
+1792354506.416841 cache qid=338 result=hit
+1792354506.416863 cache qid=340 result=hit
+1792354506.416884 cache qid=342 result=hit
+1792354506.416906 cache qid=344 result=hit
+1792354506.422742 generate qid=316 ms=51.16 answer=#2b071bfb
+1792354506.422796 cache qid=346 result=hit
+1792354506.422823 cache qid=348 result=hit
+1792354506.422849 cache qid=350 result=hit
+1792354506.422872 cache qid=352 result=hit
+1792354506.422895 cache qid=354 result=hit
+1792354506.422918 cache qid=356 result=hit
+1792354506.422941 cache qid=358 result=hit
+1792354506.422966 cache qid=360 result=hit
+1792354506.422989 cache qid=362 result=hit
+1792354506.423012 cache qid=364 result=hit
+1792354506.423034 cache qid=366 result=miss
+1792354506.423327 cache qid=368 result=hit
+1792354506.423355 cache qid=370 result=miss
+1792354506.425428 retrieve qid=370 chunks=2 ctx_bytes=1635 approx_tokens=408
+1792354506.428031 retrieve qid=366 chunks=2 ctx_bytes=1635 approx_tokens=408
+1792354506.479430 generate qid=370 ms=53.96 answer=#63996e02
+1792354506.479525 cache qid=372 result=hit
+1792354506.479549 cache qid=374 result=miss
+1792354506.488159 retrieve qid=374 chunks=3 ctx_bytes=1958 approx_tokens=489
+1792354506.489082 generate qid=366 ms=61.03 answer=#63996e02
+1792354506.489132 cache qid=376 result=hit
+1792354506.489154 cache qid=378 result=hit
+1792354506.489171 cache qid=380 result=hit
+1792354506.489214 cache qid=382 result=hit
+1792354506.489232 cache qid=384 result=hit
+1792354506.489247 cache qid=386 result=hit
+1792354506.489263 cache qid=388 result=hit
+1792354506.489278 cache qid=390 result=miss
+1792354506.491560 retrieve qid=390 chunks=2 ctx_bytes=1631 approx_tokens=407
+1792354506.556416 generate qid=374 ms=68.23 answer=#c6222830
+1792354506.556496 cache qid=392 result=miss
+1792354506.558581 retrieve qid=392 chunks=3 ctx_bytes=1509 approx_tokens=377
+1792354506.559608 generate qid=390 ms=68.01 answer=#f4691719
+1792354506.561368 cache qid=394 result=hit
+1792354506.561394 cache qid=396 result=hit
+1792354506.561412 cache qid=398 result=miss
+1792354506.563332 retrieve qid=398 chunks=2 ctx_bytes=1658 approx_tokens=414
+1792354506.617789 generate qid=392 ms=56.48 answer=#3e6ee587
+1792354506.617870 cache qid=137 result=hit
+1792354506.617893 cache qid=139 result=hit
+1792354506.617913 cache qid=141 result=hit
+1792354506.617930 cache qid=143 result=hit
+1792354506.617945 cache qid=145 result=hit
+1792354506.617959 cache qid=147 result=hit
+1792354506.617974 cache qid=149 result=hit
+1792354506.617989 cache qid=151 result=hit
+1792354506.618003 cache qid=153 result=hit
+1792354506.618018 cache qid=155 result=hit
+1792354506.618033 cache qid=157 result=hit
+1792354506.618048 cache qid=159 result=hit
+1792354506.618062 cache qid=161 result=hit
+1792354506.618077 cache qid=163 result=hit
+1792354506.618092 cache qid=165 result=hit
+1792354506.618106 cache qid=167 result=hit
+1792354506.618121 cache qid=169 result=hit
+1792354506.618137 cache qid=171 result=hit
+1792354506.618151 cache qid=173 result=hit
+1792354506.618167 cache qid=175 result=hit
+1792354506.618182 cache qid=177 result=hit
+1792354506.618196 cache qid=179 result=hit
+1792354506.618210 cache qid=181 result=hit
+1792354506.618224 cache qid=183 result=hit
+1792354506.618239 cache qid=185 result=hit
+1792354506.618252 cache qid=187 result=hit
+1792354506.618267 cache qid=189 result=hit
+1792354506.618282 cache qid=191 result=hit
+1792354506.618296 cache qid=193 result=hit
+1792354506.618310 cache qid=195 result=hit
+1792354506.618325 cache qid=197 result=hit
+1792354506.618338 cache qid=199 result=hit
+1792354506.622580 generate qid=398 ms=59.23 answer=#1a184ef8
+1792354506.622775 cache qid=201 result=hit
+1792354506.622794 cache qid=203 result=hit
+1792354506.622810 cache qid=205 result=hit
+1792354506.622824 cache qid=207 result=hit
+1792354506.622839 cache qid=209 result=hit
+1792354506.622854 cache qid=211 result=hit
+1792354506.622868 cache qid=213 result=hit
+1792354506.622883 cache qid=215 result=hit
+1792354506.622897 cache qid=217 result=hit
+1792354506.622912 cache qid=219 result=hit
+1792354506.622926 cache qid=221 result=hit
+1792354506.622940 cache qid=223 result=hit
+1792354506.622955 cache qid=225 result=hit
+1792354506.622969 cache qid=227 result=hit
+1792354506.622983 cache qid=229 result=hit
+1792354506.622998 cache qid=231 result=hit
+1792354506.623012 cache qid=233 result=hit
+1792354506.623026 cache qid=235 result=hit
+1792354506.623040 cache qid=237 result=hit
+1792354506.623054 cache qid=239 result=hit
+1792354506.623069 cache qid=241 result=hit
+1792354506.623083 cache qid=243 result=hit
+1792354506.623097 cache qid=245 result=hit
+1792354506.623111 cache qid=247 result=hit
+1792354506.623125 cache qid=249 result=hit
+1792354506.623139 cache qid=251 result=hit
+1792354506.623154 cache qid=253 result=hit
+1792354506.623168 cache qid=255 result=hit
+1792354506.623212 cache qid=257 result=hit
+1792354506.623238 cache qid=259 result=hit
+1792354506.623256 cache qid=261 result=hit
+1792354506.623296 cache qid=263 result=hit
+1792354506.623472 cache qid=265 result=hit
+1792354506.623491 cache qid=267 result=hit
+1792354506.623506 cache qid=269 result=hit
+1792354506.623521 cache qid=271 result=hit
+1792354506.623535 cache qid=273 result=hit
+1792354506.623549 cache qid=275 result=hit
+1792354506.623564 cache qid=277 result=hit
+1792354506.623578 cache qid=279 result=hit
+1792354506.623592 cache qid=281 result=hit
+1792354506.623606 cache qid=283 result=hit
+1792354506.623620 cache qid=285 result=hit
+1792354506.623634 cache qid=287 result=hit
+1792354506.623648 cache qid=289 result=hit
+1792354506.623663 cache qid=291 result=hit
+1792354506.623676 cache qid=293 result=hit
+1792354506.623690 cache qid=295 result=hit
+1792354506.623704 cache qid=297 result=hit
+1792354506.623718 cache qid=299 result=hit
+1792354506.623732 cache qid=301 result=hit
+1792354506.623746 cache qid=303 result=hit
+1792354506.623760 cache qid=305 result=hit
+1792354506.623775 cache qid=307 result=hit
+1792354506.623789 cache qid=309 result=hit
+1792354506.623803 cache qid=311 result=hit
+1792354506.623818 cache qid=313 result=hit
+1792354506.623832 cache qid=315 result=hit
+1792354506.623845 cache qid=317 result=hit
+1792354506.623859 cache qid=319 result=hit
+1792354506.623873 cache qid=321 result=miss
+1792354506.625906 retrieve qid=321 chunks=2 ctx_bytes=1684 approx_tokens=421
+1792354506.626175 cache qid=323 result=hit
+1792354506.626199 cache qid=325 result=hit
+1792354506.626216 cache qid=327 result=hit
+1792354506.626232 cache qid=329 result=hit
+1792354506.626246 cache qid=331 result=hit
+1792354506.626261 cache qid=333 result=hit
+1792354506.626275 cache qid=335 result=hit
+1792354506.626290 cache qid=337 result=hit
+1792354506.626306 cache qid=339 result=hit
+1792354506.626320 cache qid=341 result=miss
+1792354506.628592 retrieve qid=341 chunks=2 ctx_bytes=1684 approx_tokens=421
+1792354506.672316 generate qid=321 ms=46.39 answer=#f37e62a7
+1792354506.672372 cache qid=343 result=hit
+1792354506.672394 cache qid=345 result=hit
+1792354506.672412 cache qid=347 result=hit
+1792354506.672429 cache qid=349 result=miss
+1792354506.676899 generate qid=341 ms=48.27 answer=#f37e62a7
+1792354506.676977 cache qid=351 result=hit
+1792354506.677000 cache qid=353 result=hit
+1792354506.677020 cache qid=355 result=hit
+1792354506.677048 cache qid=357 result=hit
+1792354506.677077 cache qid=359 result=hit
+1792354506.677096 cache qid=361 result=hit
+1792354506.677127 cache qid=363 result=hit
+1792354506.677146 cache qid=365 result=hit
+1792354506.677162 cache qid=367 result=hit
+1792354506.677215 cache qid=369 result=miss
+1792354506.677554 retrieve qid=349 chunks=2 ctx_bytes=1670 approx_tokens=417
+1792354506.681470 retrieve qid=369 chunks=2 ctx_bytes=1720 approx_tokens=430
+1792354506.726253 generate qid=349 ms=48.68 answer=#a91ed766
+1792354506.726319 cache qid=371 result=hit
+1792354506.726343 cache qid=373 result=hit
+1792354506.726360 cache qid=375 result=miss
+1792354506.736191 retrieve qid=375 chunks=2 ctx_bytes=1680 approx_tokens=420
+1792354506.736630 generate qid=369 ms=55.13 answer=#90f23d90
+1792354506.736676 cache qid=377 result=hit
+1792354506.736697 cache qid=379 result=hit
+1792354506.736715 cache qid=381 result=hit
+1792354506.736731 cache qid=383 result=hit
+1792354506.736748 cache qid=385 result=hit
+1792354506.736763 cache qid=387 result=hit
+1792354506.736779 cache qid=389 result=miss
+1792354506.738810 retrieve qid=389 chunks=2 ctx_bytes=1705 approx_tokens=426
+1792354506.778843 generate qid=375 ms=42.63 answer=#9d093a90
+1792354506.778898 cache qid=391 result=hit
+1792354506.778919 cache qid=393 result=hit
+1792354506.778936 cache qid=395 result=hit
+1792354506.778952 cache qid=397 result=hit
+1792354506.778970 cache qid=399 result=hit
+1792354506.785542 generate qid=389 ms=46.71 answer=#6abe5ddf
+1792354506.786548 shutdown requests=400 wall_s=1.425

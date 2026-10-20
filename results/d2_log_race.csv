@@ -1,0 +1,7 @@
+rep,logger,events_written,lines_in_file,corrupted_lines
+1,UnsafeLogger,2400,2400,1823
+1,SafeLogger,2400,2400,0
+2,UnsafeLogger,2400,2400,1813
+2,SafeLogger,2400,2400,0
+3,UnsafeLogger,2400,2400,1816
+3,SafeLogger,2400,2400,0

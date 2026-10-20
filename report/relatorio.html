@@ -1,0 +1,754 @@
+<!doctype html><html lang='pt-BR'><head><meta charset='utf-8'><title>Relatório Técnico - AV2 - Leticia Cavalcanti</title>
+<style>
+@page { size: A4; margin: 16mm 14mm; }
+body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.38; color: #1a1a1a; font-size: 10.2pt; }
+h1 { font-size: 1.6em; color: #0b3d91; border-bottom: 2px solid #0b3d91; padding-bottom: 4px; }
+h2 { font-size: 1.22em; color: #0b3d91; margin-top: 1.3em; border-bottom: 1px solid #ccc; padding-bottom: 3px; page-break-after: avoid; }
+h3 { font-size: 1.05em; color: #0b3d91; page-break-after: avoid; }
+table { border-collapse: collapse; width: 100%; margin: .7em 0; font-size: .8em; page-break-inside: avoid; }
+th, td { border: 1px solid #999; padding: 3px 5px; text-align: left; }
+th { background: #eef2fb; }
+code { background: #f2f2f2; padding: 0 3px; border-radius: 3px; font-size: .9em; }
+pre { background: #f2f2f2; padding: 8px; font-size: .78em; white-space: pre-wrap; page-break-inside: avoid; }
+blockquote { border-left: 4px solid #0b3d91; margin: .8em 0; padding: .1em .9em; background: #f7f9fd; }
+img { max-width: 100%; display: block; margin: .6em auto; page-break-inside: avoid; }
+p.fig { font-size: .85em; color: #52514e; text-align: center; margin-top: -.2em; }
+a { color: #0b3d91; }
+</style>
+</head><body><h1 id="relatorio-tecnico-av2-memoria-armazenamento-sincronizacao-e-desempenho-em-um-servico-rag-genresearch-servidor">Relatório Técnico — AV2: Memória, armazenamento, sincronização e desempenho em um serviço RAG (GenResearch-Servidor)</h1>
+<p><strong>Disciplina:</strong> Sistemas Operacionais — 2026.2 | <strong>Discente:</strong> Leticia Cavalcanti (trabalho individual)
+<strong>Repositório:</strong> <code>https://github.com/leticiacavalcaanti/SO_UFS_2026_2_AV2_Cavalcanti_Leticia</code> <em>(confirmar o nome exigido pelo docente)</em> | <strong>Commit da entrega:</strong> <code>PREENCHER (git rev-parse --short HEAD)</code>
+<strong>Vídeo:</strong> <code>PREENCHER</code> (ver VIDEO.md) | <strong>Data das execuções:</strong> 18/10/2026</p>
+<h2 id="1-tabela-de-contribuicao-individual">1. Tabela de contribuição individual</h2>
+<table>
+<thead>
+<tr>
+<th>Integrante</th>
+<th>Contribuição</th>
+<th>Participação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Leticia Cavalcanti</td>
+<td>Definição do recorte, implementação do serviço e dos experimentos, execução, análise, relatório, slides e vídeo</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table>
+<p>O uso de IA generativa (assistente de código) na elaboração está declarado em <code>declaracao_uso_ia.md</code>.</p>
+<h2 id="2-introducao-problema-e-pergunta-norteadora">2. Introdução, problema e pergunta norteadora</h2>
+<p>Aplicações de IA generativa e de RAG (<em>retrieval-augmented generation</em>) são, do ponto de vista do sistema operacional (SO), cargas que combinam: arquivos grandes lidos do armazenamento (corpus, índices, <em>embeddings</em>, <em>checkpoints</em>), memória virtual (mapeamentos, cache de páginas), filas de requisições e <em>caches</em> compartilhados por várias threads, e escrita concorrente em logs. Este trabalho implementa um serviço simplificado — o <strong>GenResearch-Servidor</strong> — e o usa como carga para observar como o SO administra esses recursos e que custos aparecem.</p>
+<p><strong>Pergunta norteadora:</strong> <em>como memória principal, memória virtual, armazenamento, caches, filas compartilhadas e mecanismos de sincronização afetam o desempenho, a estabilidade e a correção de uma aplicação de IA generativa ou de RAG?</em></p>
+<p><strong>Recorte experimental (e justificativa).</strong> O foco é o SO, não a qualidade do texto. Por isso: (i) os <em>embeddings</em> são <strong>simulados</strong> (hashing, determinísticos) e a <strong>geração é simulada</strong> (latência configurável + CPU proporcional ao contexto) — isso elimina a dependência de chave de API, de pesos de modelo e de GPU, e torna tudo reprodutível; (ii) o corpus é <strong>sintético</strong>; (iii) o recorte cobre as configurações C1–C6 e a Parte D com as opções 1 (produtor/consumidor) e 2 (cache compartilhado), além de log concorrente e deadlock isolado. A ideia de <em>chunking</em> por palavras com sobreposição e de similaridade de cosseno sobre vetores normalizados vem de um serviço RAG anterior da autora (projeto glpimentor), reescrito aqui sem nenhuma dependência dele.</p>
+<h2 id="3-ambiente-parte-a">3. Ambiente (Parte A)</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hospedeiro</td>
+<td>Windows 11 Home, Docker Desktop 28.3.2 (backend WSL2)</td>
+</tr>
+<tr>
+<td>Ambiente Linux</td>
+<td><strong>Contêiner</strong> <code>python:3.12-slim</code> (Debian GNU/Linux 13 "trixie") sobre a VM Linux do Docker Desktop</td>
+</tr>
+<tr>
+<td>Kernel</td>
+<td>6.6.87.2-microsoft-standard-WSL2 (x86_64)</td>
+</tr>
+<tr>
+<td>CPU</td>
+<td>Intel Core i5-10210U, 4 CPUs lógicas (2 núcleos × 2 threads), 1,6 GHz base</td>
+</tr>
+<tr>
+<td>RAM / swap</td>
+<td>5,8 GiB / 1,0 GiB (VM); página de 4 KiB</td>
+</tr>
+<tr>
+<td>Armazenamento</td>
+<td>disco virtual da VM (ext4); corpus e índices em volume Docker</td>
+</tr>
+<tr>
+<td>GPU</td>
+<td>nenhuma (somente CPU)</td>
+</tr>
+<tr>
+<td>Linguagem/bibliotecas</td>
+<td>Python 3.12, numpy 2.1.3, matplotlib 3.9.2, SQLite (stdlib)</td>
+</tr>
+<tr>
+<td>Modelo/ferramenta</td>
+<td>nenhum modelo real: vetores e geração simulados (ver §2)</td>
+</tr>
+</tbody>
+</table>
+<p>Comandos executados e saídas completas: <code>results/env/ambiente_container.txt</code> (<code>uname -a</code>, <code>os-release</code>, <code>lscpu</code>, <code>free -h</code>, <code>/proc/meminfo</code>, <code>lsblk</code>, <code>df -h</code>, <code>swapon --show</code>, <code>vmstat</code>, <code>iostat -xz</code>) e <code>results/env/ambiente_host_docker.txt</code>.</p>
+<p><strong>MemFree, MemAvailable, cache e swap.</strong> <code>MemFree</code> é a RAM totalmente ociosa; <code>MemAvailable</code> é a estimativa do kernel de quanto pode ser dado a novos processos sem <em>swap</em>, <strong>incluindo</strong> o cache de páginas e <em>slabs</em> reclamáveis; "cache" (<code>Cached</code>) é a memória usada pelo <strong>cache de páginas</strong>, que guarda conteúdo de arquivos já lidos; <em>swap</em> é o espaço em disco para páginas anônimas expulsas da RAM. O cache de páginas não é memória desperdiçada: é reutilizável (a 2ª leitura de um arquivo evita o disco, como medido em §8) e é devolvido sob pressão — por isso olhar só <code>MemFree</code> leva a conclusões erradas. Para datasets, índices, <em>embeddings</em> e <em>checkpoints</em>, isso significa que ler um arquivo grande uma vez "enche" o cache, que a primeira leitura paga E/S e as seguintes não, e que um arquivo maior que a memória disponível não tem como ficar todo em cache (§8.2).</p>
+<h2 id="4-arquitetura">4. Arquitetura</h2>
+<pre><code>2 produtores ─put→ BoundedBuffer (semáforos empty/full + mutex) ─get→ N trabalhadores (threads)
+trabalhador: cache compartilhado ──miss→ embedding da consulta → varredura do índice (.npy: read ou mmap)
+             → textos dos trechos no SQLite → contexto limitado → geração (simulada) → grava no cache
+logs de eventos (mutex) · métricas via /proc, getrusage e cgroup v2
+</code></pre>
+<ul>
+<li><strong>Ingestão</strong> (<code>genresearch/store.py</code>): lê <code>.txt</code>, fragmenta em trechos de 100 palavras com 20 de sobreposição, gera um vetor float32 de 256 dimensões por trecho e grava <code>vectors.npy</code> (N×256) + <code>meta.sqlite</code> (documento, ordem, texto).</li>
+<li><strong>Recuperação:</strong> top-k (k=5) por produto escalar, varrendo o índice em blocos de 32.768 linhas — idêntico para índice carregado na RAM (<code>np.load</code>) ou mapeado (<code>np.load(mmap_mode="r")</code>, que usa <code>mmap</code>).</li>
+<li><strong>Contexto:</strong> concatena os trechos até um limite de bytes (≈ tokens × 4), registrando trechos, bytes e tokens aproximados.</li>
+<li><strong>Geração simulada:</strong> <code>sleep</code> (latência de um serviço externo, 20 ms) + SHA-256 repetido sobre o contexto (CPU proporcional ao contexto).</li>
+<li><strong>Trabalhadores = threads.</strong> A carga é mista: a espera da geração (<code>sleep</code>), o <code>matmul</code> do numpy e o <code>hashlib</code> com buffers grandes liberam o GIL; processos custariam cópia/compartilhamento do índice e IPC para ganho pequeno neste recorte. (A escolha foi testada empiricamente em §9.1, onde se vê o limite do GIL/CPU.)</li>
+</ul>
+<h2 id="5-dados-corpus-embeddings-indice-e-cache">5. Dados, corpus, <em>embeddings</em>, índice e cache</h2>
+<p>O corpus é gerado por <code>genresearch/corpus.py</code> com semente fixa: 12 tópicos, cada um com vocabulário próprio (70% das palavras de um documento vêm do tópico, 30% do vocabulário global), de modo que consultas de um tópico realmente recuperam trechos dele. Nada é real nem pessoal. Tamanhos usados:</p>
+<table>
+<thead>
+<tr>
+<th>Documentos</th>
+<th>Trechos</th>
+<th>Corpus (texto)</th>
+<th><code>vectors.npy</code></th>
+<th>SQLite</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200 (smoke)</td>
+<td>2.600</td>
+<td>1,6 MB</td>
+<td>2,5 MB</td>
+<td>2,4 MB</td>
+</tr>
+<tr>
+<td>500</td>
+<td>6.500</td>
+<td>≈ 4 MB</td>
+<td>6,4 MB</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2.000 (C3, C4, C6)</td>
+<td>26.000</td>
+<td>≈ 17 MB</td>
+<td>25 MB</td>
+<td>—</td>
+</tr>
+<tr>
+<td>8.000</td>
+<td>104.000</td>
+<td>≈ 68 MB</td>
+<td>102 MB</td>
+<td>—</td>
+</tr>
+<tr>
+<td>24.000</td>
+<td>312.000</td>
+<td>≈ 200 MB</td>
+<td>305 MB</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>(valores completos em <code>…/stats.json</code>, reproduzidos pelos scripts). <strong>Cache compartilhado:</strong> LRU ou FIFO, com capacidade configurável, chave canônica da consulta (palavras únicas ordenadas, sem <em>stopwords</em> — paráfrases por reordenação colidem), protegido por mutex; registra acertos, erros, substituições e o tempo economizado (custo de recuperação+geração de cada resposta, somado a cada acerto).</p>
+<h2 id="6-processos-threads-filas-e-recursos-compartilhados">6. Processos, threads, filas e recursos compartilhados</h2>
+<p>Há um processo Python e, nele: 2 threads produtoras, N trabalhadoras e a <em>thread</em> principal; o numpy cria ainda um <em>pool</em> de threads do OpenBLAS (visto em §10). Recursos compartilhados e seu controle:</p>
+<table>
+<thead>
+<tr>
+<th>Recurso</th>
+<th>Risco sem proteção</th>
+<th>Proteção</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fila de requisições</td>
+<td>perda/duplicação, estouro</td>
+<td><code>BoundedBuffer</code>: semáforos <code>empty</code>/<code>full</code> + mutex; número de sequência sob o mutex para verificar FIFO</td>
+</tr>
+<tr>
+<td>Cache de respostas</td>
+<td>atualização perdida, computação duplicada</td>
+<td><code>Lock</code> na estrutura e nos contadores</td>
+</tr>
+<tr>
+<td>Arquivo de log</td>
+<td>linhas intercaladas</td>
+<td><code>Lock</code> em <code>SafeLogger</code></td>
+</tr>
+<tr>
+<td>Conexão SQLite</td>
+<td>uso de uma conexão por várias threads</td>
+<td>uma conexão somente-leitura por thread (<code>threading.local</code>)</td>
+</tr>
+<tr>
+<td>Índice vetorial</td>
+<td>—</td>
+<td>somente leitura após a ingestão (sem escrita concorrente)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="7-estrategia-de-sincronizacao-e-metodologia">7. Estratégia de sincronização e metodologia</h2>
+<p><strong>Mecanismos adotados:</strong> semáforos contadores (<code>empty</code>, <code>full</code>) + mutex para o buffer limitado (Opção 1); mutex global e lock <strong>por chave</strong> (<em>single-flight</em>) para o cache (Opção 2); mutex no log; ordenação global de locks e <code>acquire</code> com <em>timeout</em> + recuo para o deadlock.</p>
+<p><strong>Metodologia.</strong> Cada configuração foi repetida <strong>3 vezes</strong>; as tabelas trazem média (± desvio-padrão quando relevante). Mesma aplicação e mesmo corpus em cada comparação, salvo a variável explicitamente alterada. Fatores variados: nº de trabalhadores (1, 2, 4, 8), capacidade da fila (4, 64), tamanho do corpus (6 a 305 MB de índice), contexto (500, 2.000, 8.000 B), capacidade (0, 16, 64, 512) e política (LRU/FIFO) do cache, uso de <code>mmap</code>, padrão de leitura (sequencial/aleatório), estado do cache de páginas (frio/quente) e limite de memória (cgroup). Métricas: latência (média, mediana, p95), vazão, RSS/VSZ (<code>/proc/self/status</code>), <code>MemAvailable</code>, faltas de página e bytes lidos do disco (<code>getrusage</code>, <code>/proc/self/io</code>, cgroup), fila (média/máxima/espera), utilização, acertos/erros/substituições, perdas/duplicações. Comandos exatos: README (<code>python scripts/run_all.py</code>). Resultados brutos: <code>results/*.csv</code>; logs: <code>results/logs/</code>; tabelas: <code>results/tabelas_resumo.md</code>.</p>
+<p><strong>Estado "frio".</strong> Antes de cada execução fria, as páginas do arquivo são despejadas com <code>posix_fadvise(POSIX_FADV_DONTNEED)</code> (não exige privilégio). Vale para o cache de páginas da VM Linux; o disco virtual ainda pode ser cacheado pelo Windows (ver §13).</p>
+<h2 id="8-resultados-memoria-armazenamento-paginacao-e-es">8. Resultados: memória, armazenamento, paginação e E/S</h2>
+<h3 id="81-c1-c2-read-convencional-mmap-parte-e">8.1 C1 × C2 — <code>read()</code> convencional × <code>mmap</code> (Parte E)</h3>
+<p>Arquivo aleatório de 16, 128 e 768 MB; leitura sequencial em blocos de 1 MiB (<code>read</code> em blocos, <code>read</code> do arquivo inteiro para a RAM, <code>mmap</code>) e 3.000 acessos aleatórios de 4 KiB (<code>pread</code> × <code>mmap</code>); 1ª execução (fria) e 2ª (quente). Médias de 3 repetições, arquivo de 768 MB:</p>
+<table>
+<thead>
+<tr>
+<th>Método / padrão</th>
+<th>Cache</th>
+<th>Abertura (ms)</th>
+<th>Leitura (ms)</th>
+<th>ΔRSS (MB)</th>
+<th>ΔVSZ (MB)</th>
+<th>Faltas maiores</th>
+<th>Lido do disco (MB)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>read</code> em blocos, seq.</td>
+<td>fria</td>
+<td>0,005</td>
+<td>755</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>768</td>
+</tr>
+<tr>
+<td><code>read</code> em blocos, seq.</td>
+<td>quente</td>
+<td>0,005</td>
+<td>331</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><code>read</code> tudo, seq.</td>
+<td>fria</td>
+<td>0,005</td>
+<td>1.369</td>
+<td>768</td>
+<td>768</td>
+<td>0</td>
+<td>768</td>
+</tr>
+<tr>
+<td><code>read</code> tudo, seq.</td>
+<td>quente</td>
+<td>0,012</td>
+<td>661</td>
+<td>768</td>
+<td>768</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><code>mmap</code>, seq.</td>
+<td>fria</td>
+<td>0,021</td>
+<td>1.064</td>
+<td>768</td>
+<td>768</td>
+<td>6.146</td>
+<td>768</td>
+</tr>
+<tr>
+<td><code>mmap</code>, seq.</td>
+<td>quente</td>
+<td>0,024</td>
+<td>322</td>
+<td>768</td>
+<td>768</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><code>pread</code> 4 KiB, aleatório</td>
+<td>fria</td>
+<td>0,005</td>
+<td>637</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>23</strong></td>
+</tr>
+<tr>
+<td><code>mmap</code>, aleatório</td>
+<td>fria</td>
+<td>0,036</td>
+<td>1.410</td>
+<td>165</td>
+<td>768</td>
+<td>2.441</td>
+<td><strong>287</strong></td>
+</tr>
+<tr>
+<td><code>pread</code> 4 KiB, aleatório</td>
+<td>quente</td>
+<td>0,007</td>
+<td>12,8</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><code>mmap</code>, aleatório</td>
+<td>quente</td>
+<td>0,029</td>
+<td>17,6</td>
+<td>165</td>
+<td>768</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="Leitura sequencial" src="../results/fig_c1c2_leitura.png" /></p>
+<p class="fig">Figura 1 — Leitura sequencial de 768 MB (média ± desvio-padrão, 3 repetições): tempo frio, tempo quente e ΔRSS.</p>
+
+<p>Observações (todas medidas; as explicações causais são interpretações):</p>
+<ol>
+<li><strong>Abertura:</strong> <code>mmap</code> custa ~20–40 µs (mapeia, não lê) contra ~5 µs do <code>open</code>; o VSZ já sobe 768 MB na abertura (espaço de endereços reservado), mas o RSS só cresce quando as páginas são tocadas — <strong>VSZ ≠ memória física</strong>.</li>
+<li><strong>Primeira × segunda execução:</strong> a 2ª execução é 2,3× (<code>read</code> em blocos), 2,1× (<code>read</code> tudo) e 3,3× (<code>mmap</code>) mais rápida e <strong>não lê nada do disco</strong> (0 MB): é o cache de páginas.</li>
+<li><strong>Faltas de página:</strong> <code>read()</code> não gera falta maior (os dados são copiados pelo kernel na chamada de sistema), enquanto o <code>mmap</code> gerou 6.146 faltas maiores na leitura fria sequencial — 768 MB / 6.146 ≈ 125 KiB por falta, compatível com leitura antecipada (<em>readahead</em>) em janelas de ~128 KiB. Na 2ª execução, 0 faltas maiores, mas ~12.288 faltas menores (a tabela de páginas do processo é preenchida a partir do cache).</li>
+<li><strong><code>read</code> do arquivo inteiro é o pior caso</strong> (2× mais lento que ler em blocos): além da cópia, precisa de 768 MB de memória anônima e ~196.600 faltas menores de primeiro acesso; o RSS fica em 768 MB. Ler em blocos mantém o RSS estável. Isso é o que acontece ao carregar um <em>checkpoint</em> inteiro com <code>read()</code>.</li>
+<li><strong>Acesso aleatório frio:</strong> o <code>mmap</code> leu <strong>287 MB</strong> do disco para atender 3.000 acessos que somam ~12 MB úteis (12× de amplificação, ~117 KiB por falta), contra 23 MB do <code>pread</code> (2× de amplificação), e foi 2,2× mais lento. Com acesso esparso e frio, <code>mmap</code> não é vantajoso; quente, a diferença cai (17,6 × 12,8 ms).</li>
+<li><strong>Tamanhos pequenos (16 MB):</strong> as diferenças absolutas são pequenas (21–30 ms na leitura fria) — o custo relevante só aparece com arquivos grandes.</li>
+</ol>
+<p><img alt="Acesso aleatório frio" src="../results/fig_c1c2_aleatorio.png" /></p>
+<p class="fig">Figura 2 — Acesso aleatório frio (768 MB): bytes lidos do disco e tempo, `pread` × `mmap`.</p>
+
+<h3 id="82-c5-pressao-de-memoria">8.2 C5 — pressão de memória</h3>
+<p><strong>(a) Crescimento do corpus e do contexto (1 trabalhador, 150 consultas; cada configuração em processo novo, 1ª leitura fria).</strong></p>
+<table>
+<thead>
+<tr>
+<th>Docs</th>
+<th>Índice (MB)</th>
+<th>Recuperação mediana (ms)</th>
+<th>RSS máx (MB)</th>
+<th>VSZ máx (MB)</th>
+<th>Faltas maiores <code>read</code> / <code>mmap</code></th>
+<th>Lido do disco (MB)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>500</td>
+<td>6</td>
+<td>0,8</td>
+<td>44</td>
+<td>448</td>
+<td>0 / 56</td>
+<td>6</td>
+</tr>
+<tr>
+<td>2.000</td>
+<td>25</td>
+<td>2,0</td>
+<td>63</td>
+<td>467</td>
+<td>0 / 209</td>
+<td>25</td>
+</tr>
+<tr>
+<td>8.000</td>
+<td>102</td>
+<td>≈ 9–10</td>
+<td>140</td>
+<td>545</td>
+<td>0 / 830</td>
+<td>102</td>
+</tr>
+<tr>
+<td>24.000</td>
+<td>305</td>
+<td>≈ 21</td>
+<td>344</td>
+<td>748</td>
+<td>0 / 2.474</td>
+<td>305</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="Escala" src="../results/fig_c5_escala.png" /></p>
+<p class="fig">Figura 3 — Efeito do tamanho do índice (contexto de 2.000 B): recuperação, RSS máximo e faltas maiores.</p>
+
+<ul>
+<li>A recuperação cresce <strong>linearmente</strong> com o índice (≈ 70 µs/MB): a varredura é O(N). O RSS acompanha o tamanho do índice (≈ índice + ~40 MB-base): a 305 MB o processo tem 344 MB.</li>
+<li><strong><code>read</code> e <code>mmap</code> têm RSS e latência de recuperação praticamente iguais em regime estacionário</strong>, porque a varredura toca todo o índice e, depois da 1ª consulta, tudo está no cache de páginas. A diferença está <strong>no momento do custo</strong>: <code>read</code> paga tudo na abertura (e exige RAM anônima do tamanho do índice), <code>mmap</code> paga nas faltas de página durante a 1ª consulta (2.474 faltas maiores ≈ 126 KiB cada).</li>
+<li><strong>Contexto:</strong> o tempo de geração cresce com o contexto (≈ 20 ms com 500 B, 34–44 ms com 2.000 B, ≈ 100–120 ms com 8.000 B) porque a CPU do SHA-256 é proporcional ao contexto; o RSS quase não muda. Com limite de 500 B nenhum trecho (~700 B) cabe quase sempre (contexto médio de 22–53 B): na prática o limite de contexto trunca/descarta informação — numa aplicação real, isso degradaria a qualidade da resposta.</li>
+<li>As faltas <strong>menores</strong> não são comparáveis entre tamanhos neste experimento (dependem do alocador e de <em>buffers</em> temporários do numpy; observamos um pico não monotônico em 102 MB que <strong>não</strong> investigamos), por isso não as interpretamos.</li>
+</ul>
+<p><strong>(b) Índice maior que o limite de memória (cgroup, swap do contêiner desligado).</strong> Índice sintético de 1.024 MB; 15 consultas, cada uma varrendo todo o índice; <code>docker run --memory=&lt;limite&gt; --memory-swap=&lt;limite&gt;</code>. O cache de páginas do arquivo é despejado antes de cada execução, para que as páginas sejam carregadas — e cobradas — <em>dentro</em> do cgroup do teste.</p>
+<table>
+<thead>
+<tr>
+<th>Limite</th>
+<th>Modo</th>
+<th>Resultado (3 de 3 repetições)</th>
+<th>Mediana/consulta (ms)</th>
+<th>Faltas maiores</th>
+<th>Lido do disco</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2.048 MB</td>
+<td><code>read</code></td>
+<td>conclui 15/15</td>
+<td>70–103</td>
+<td>0</td>
+<td>1,0 GB</td>
+</tr>
+<tr>
+<td>2.048 MB</td>
+<td><code>mmap</code></td>
+<td>conclui 15/15</td>
+<td>89–153</td>
+<td>≈ 8.300</td>
+<td>1,0 GB</td>
+</tr>
+<tr>
+<td><strong>384 MB</strong></td>
+<td><strong><code>read</code></strong></td>
+<td><strong>morto pelo OOM killer (exit 137)</strong></td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>384 MB</strong></td>
+<td><strong><code>mmap</code></strong></td>
+<td><strong>conclui 15/15, RSS limitado a ≈ 399 MB</strong></td>
+<td><strong>1.174–1.589</strong></td>
+<td><strong>≈ 125.000</strong></td>
+<td><strong>≈ 15,3 GB</strong></td>
+</tr>
+</tbody>
+</table>
+<p><img alt="Limite de memória" src="../results/fig_c5_limite.png" /></p>
+<p class="fig">Figura 4 — Latência por consulta com `mmap` e índice de 1 GB: limite de 2 GB (cabe) × 384 MB (não cabe).</p>
+
+<ul>
+<li>Com 384 MB, <code>read</code> precisa de ~1 GB de memória <strong>anônima</strong> (não reclamável sem swap) e o kernel mata o processo (C6, "limite de memória"). O <code>mmap</code> mapeia páginas <strong>de arquivo</strong> (limpas, reclamáveis): o kernel as descarta e relê quando necessário, então o processo <strong>sobrevive</strong>, mas com <strong>thrashing</strong>: cada consulta varre 1 GB sequencialmente, o cache (≈ 384 MB) nunca retém o que a próxima varredura precisa (o acesso sequencial cíclico a um conjunto maior que o cache faz a política de substituição falhar quase sempre), e <strong>todas as 15 varreduras relêem do disco</strong> (15,3 GB ≈ 15 × 1.024 MB). O resultado é ~13–17× mais lento que com 2 GB.</li>
+<li><strong>Swap não foi exercitado</strong>: o contêiner foi executado sem swap (<code>--memory-swap</code> igual a <code>--memory</code>) para não pressionar a VM/hospedeiro; a VM tinha ~1 MB de swap em uso em todos os casos. A paginação observada é de <strong>arquivo</strong> (faltas maiores), não de swap de páginas anônimas. Não foi feita uma execução com swap habilitado.</li>
+</ul>
+<h2 id="9-resultados-concorrencia-cache-e-correcao">9. Resultados: concorrência, cache e correção</h2>
+<h3 id="91-c3-concorrencia-e-fila">9.1 C3 — concorrência e fila</h3>
+<p>400 consultas distintas (cache desligado), 2 produtores, 2.000 documentos, geração com <code>sleep</code> de 20 ms + CPU (3.000 passes de SHA-256). Média ± desvio-padrão de 3 repetições:</p>
+<table>
+<thead>
+<tr>
+<th>Fila</th>
+<th>Workers</th>
+<th>Vazão (req/s)</th>
+<th>p95 do serviço (ms)</th>
+<th>Espera média na fila (ms)</th>
+<th>Fila média / máx</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4</td>
+<td>1</td>
+<td>25,3 ± 1,5</td>
+<td>51</td>
+<td>157</td>
+<td>3,5 / 4</td>
+</tr>
+<tr>
+<td>4</td>
+<td>2</td>
+<td>36,5 ± 0,8</td>
+<td>73</td>
+<td>106</td>
+<td>3,3 / 4</td>
+</tr>
+<tr>
+<td>4</td>
+<td>4</td>
+<td>43,1 ± 0,2</td>
+<td>138</td>
+<td>87</td>
+<td>3,2 / 4</td>
+</tr>
+<tr>
+<td>4</td>
+<td>8</td>
+<td>46,0 ± 1,5</td>
+<td>274</td>
+<td>76</td>
+<td>3,0 / 4</td>
+</tr>
+<tr>
+<td>64</td>
+<td>1</td>
+<td>25,4 ± 1,9</td>
+<td>51</td>
+<td>2.341</td>
+<td>58,5 / 64</td>
+</tr>
+<tr>
+<td>64</td>
+<td>2</td>
+<td>39,4 ± 0,3</td>
+<td>67</td>
+<td>1.483</td>
+<td>58,3 / 64</td>
+</tr>
+<tr>
+<td>64</td>
+<td>4</td>
+<td>47,0 ± 1,1</td>
+<td>126</td>
+<td>1.248</td>
+<td>58,2 / 64</td>
+</tr>
+<tr>
+<td>64</td>
+<td>8</td>
+<td>43,6 ± 6,0</td>
+<td>292</td>
+<td>1.340</td>
+<td>58,0 / 64</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="Concorrência" src="../results/fig_c3_concorrencia.png" /></p>
+<p class="fig">Figura 5 — Vazão, latência p95 do serviço e espera na fila × número de trabalhadores, para filas de 4 e de 64.</p>
+
+<ul>
+<li><strong>A concorrência aumentou a vazão, mas com retorno decrescente:</strong> 2 workers = 1,44–1,55× a de 1; 4 workers = 1,7–1,85×; 8 workers = sem ganho (fila 64: 47,0 → 43,6 req/s, com desvio-padrão de 6) e <strong>p95 do serviço 5× maior</strong> que com 1 trabalhador (51 → 292 ms). Com 4 CPUs lógicas (2 núcleos físicos) e parte do trabalho segurando o GIL, mais threads só adicionam disputa e trocas de contexto: contenção e degradação, sem ganho de vazão.</li>
+<li><strong>Fila maior não aumenta a vazão; aumenta a latência.</strong> A fila ficou sempre praticamente cheia (média 58 de 64) porque os produtores são mais rápidos que os consumidores; com fila 64, a espera média foi de 1,2–2,3 s contra 0,08–0,16 s com fila 4 (efeito de lei de Little / <em>bufferbloat</em>). O limite da fila é o que dá <em>backpressure</em>: o produtor bloqueia (semáforo <code>empty</code>) em vez de acumular memória sem limite (RSS 114–388 MB).</li>
+<li><strong>Correção:</strong> em todas as execuções, 0 requisições perdidas, 0 duplicadas e 0 violações de FIFO.</li>
+<li><strong>Utilização dos trabalhadores:</strong> ≈ 0,99–1,0 (carga saturante).</li>
+<li><strong>Teste de hipótese (OpenBLAS).</strong> Em <code>ps -L</code> (§10) viram-se 3 threads com ~82% de CPU e quase nenhuma troca voluntária — compatível com o <em>pool</em> do OpenBLAS (numpy) em espera ativa. Repetindo C3 (fila 64) com <code>OPENBLAS_NUM_THREADS=1</code>: 29,4 ± 0,5 (1 worker), 43,8 ± 1,4 (2), 41,9 ± 6,3 (4) e 45,9 ± 16,0 (8) req/s (<code>results/c3_openblas1.csv</code>). Ou seja, ≈ +10–15% com 1–2 workers, mas <strong>a saturação acima de 2 workers persiste</strong>; logo o OpenBLAS explica só uma parte e não identificamos a causa total (GIL, núcleos físicos, ruído do hospedeiro). A variância alta com 4–8 workers indica ruído do ambiente.</li>
+</ul>
+<h3 id="92-c4-cache-compartilhado">9.2 C4 — cache compartilhado</h3>
+<p>400 requisições, 2 workers, mesma carga de CPU. Cenários: consultas todas distintas (tópicos/palavras diferentes), 50% e 90% de repetições de texto idêntico, e 50% de paráfrases (mesma consulta com ordem/caixa alteradas — a chave canônica trata como igual).</p>
+<table>
+<thead>
+<tr>
+<th>Cenário</th>
+<th>Cache (LRU)</th>
+<th>Acerto</th>
+<th>Erros (miss)</th>
+<th>Substituições</th>
+<th>Tempo economizado</th>
+<th>Tempo total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>distintas</td>
+<td>512</td>
+<td>0%</td>
+<td>400</td>
+<td>0</td>
+<td>0 s</td>
+<td>11,3 ± 1,0 s</td>
+</tr>
+<tr>
+<td>repetidas 50%</td>
+<td>0</td>
+<td>0%</td>
+<td>400</td>
+<td>0</td>
+<td>0 s</td>
+<td>12,0 ± 0,8 s</td>
+</tr>
+<tr>
+<td>repetidas 50%</td>
+<td>512</td>
+<td>44,7%</td>
+<td>221</td>
+<td>0</td>
+<td>9,3 s</td>
+<td>5,7 ± 0,05 s</td>
+</tr>
+<tr>
+<td>repetidas 90%</td>
+<td>0</td>
+<td>0%</td>
+<td>400</td>
+<td>0</td>
+<td>0 s</td>
+<td>9,9 ± 0,2 s</td>
+</tr>
+<tr>
+<td>repetidas 90%</td>
+<td>16</td>
+<td>74,0%</td>
+<td>104</td>
+<td>70</td>
+<td>16,2 s</td>
+<td>2,7 s</td>
+</tr>
+<tr>
+<td>repetidas 90%</td>
+<td>64</td>
+<td>89,2%</td>
+<td>43</td>
+<td>0</td>
+<td>19,2 s</td>
+<td>1,25 ± 0,14 s</td>
+</tr>
+<tr>
+<td>paráfrase 50%</td>
+<td>512</td>
+<td>50,9%</td>
+<td>196</td>
+<td>0</td>
+<td>10,9 s</td>
+<td>5,2 ± 0,2 s</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="Cache" src="../results/fig_c4_cache.png" /></p>
+<p class="fig">Figura 6 — Taxa de acerto e tempo total × capacidade do cache, por cenário (LRU).</p>
+
+<ul>
+<li><strong>O cache reduziu tempo e operações de recuperação</strong> quando há repetição: com 90% de repetição, 89,2% de acerto evitou 357 das 400 recuperações+gerações e reduziu o tempo total de 9,9 s para 1,25 s (≈ 8×; vazão 40 → ≈ 320 req/s). Com consultas semanticamente distintas, a taxa de acerto é <strong>0%</strong> e o cache só adiciona custo (inserções e, com capacidade pequena, 384 substituições).</li>
+<li>A capacidade importa até cobrir o conjunto de consultas repetidas: com 90% de repetição, 16 entradas → 74%, 64 → 89,2%, 512 → 89,2% (o teto é o limite imposto pelas primeiras ocorrências).</li>
+<li><strong>LRU × FIFO</strong> (capacidade 16): 74,0% × 73,7% (90%) e 9,9% × 10,2% (50%) — sem diferença apreciável, porque as repetições foram sorteadas uniformemente (sem localidade temporal forte); com carga enviesada, LRU deveria ganhar (não testado).</li>
+<li><strong>Ruído:</strong> com cache desligado, a mesma quantidade de trabalho levou de 9,9 s a 12,9 s (± 2,7 s) entre cenários; diferenças de tempo menores que ~25% neste ambiente <strong>não são significativas</strong>. Os ganhos acima (≥ 2×) estão bem fora desse ruído.</li>
+</ul>
+<h3 id="93-c6-falhas-controladas">9.3 C6 — falhas controladas</h3>
+<table>
+<thead>
+<tr>
+<th>Cenário</th>
+<th>Resultado (média de 3)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Arquivo/índice ausente</td>
+<td>40 requisições → 40 erros controlados, 80 retentativas (2 por requisição), processo não caiu, 0,6 s</td>
+</tr>
+<tr>
+<td>Índice indisponível por 0,6 s e depois restaurado</td>
+<td>120/120 concluídas com sucesso após retentativas com recuo; 2,2 s</td>
+</tr>
+<tr>
+<td>Fila saturada, produtor com <em>timeout</em> (rejeita)</td>
+<td>8 concluídas, <strong>112 rejeitadas</strong> (93%) e registradas; 0 perdas silenciosas</td>
+</tr>
+<tr>
+<td>Fila saturada, produtor bloqueia (sem <em>timeout</em>)</td>
+<td>120/120 concluídas, 4,0 s (<em>backpressure</em>)</td>
+</tr>
+<tr>
+<td>Serviço externo falhando em 30%, sem retentativa</td>
+<td>79 ok, <strong>41 erros (34%)</strong></td>
+</tr>
+<tr>
+<td>Idem, com até 3 retentativas</td>
+<td>119 ok, <strong>1 erro</strong>, 55 retentativas; 1,8 s (≈ +88% de tempo)</td>
+</tr>
+<tr>
+<td>Limite de memória</td>
+<td>§8.2(b): <code>read</code> morto por OOM (exit 137, 3/3); <code>mmap</code> sobrevive com <em>thrashing</em></td>
+</tr>
+</tbody>
+</table>
+<p>Trade-off: rejeitar protege a latência e a memória, mas perde trabalho (exige que o cliente trate o erro); bloquear não perde nada, mas empurra a espera para o produtor. Retentativas convertem falhas transitórias em sucesso ao custo de tempo extra; falhas permanentes (arquivo ausente) apenas multiplicam o custo se o limite de tentativas for alto.</p>
+<h2 id="10-parte-d-sincronizacao-falhas-demonstradas-e-correcoes">10. Parte D — sincronização: falhas demonstradas e correções</h2>
+<p>As janelas de corrida foram ampliadas <strong>de propósito</strong> (<code>time.sleep(0)</code> entre leitura e escrita e <code>sys.setswitchinterval(1e-6)</code>): é injeção de falha controlada; em condições normais a corrida existiria, mas seria bem mais rara.</p>
+<p><strong>D1 — cache compartilhado (8 threads × 1.500 operações, 40 chaves).</strong></p>
+<table>
+<thead>
+<tr>
+<th>Modo</th>
+<th>Atualizações perdidas</th>
+<th>Computações (ideal = 40)</th>
+<th>Duplicadas</th>
+<th>Tempo (s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sem proteção</td>
+<td><strong>10.334 de 12.000 (86%)</strong></td>
+<td>62</td>
+<td><strong>22</strong></td>
+<td>0,36</td>
+</tr>
+<tr>
+<td>Mutex global</td>
+<td>0</td>
+<td>40</td>
+<td>0</td>
+<td>0,68</td>
+</tr>
+<tr>
+<td>Lock por chave (<em>single-flight</em>)</td>
+<td>0</td>
+<td>40</td>
+<td>0</td>
+<td>0,56</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="D1" src="../results/fig_d1_corrida_cache.png" /></p>
+<p class="fig">Figura 7 — Cache sem proteção × mutex global × lock por chave.</p>
+
+<p>Sem proteção, o contador <code>hits += 1</code> (ler–somar–escrever) perde atualizações e duas threads calculam a mesma chave (<em>cache stampede</em>). O mutex global corrige, mas serializa também a computação cara (0,68 s); o lock por chave mantém a correção e reduz o tempo em ~18% porque chaves diferentes computam em paralelo — ao custo de mais código e de um mapa de locks. A versão sem proteção é "mais rápida" só porque está errada.</p>
+<p><strong>D2 — log concorrente.</strong> <code>UnsafeLogger</code> (linha escrita em três partes, sem lock): em 2.400 eventos, <strong>1.817 linhas (76%) corrompidas</strong> (mistura de partes de eventos diferentes); <code>SafeLogger</code> (mutex): <strong>0</strong>. O mutex custa a serialização da escrita (aceitável aqui, pois o log é pequeno e em <em>buffer</em>).</p>
+<p><strong>D3 — produtor/consumidor com buffer limitado.</strong> 3 produtores × 500 itens, 2 consumidores, capacidades 1, 4 e 64: <strong>0 perdidos, 0 duplicados, 0 violações de FIFO</strong> em todas as 18 execuções. Com consumidor lento, o produtor ficou bloqueado ≈ 1,2 s no total e a ocupação máxima igualou a capacidade (<em>backpressure</em>); com produtor lento, os consumidores esperaram ≈ 1,0 s (semáforo <code>full</code>) e a ocupação máxima ficou em ≤ 3. A capacidade só altera <strong>onde</strong> a espera acontece, não a correção.</p>
+<p><strong>D4 — deadlock (espera circular) em processo isolado.</strong> Duas threads pegam dois locks em ordem oposta (A→B, B→A). Em 3/3 repetições o subprocesso <strong>não terminou</strong>; após 3 s o processo pai o classificou como <em>deadlock</em>, registrou o estado das threads e o <strong>encerrou (<code>kill</code>)</strong>. Em <code>/proc/&lt;pid&gt;/task/*/wchan</code>, as threads estavam em <code>S (sleeping)</code> aguardando <code>futex_wait_queue</code> (esperando um lock que nunca será liberado). Correções testadas: <strong>ordenação global de locks</strong> (ambas as threads pegam A antes de B → 0,30 s, sem deadlock) e <strong><code>acquire</code> com <em>timeout</em> + recuo assimétrico</strong> (desiste, libera o primeiro lock e tenta de novo → 0,60 s). Trade-off: a ordenação exige disciplina em todo o código; o <em>timeout</em> adiciona latência e a necessidade de recuo para evitar <em>livelock</em>. Não demonstramos <em>starvation</em>.</p>
+<p><strong>Evidências de SO</strong> (<code>results/evidence/</code>): <code>ps -L</code>, <code>/proc/&lt;pid&gt;/status</code>, trocas de contexto por thread, <code>pidstat -t</code>, <code>vmstat</code>, <code>iostat</code>, <code>smaps_rollup</code>, <code>strace -c -f</code>. Com 4 trabalhadores + 2 produtores: 11 threads no processo; 3 threads em estado <code>Rl</code> com ≈ 82% de CPU e quase nenhuma troca voluntária (compatível com espera ativa do OpenBLAS — hipótese testada parcialmente em §9.1); as demais em <code>futex_wait_queue</code>. No <code>strace -c -f</code> do pipeline, <strong><code>futex</code> respondeu por 70% do tempo em chamadas de sistema</strong> (3.919 chamadas) — o custo de sincronização entre threads —, seguido de <code>clock_nanosleep</code> (16%, a geração simulada). O <code>strace</code> de <code>read</code> × <code>mmap</code> mostra, para o mesmo arquivo de 16 MB, uma sequência de <code>read(3, …, 1048576)</code> no primeiro caso e <strong>um único <code>mmap(NULL, 16777216, PROT_READ, MAP_SHARED, 3, 0)</code></strong> no segundo — a leitura passa a ocorrer por faltas de página, invisíveis ao <code>strace</code>.</p>
+<h2 id="11-relacao-com-sistemas-operacionais-e-ia-generativa">11. Relação com Sistemas Operacionais e IA generativa</h2>
+<ul>
+<li><strong>Memória virtual e cache de páginas:</strong> carregar embeddings/índices/checkpoints com <code>read()</code> exige memória anônima do tamanho do arquivo (e OOM se não couber); <code>mmap</code> evita essa cópia e a reserva, funciona acima da RAM, mas vira <em>thrashing</em> se o conjunto de trabalho não cabe no cache — como numa varredura completa de índice vetorial a cada consulta. A segunda leitura é rápida pelo cache de páginas; por isso o primeiro <em>token</em> (carga fria) é bem mais lento que os seguintes.</li>
+<li><strong>RAG:</strong> a recuperação por força bruta é O(N) em tempo e em bytes lidos; índices aproximados (HNSW, IVF) existem para cortar esse custo e a pressão de memória. O limite de contexto é simultaneamente limite de custo (CPU/memória) e de qualidade.</li>
+<li><strong>Filas e <em>backpressure</em>:</strong> em serviços de inferência, fila ilimitada vira latência e memória; limite + rejeição/bloqueio é uma decisão de projeto.</li>
+<li><strong>Caches de resposta:</strong> só pagam quando há repetição; consultas semanticamente distintas dão 0% de acerto (um cache semântico baseado em similaridade de embeddings aceitaria paráfrases não triviais — não implementado).</li>
+<li><strong>Concorrência:</strong> o ganho de vazão satura por GIL/CPU; em inferência real a contenção seria por GPU/memória de dispositivo.</li>
+</ul>
+<h2 id="12-respostas-as-questoes-de-analise-sintese">12. Respostas às questões de análise (síntese)</h2>
+<ol>
+<li><em>Corpus/índice/contexto × RAM, paginação e latência:</em> índice 6→305 MB: recuperação 0,8→21 ms (linear), RSS 44→344 MB; contexto 500→8.000 B: geração 20→~110 ms (§8.2a).</li>
+<li><em><code>read</code> × <code>mmap</code>:</em> §8.1 — <code>mmap</code> abre mais rápido? não (20–40 µs × 5 µs) mas não lê; é melhor que <code>read</code> do arquivo inteiro, pior que <code>read</code> em blocos na leitura fria sequencial e pior em acesso aleatório frio (287 × 23 MB lidos).</li>
+<li><em>Cache:</em> sim, até 8× menos tempo e 89% de acerto com 90% de repetição; 0% sem repetição (§9.2).</li>
+<li><em>Concorrência:</em> +70–85% de vazão com 4 workers; sem ganho e p95 5× pior com 8 (§9.1).</li>
+<li><em>Exclusão mútua / eventos:</em> cache, log e estruturas da fila (mutex); <code>empty</code>/<code>full</code> para sincronização de eventos da fila (§6).</li>
+<li><em>Corrida/deadlock demonstrados:</em> atualização perdida (86%), duplicação de computação (22), log intercalado (76%) e deadlock isolado com recuperação (§10).</li>
+<li><em>Mecanismos e trade-offs:</em> mutex global × por chave, ordenação × <em>timeout</em> (§10).</li>
+<li><em>Paginação intensa, swap:</em> paginação de <strong>arquivo</strong> intensa no limite de 384 MB (≈ 125 mil faltas maiores, 15,3 GB lidos); <strong>swap não exercitado</strong> (§8.2b).</li>
+<li><em>Relação com RAG/checkpoints/caches:</em> §11.</li>
+<li><em>Limitações:</em> §13.</li>
+</ol>
+<h2 id="13-limitacoes">13. Limitações</h2>
+<ul>
+<li><strong>Ambiente virtualizado:</strong> contêiner sobre WSL2 sobre Windows; o "disco" é virtual e pode ser cacheado pelo hospedeiro, então "frio" significa <em>frio no cache de páginas da VM</em>, não necessariamente no disco físico. Máquina de 2 núcleos físicos, compartilhada com o Windows: há ruído (ex.: 9,9–12,9 s para trabalho equivalente no C4; desvio-padrão alto com 8 workers).</li>
+<li><strong>Geração e embeddings simulados:</strong> não há GPU, VRAM, KV-cache nem pesos; a "geração" é <code>sleep</code> + hash. Resultados sobre CPU/GIL <strong>não</strong> se transferem a modelos grandes, múltiplas GPUs ou ambientes distribuídos, onde dominam transferência host↔dispositivo, memória da GPU, comunicação entre nós e <em>checkpoints</em> de dezenas de GB.</li>
+<li><strong>Corpus pequeno</strong> (≤ 305 MB de índice) e sintético; índice de força bruta (sem HNSW/IVF); consultas com distribuição uniforme.</li>
+<li><strong>Corrida com injeção de falha:</strong> as taxas de perda (86%, 76%) valem para janelas ampliadas artificialmente, não para o código "natural".</li>
+<li><strong>Swap</strong> e <strong>starvation</strong> não foram exercitados; faltas menores no C5a não foram interpretadas; a causa total da saturação com &gt; 2 workers não foi isolada (apenas parte atribuída ao OpenBLAS).</li>
+<li>Três repetições dão desvio-padrão pouco robusto; diferenças pequenas (&lt; 25% em tempo) devem ser lidas com cautela.</li>
+</ul>
+<h2 id="14-conclusao">14. Conclusão</h2>
+<p>O serviço implementado e medido mostrou, com evidências reprodutíveis, que: (i) o cache de páginas explica a diferença entre 1ª e 2ª leitura e que carregar tudo com <code>read()</code> é o caminho mais caro em memória; (ii) <code>mmap</code> troca RAM anônima por paginação sob demanda — permite operar um índice (1 GB) maior que o limite de memória (384 MB) onde <code>read</code> é morto pelo OOM, ao custo de <em>thrashing</em> (~15× mais lento, 15 GB lidos); (iii) mais threads não significam mais vazão — há saturação em 2–4 workers e piora do p95 com 8 —, e filas grandes viram latência, não vazão; (iv) um cache compartilhado só compensa com repetição, mas então reduz o tempo em até ~8×; e (v) sem exclusão mútua o cache e o log ficam incorretos (86% de atualizações perdidas, 76% de linhas corrompidas) e a ordem de aquisição de locks pode produzir deadlock, evitável por ordenação global ou <em>timeouts</em>, cada um com seu custo. Tudo isso é fruto de decisões do sistema operacional — memória virtual, cache de páginas, escalonamento e primitivas de sincronização — que uma aplicação de IA generativa herda.</p>
+<h2 id="15-referencias">15. Referências</h2>
+<ul>
+<li>Silberschatz, Galvin, Gagne. <em>Fundamentos de Sistemas Operacionais</em> (capítulos de memória virtual, sincronização e deadlock).</li>
+<li>Tanenbaum, Bos. <em>Sistemas Operacionais Modernos</em>.</li>
+<li><code>man 2 mmap</code>, <code>man 2 posix_fadvise</code>, <code>man 5 proc</code> (<code>/proc/meminfo</code>, <code>/proc/&lt;pid&gt;/io</code>, <code>/proc/&lt;pid&gt;/status</code>), <code>man 2 getrusage</code>, <code>man 7 cgroups</code> e documentação do cgroup v2 (<code>memory.max</code>, <code>memory.events</code>, <code>memory.stat</code>).</li>
+<li>Documentação do Python (<code>threading</code>, <code>mmap</code>, <code>sqlite3</code>) e do numpy (<code>numpy.load</code> com <code>mmap_mode</code>).</li>
+<li>Lewis et al. <em>Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks</em> (NeurIPS 2020).</li>
+<li>Código autoral deste repositório; <em>chunking</em> e similaridade de cosseno inspirados no projeto glpimentor_servicoia (mesma autora).</li>
+</ul></body></html>

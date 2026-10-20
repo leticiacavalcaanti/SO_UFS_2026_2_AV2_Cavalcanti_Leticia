@@ -1,0 +1,274 @@
+1792355467.032765 start workers=1 producers=4 queue=2
+1792355467.036399 cache qid=0 result=miss
+1792355467.041477 retrieve qid=0 chunks=2 ctx_bytes=1671 approx_tokens=417
+1792355467.041652 fail qid=12 error=queue_full
+1792355467.045205 fail qid=1 error=queue_full
+1792355467.046741 fail qid=16 error=queue_full
+1792355467.046893 fail qid=2 error=queue_full
+1792355467.049161 fail qid=3 error=queue_full
+1792355467.050319 fail qid=5 error=queue_full
+1792355467.051850 fail qid=20 error=queue_full
+1792355467.051984 fail qid=6 error=queue_full
+1792355467.054367 fail qid=7 error=queue_full
+1792355467.055517 fail qid=9 error=queue_full
+1792355467.056969 fail qid=24 error=queue_full
+1792355467.057148 fail qid=10 error=queue_full
+1792355467.059546 fail qid=11 error=queue_full
+1792355467.060683 fail qid=13 error=queue_full
+1792355467.062053 fail qid=28 error=queue_full
+1792355467.062305 fail qid=14 error=queue_full
+1792355467.064702 fail qid=15 error=queue_full
+1792355467.065842 fail qid=17 error=queue_full
+1792355467.067135 fail qid=32 error=queue_full
+1792355467.067471 fail qid=18 error=queue_full
+1792355467.069870 fail qid=19 error=queue_full
+1792355467.071069 fail qid=21 error=queue_full
+1792355467.073006 generate qid=0 ms=31.49 answer=#bc304f73
+1792355467.073060 cache qid=4 result=miss
+1792355467.073843 retrieve qid=4 chunks=2 ctx_bytes=1692 approx_tokens=423
+1792355467.073884 fail qid=22 error=queue_full
+1792355467.075093 fail qid=23 error=queue_full
+1792355467.076246 fail qid=25 error=queue_full
+1792355467.078333 fail qid=40 error=queue_full
+1792355467.079044 fail qid=26 error=queue_full
+1792355467.080249 fail qid=27 error=queue_full
+1792355467.081413 fail qid=29 error=queue_full
+1792355467.083422 fail qid=44 error=queue_full
+1792355467.084172 fail qid=30 error=queue_full
+1792355467.085396 fail qid=31 error=queue_full
+1792355467.086552 fail qid=33 error=queue_full
+1792355467.088532 fail qid=48 error=queue_full
+1792355467.089415 fail qid=34 error=queue_full
+1792355467.090527 fail qid=35 error=queue_full
+1792355467.091716 fail qid=37 error=queue_full
+1792355467.093626 fail qid=52 error=queue_full
+1792355467.094538 fail qid=38 error=queue_full
+1792355467.095640 fail qid=39 error=queue_full
+1792355467.096829 fail qid=41 error=queue_full
+1792355467.098706 fail qid=56 error=queue_full
+1792355467.099670 fail qid=42 error=queue_full
+1792355467.100821 fail qid=43 error=queue_full
+1792355467.102046 fail qid=45 error=queue_full
+1792355467.103843 fail qid=60 error=queue_full
+1792355467.105571 generate qid=4 ms=31.70 answer=#028ef91c
+1792355467.105633 cache qid=8 result=miss
+1792355467.106346 retrieve qid=8 chunks=2 ctx_bytes=1669 approx_tokens=417
+1792355467.106416 fail qid=47 error=queue_full
+1792355467.107215 fail qid=49 error=queue_full
+1792355467.109019 fail qid=64 error=queue_full
+1792355467.111507 fail qid=50 error=queue_full
+1792355467.111537 fail qid=51 error=queue_full
+1792355467.112369 fail qid=53 error=queue_full
+1792355467.114107 fail qid=68 error=queue_full
+1792355467.116651 fail qid=54 error=queue_full
+1792355467.116678 fail qid=55 error=queue_full
+1792355467.117608 fail qid=57 error=queue_full
+1792355467.119225 fail qid=72 error=queue_full
+1792355467.121851 fail qid=58 error=queue_full
+1792355467.121906 fail qid=59 error=queue_full
+1792355467.122770 fail qid=61 error=queue_full
+1792355467.124328 fail qid=76 error=queue_full
+1792355467.127039 fail qid=62 error=queue_full
+1792355467.127066 fail qid=63 error=queue_full
+1792355467.127931 fail qid=65 error=queue_full
+1792355467.129416 fail qid=80 error=queue_full
+1792355467.132170 fail qid=66 error=queue_full
+1792355467.132202 fail qid=67 error=queue_full
+1792355467.133070 fail qid=69 error=queue_full
+1792355467.134523 fail qid=84 error=queue_full
+1792355467.138948 generate qid=8 ms=32.57 answer=#7f831a21
+1792355467.139052 cache qid=36 result=miss
+1792355467.139760 fail qid=70 error=queue_full
+1792355467.139787 fail qid=88 error=queue_full
+1792355467.139805 fail qid=73 error=queue_full
+1792355467.140034 retrieve qid=36 chunks=2 ctx_bytes=1628 approx_tokens=407
+1792355467.144897 fail qid=77 error=queue_full
+1792355467.144926 fail qid=92 error=queue_full
+1792355467.144942 fail qid=74 error=queue_full
+1792355467.144954 fail qid=75 error=queue_full
+1792355467.150066 fail qid=78 error=queue_full
+1792355467.150098 fail qid=96 error=queue_full
+1792355467.150113 fail qid=79 error=queue_full
+1792355467.150126 fail qid=81 error=queue_full
+1792355467.155289 fail qid=83 error=queue_full
+1792355467.155335 fail qid=100 error=queue_full
+1792355467.155360 fail qid=85 error=queue_full
+1792355467.155375 fail qid=82 error=queue_full
+1792355467.160473 fail qid=89 error=queue_full
+1792355467.160505 fail qid=104 error=queue_full
+1792355467.160521 fail qid=86 error=queue_full
+1792355467.160534 fail qid=87 error=queue_full
+1792355467.165649 fail qid=90 error=queue_full
+1792355467.165681 fail qid=108 error=queue_full
+1792355467.165696 fail qid=91 error=queue_full
+1792355467.165708 fail qid=93 error=queue_full
+1792355467.172264 generate qid=36 ms=32.20 answer=#e19b1527
+1792355467.172334 cache qid=46 result=miss
+1792355467.172424 fail qid=112 error=queue_full
+1792355467.172457 fail qid=94 error=queue_full
+1792355467.172484 fail qid=97 error=queue_full
+1792355467.173202 retrieve qid=46 chunks=2 ctx_bytes=1194 approx_tokens=298
+1792355467.177574 fail qid=101 error=queue_full
+1792355467.177603 fail qid=116 error=queue_full
+1792355467.177783 fail qid=98 error=queue_full
+1792355467.177820 fail qid=99 error=queue_full
+1792355467.182748 fail qid=105 error=queue_full
+1792355467.182893 fail qid=102 error=queue_full
+1792355467.182917 fail qid=103 error=queue_full
+1792355467.187970 fail qid=109 error=queue_full
+1792355467.188030 fail qid=107 error=queue_full
+1792355467.188056 fail qid=106 error=queue_full
+1792355467.193179 fail qid=113 error=queue_full
+1792355467.193214 fail qid=110 error=queue_full
+1792355467.193230 fail qid=111 error=queue_full
+1792355467.198349 fail qid=117 error=queue_full
+1792355467.198495 fail qid=115 error=queue_full
+1792355467.198523 fail qid=114 error=queue_full
+1792355467.205112 generate qid=46 ms=31.88 answer=#5de8a59b
+1792355467.205189 cache qid=71 result=miss
+1792355467.205377 fail qid=119 error=queue_full
+1792355467.206437 retrieve qid=71 chunks=2 ctx_bytes=1696 approx_tokens=424
+1792355467.239171 generate qid=71 ms=32.70 answer=#95f32954
+1792355467.239262 cache qid=95 result=miss
+1792355467.240154 retrieve qid=95 chunks=2 ctx_bytes=1687 approx_tokens=421
+1792355467.272550 generate qid=95 ms=32.36 answer=#7a78194b
+1792355467.272629 cache qid=118 result=miss
+1792355467.273619 retrieve qid=118 chunks=2 ctx_bytes=1684 approx_tokens=421
+1792355467.306284 generate qid=118 ms=32.63 answer=#c0d11add
+1792355467.307958 shutdown requests=8 wall_s=0.273
+1792355625.310786 start workers=1 producers=4 queue=2
+1792355625.316850 cache qid=0 result=miss
+1792355625.320305 retrieve qid=0 chunks=2 ctx_bytes=1671 approx_tokens=417
+1792355625.322158 fail qid=12 error=queue_full
+1792355625.325750 fail qid=1 error=queue_full
+1792355625.327311 fail qid=16 error=queue_full
+1792355625.327379 fail qid=2 error=queue_full
+1792355625.329902 fail qid=3 error=queue_full
+1792355625.330918 fail qid=5 error=queue_full
+1792355625.332392 fail qid=20 error=queue_full
+1792355625.332487 fail qid=6 error=queue_full
+1792355625.335003 fail qid=7 error=queue_full
+1792355625.336030 fail qid=9 error=queue_full
+1792355625.337483 fail qid=24 error=queue_full
+1792355625.337646 fail qid=10 error=queue_full
+1792355625.340185 fail qid=11 error=queue_full
+1792355625.341236 fail qid=13 error=queue_full
+1792355625.342599 fail qid=28 error=queue_full
+1792355625.342748 fail qid=14 error=queue_full
+1792355625.345310 fail qid=15 error=queue_full
+1792355625.346411 fail qid=17 error=queue_full
+1792355625.347694 fail qid=32 error=queue_full
+1792355625.347858 fail qid=18 error=queue_full
+1792355625.350404 fail qid=19 error=queue_full
+1792355625.351511 generate qid=0 ms=31.18 answer=#bc304f73
+1792355625.351546 cache qid=4 result=miss
+1792355625.352348 retrieve qid=4 chunks=2 ctx_bytes=1692 approx_tokens=423
+1792355625.352786 fail qid=36 error=queue_full
+1792355625.352971 fail qid=22 error=queue_full
+1792355625.355573 fail qid=23 error=queue_full
+1792355625.357600 fail qid=25 error=queue_full
+1792355625.357900 fail qid=40 error=queue_full
+1792355625.358172 fail qid=26 error=queue_full
+1792355625.360788 fail qid=27 error=queue_full
+1792355625.363004 fail qid=44 error=queue_full
+1792355625.363124 fail qid=29 error=queue_full
+1792355625.363284 fail qid=30 error=queue_full
+1792355625.365903 fail qid=31 error=queue_full
+1792355625.368092 fail qid=48 error=queue_full
+1792355625.368279 fail qid=33 error=queue_full
+1792355625.368385 fail qid=34 error=queue_full
+1792355625.371042 fail qid=35 error=queue_full
+1792355625.373204 fail qid=52 error=queue_full
+1792355625.373482 fail qid=37 error=queue_full
+1792355625.373515 fail qid=38 error=queue_full
+1792355625.376243 fail qid=39 error=queue_full
+1792355625.378304 fail qid=56 error=queue_full
+1792355625.378599 fail qid=41 error=queue_full
+1792355625.378624 fail qid=42 error=queue_full
+1792355625.381354 fail qid=43 error=queue_full
+1792355625.383635 generate qid=4 ms=31.27 answer=#028ef91c
+1792355625.383682 cache qid=8 result=miss
+1792355625.383756 fail qid=46 error=queue_full
+1792355625.383769 fail qid=45 error=queue_full
+1792355625.384509 retrieve qid=8 chunks=2 ctx_bytes=1669 approx_tokens=417
+1792355625.386484 fail qid=47 error=queue_full
+1792355625.388893 fail qid=50 error=queue_full
+1792355625.388936 fail qid=49 error=queue_full
+1792355625.388955 fail qid=64 error=queue_full
+1792355625.391696 fail qid=51 error=queue_full
+1792355625.394041 fail qid=53 error=queue_full
+1792355625.394064 fail qid=68 error=queue_full
+1792355625.394078 fail qid=54 error=queue_full
+1792355625.396831 fail qid=55 error=queue_full
+1792355625.399170 fail qid=72 error=queue_full
+1792355625.399195 fail qid=58 error=queue_full
+1792355625.399209 fail qid=57 error=queue_full
+1792355625.401928 fail qid=59 error=queue_full
+1792355625.404304 fail qid=62 error=queue_full
+1792355625.404361 fail qid=61 error=queue_full
+1792355625.404381 fail qid=76 error=queue_full
+1792355625.407129 fail qid=63 error=queue_full
+1792355625.409465 fail qid=65 error=queue_full
+1792355625.409505 fail qid=80 error=queue_full
+1792355625.409519 fail qid=66 error=queue_full
+1792355625.412261 fail qid=67 error=queue_full
+1792355625.414589 fail qid=84 error=queue_full
+1792355625.416709 generate qid=8 ms=32.15 answer=#7f831a21
+1792355625.416796 cache qid=21 result=miss
+1792355625.417462 fail qid=69 error=queue_full
+1792355625.417500 fail qid=71 error=queue_full
+1792355625.419761 fail qid=88 error=queue_full
+1792355625.422273 retrieve qid=21 chunks=2 ctx_bytes=1678 approx_tokens=419
+1792355625.422604 fail qid=75 error=queue_full
+1792355625.422655 fail qid=73 error=queue_full
+1792355625.422682 fail qid=74 error=queue_full
+1792355625.424962 fail qid=92 error=queue_full
+1792355625.427816 fail qid=77 error=queue_full
+1792355625.427892 fail qid=78 error=queue_full
+1792355625.427923 fail qid=79 error=queue_full
+1792355625.430197 fail qid=96 error=queue_full
+1792355625.433058 fail qid=82 error=queue_full
+1792355625.433119 fail qid=83 error=queue_full
+1792355625.433145 fail qid=81 error=queue_full
+1792355625.435432 fail qid=100 error=queue_full
+1792355625.438272 fail qid=87 error=queue_full
+1792355625.438318 fail qid=85 error=queue_full
+1792355625.438335 fail qid=86 error=queue_full
+1792355625.440623 fail qid=104 error=queue_full
+1792355625.443458 fail qid=89 error=queue_full
+1792355625.443511 fail qid=90 error=queue_full
+1792355625.443526 fail qid=91 error=queue_full
+1792355625.445919 fail qid=108 error=queue_full
+1792355625.448639 fail qid=94 error=queue_full
+1792355625.448697 fail qid=95 error=queue_full
+1792355625.448718 fail qid=93 error=queue_full
+1792355625.451093 fail qid=112 error=queue_full
+1792355625.454504 generate qid=21 ms=32.19 answer=#67e0241a
+1792355625.454581 cache qid=60 result=miss
+1792355625.455388 retrieve qid=60 chunks=2 ctx_bytes=1667 approx_tokens=416
+1792355625.455468 fail qid=98 error=queue_full
+1792355625.455487 fail qid=99 error=queue_full
+1792355625.456262 fail qid=116 error=queue_full
+1792355625.460651 fail qid=102 error=queue_full
+1792355625.460724 fail qid=103 error=queue_full
+1792355625.460747 fail qid=101 error=queue_full
+1792355625.465858 fail qid=107 error=queue_full
+1792355625.465930 fail qid=105 error=queue_full
+1792355625.465954 fail qid=106 error=queue_full
+1792355625.471114 fail qid=109 error=queue_full
+1792355625.471163 fail qid=110 error=queue_full
+1792355625.471181 fail qid=111 error=queue_full
+1792355625.476329 fail qid=113 error=queue_full
+1792355625.476424 fail qid=115 error=queue_full
+1792355625.476470 fail qid=114 error=queue_full
+1792355625.481556 fail qid=117 error=queue_full
+1792355625.481802 fail qid=119 error=queue_full
+1792355625.481920 fail qid=118 error=queue_full
+1792355625.487881 generate qid=60 ms=32.46 answer=#48b7bd61
+1792355625.488010 cache qid=70 result=miss
+1792355625.489172 retrieve qid=70 chunks=2 ctx_bytes=1680 approx_tokens=420
+1792355625.521133 generate qid=70 ms=31.93 answer=#6bb42c83
+1792355625.521206 cache qid=97 result=miss
+1792355625.522168 retrieve qid=97 chunks=2 ctx_bytes=1742 approx_tokens=435
+1792355625.554140 generate qid=97 ms=31.93 answer=#eddae865
+1792355625.555949 shutdown requests=7 wall_s=0.243

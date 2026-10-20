@@ -1,0 +1,724 @@
+1792355471.325880 start workers=2 producers=2 queue=32
+1792355471.332346 cache qid=0 result=miss
+1792355471.332816 cache qid=2 result=miss
+1792355471.340630 retrieve qid=0 chunks=2 ctx_bytes=1671 approx_tokens=417
+1792355471.341803 retrieve qid=2 chunks=2 ctx_bytes=1691 approx_tokens=422
+1792355471.362171 generate qid=0 ms=21.51 answer=#bc304f73
+1792355471.362244 cache qid=4 result=miss
+1792355471.363123 retrieve qid=4 chunks=2 ctx_bytes=1692 approx_tokens=423
+1792355471.363147 fail qid=4 error=ExternalServiceError
+1792355471.363204 cache qid=6 result=miss
+1792355471.364581 generate qid=2 ms=22.76 answer=#1d8169b4
+1792355471.364610 cache qid=8 result=miss
+1792355471.365210 retrieve qid=6 chunks=2 ctx_bytes=1741 approx_tokens=435
+1792355471.365937 retrieve qid=8 chunks=2 ctx_bytes=1669 approx_tokens=417
+1792355471.387151 generate qid=6 ms=21.91 answer=#508c086d
+1792355471.387225 cache qid=10 result=miss
+1792355471.389266 generate qid=8 ms=23.31 answer=#7f831a21
+1792355471.389317 cache qid=12 result=miss
+1792355471.390069 retrieve qid=10 chunks=2 ctx_bytes=1620 approx_tokens=405
+1792355471.390171 retrieve qid=12 chunks=2 ctx_bytes=1691 approx_tokens=422
+1792355471.411488 generate qid=10 ms=21.40 answer=#5f5bd1d3
+1792355471.411573 cache qid=14 result=miss
+1792355471.412967 generate qid=12 ms=22.78 answer=#6fd1ad80
+1792355471.413003 cache qid=16 result=miss
+1792355471.413733 retrieve qid=16 chunks=2 ctx_bytes=1705 approx_tokens=426
+1792355471.413754 fail qid=16 error=ExternalServiceError
+1792355471.413806 cache qid=18 result=miss
+1792355471.414457 retrieve qid=14 chunks=3 ctx_bytes=1962 approx_tokens=490
+1792355471.414989 retrieve qid=18 chunks=3 ctx_bytes=1958 approx_tokens=489
+1792355471.415010 fail qid=18 error=ExternalServiceError
+1792355471.415065 cache qid=20 result=miss
+1792355471.415573 retrieve qid=20 chunks=2 ctx_bytes=1697 approx_tokens=424
+1792355471.415591 fail qid=20 error=ExternalServiceError
+1792355471.415644 cache qid=22 result=miss
+1792355471.416162 retrieve qid=22 chunks=2 ctx_bytes=1732 approx_tokens=433
+1792355471.437866 generate qid=14 ms=23.37 answer=#a5252217
+1792355471.437992 cache qid=24 result=miss
+1792355471.440289 generate qid=22 ms=24.09 answer=#abda7bd3
+1792355471.440400 cache qid=26 result=miss
+1792355471.441574 retrieve qid=24 chunks=3 ctx_bytes=1956 approx_tokens=489
+1792355471.442818 retrieve qid=26 chunks=2 ctx_bytes=1199 approx_tokens=299
+1792355471.463428 generate qid=24 ms=21.82 answer=#ca879e8e
+1792355471.463509 cache qid=28 result=miss
+1792355471.464566 generate qid=26 ms=21.72 answer=#e9001b5a
+1792355471.464614 cache qid=30 result=miss
+1792355471.465427 retrieve qid=28 chunks=3 ctx_bytes=1966 approx_tokens=491
+1792355471.466311 retrieve qid=30 chunks=2 ctx_bytes=1670 approx_tokens=417
+1792355471.466343 fail qid=30 error=ExternalServiceError
+1792355471.466426 cache qid=32 result=miss
+1792355471.467115 retrieve qid=32 chunks=2 ctx_bytes=1685 approx_tokens=421
+1792355471.467138 fail qid=32 error=ExternalServiceError
+1792355471.467194 cache qid=34 result=miss
+1792355471.468157 retrieve qid=34 chunks=2 ctx_bytes=1689 approx_tokens=422
+1792355471.468202 fail qid=34 error=ExternalServiceError
+1792355471.468273 cache qid=36 result=miss
+1792355471.469270 retrieve qid=36 chunks=2 ctx_bytes=1628 approx_tokens=407
+1792355471.469300 fail qid=36 error=ExternalServiceError
+1792355471.469370 cache qid=38 result=miss
+1792355471.470257 retrieve qid=38 chunks=2 ctx_bytes=1660 approx_tokens=415
+1792355471.487678 generate qid=28 ms=22.23 answer=#4bdb61d7
+1792355471.487769 cache qid=40 result=miss
+1792355471.488760 retrieve qid=40 chunks=2 ctx_bytes=1648 approx_tokens=412
+1792355471.491807 generate qid=38 ms=21.52 answer=#b35e406b
+1792355471.491895 cache qid=42 result=miss
+1792355471.492772 retrieve qid=42 chunks=2 ctx_bytes=1675 approx_tokens=418
+1792355471.492795 fail qid=42 error=ExternalServiceError
+1792355471.492840 cache qid=44 result=miss
+1792355471.493483 retrieve qid=44 chunks=2 ctx_bytes=1681 approx_tokens=420
+1792355471.510600 generate qid=40 ms=21.81 answer=#fb8d589f
+1792355471.510680 cache qid=46 result=miss
+1792355471.511520 retrieve qid=46 chunks=2 ctx_bytes=1194 approx_tokens=298
+1792355471.515090 generate qid=44 ms=21.59 answer=#8e39e191
+1792355471.515140 cache qid=48 result=miss
+1792355471.515928 retrieve qid=48 chunks=2 ctx_bytes=1712 approx_tokens=428
+1792355471.532752 generate qid=46 ms=21.21 answer=#5de8a59b
+1792355471.532836 cache qid=50 result=miss
+1792355471.534217 retrieve qid=50 chunks=2 ctx_bytes=1684 approx_tokens=421
+1792355471.534245 fail qid=50 error=ExternalServiceError
+1792355471.534298 cache qid=52 result=miss
+1792355471.534990 retrieve qid=52 chunks=2 ctx_bytes=1715 approx_tokens=428
+1792355471.537569 generate qid=48 ms=21.61 answer=#6ca67d35
+1792355471.537662 cache qid=54 result=miss
+1792355471.538672 retrieve qid=54 chunks=2 ctx_bytes=1728 approx_tokens=432
+1792355471.538699 fail qid=54 error=ExternalServiceError
+1792355471.538767 cache qid=56 result=miss
+1792355471.539404 retrieve qid=56 chunks=2 ctx_bytes=1649 approx_tokens=412
+1792355471.556628 generate qid=52 ms=21.61 answer=#b0f5842b
+1792355471.556715 cache qid=58 result=miss
+1792355471.557533 retrieve qid=58 chunks=3 ctx_bytes=1978 approx_tokens=494
+1792355471.561039 generate qid=56 ms=21.62 answer=#80fe21ad
+1792355471.561094 cache qid=60 result=miss
+1792355471.561911 retrieve qid=60 chunks=2 ctx_bytes=1667 approx_tokens=416
+1792355471.579555 generate qid=58 ms=21.99 answer=#69588435
+1792355471.579677 cache qid=62 result=miss
+1792355471.580614 retrieve qid=62 chunks=2 ctx_bytes=1723 approx_tokens=430
+1792355471.583436 generate qid=60 ms=21.51 answer=#48b7bd61
+1792355471.583525 cache qid=64 result=miss
+1792355471.584285 retrieve qid=64 chunks=2 ctx_bytes=1661 approx_tokens=415
+1792355471.584310 fail qid=64 error=ExternalServiceError
+1792355471.584370 cache qid=66 result=miss
+1792355471.585556 retrieve qid=66 chunks=3 ctx_bytes=1510 approx_tokens=377
+1792355471.603115 generate qid=62 ms=22.47 answer=#20563ee1
+1792355471.603253 cache qid=1 result=miss
+1792355471.604462 retrieve qid=1 chunks=2 ctx_bytes=1674 approx_tokens=418
+1792355471.607746 generate qid=66 ms=22.16 answer=#774e8ba4
+1792355471.607893 cache qid=3 result=miss
+1792355471.608822 retrieve qid=3 chunks=2 ctx_bytes=1688 approx_tokens=422
+1792355471.626036 generate qid=1 ms=21.54 answer=#b2181f72
+1792355471.626121 cache qid=5 result=miss
+1792355471.626973 retrieve qid=5 chunks=2 ctx_bytes=1709 approx_tokens=427
+1792355471.627289 fail qid=5 error=ExternalServiceError
+1792355471.627348 cache qid=7 result=miss
+1792355471.628129 retrieve qid=7 chunks=2 ctx_bytes=1711 approx_tokens=427
+1792355471.630356 generate qid=3 ms=21.51 answer=#9be5fcb7
+1792355471.630419 cache qid=9 result=miss
+1792355471.631115 retrieve qid=9 chunks=2 ctx_bytes=1661 approx_tokens=415
+1792355471.631136 fail qid=9 error=ExternalServiceError
+1792355471.631183 cache qid=11 result=miss
+1792355471.631820 retrieve qid=11 chunks=3 ctx_bytes=1507 approx_tokens=376
+1792355471.631840 fail qid=11 error=ExternalServiceError
+1792355471.631903 cache qid=13 result=miss
+1792355471.633211 retrieve qid=13 chunks=2 ctx_bytes=1653 approx_tokens=413
+1792355471.649691 generate qid=7 ms=21.54 answer=#1e01000b
+1792355471.649781 cache qid=15 result=miss
+1792355471.650759 retrieve qid=15 chunks=2 ctx_bytes=1686 approx_tokens=421
+1792355471.654860 generate qid=13 ms=21.61 answer=#69cad98f
+1792355471.654945 cache qid=17 result=miss
+1792355471.656046 retrieve qid=17 chunks=2 ctx_bytes=1653 approx_tokens=413
+1792355471.656086 fail qid=17 error=ExternalServiceError
+1792355471.656175 cache qid=68 result=miss
+1792355471.657134 retrieve qid=68 chunks=2 ctx_bytes=1646 approx_tokens=411
+1792355471.672483 generate qid=15 ms=21.70 answer=#1031412b
+1792355471.672568 cache qid=19 result=miss
+1792355471.673722 retrieve qid=19 chunks=2 ctx_bytes=1661 approx_tokens=415
+1792355471.673748 fail qid=19 error=ExternalServiceError
+1792355471.673804 cache qid=21 result=miss
+1792355471.674665 retrieve qid=21 chunks=2 ctx_bytes=1678 approx_tokens=419
+1792355471.678792 generate qid=68 ms=21.63 answer=#36924dbd
+1792355471.678855 cache qid=23 result=miss
+1792355471.679693 retrieve qid=23 chunks=2 ctx_bytes=1673 approx_tokens=418
+1792355471.680227 fail qid=23 error=ExternalServiceError
+1792355471.680300 cache qid=70 result=miss
+1792355471.681199 retrieve qid=70 chunks=2 ctx_bytes=1680 approx_tokens=420
+1792355471.697442 generate qid=21 ms=22.75 answer=#67e0241a
+1792355471.697540 cache qid=25 result=miss
+1792355471.698395 retrieve qid=25 chunks=2 ctx_bytes=1706 approx_tokens=426
+1792355471.704028 generate qid=70 ms=22.80 answer=#6bb42c83
+1792355471.704145 cache qid=72 result=miss
+1792355471.705043 retrieve qid=72 chunks=2 ctx_bytes=1672 approx_tokens=418
+1792355471.721126 generate qid=25 ms=22.70 answer=#c8bff68c
+1792355471.721220 cache qid=27 result=miss
+1792355471.722203 retrieve qid=27 chunks=2 ctx_bytes=1623 approx_tokens=405
+1792355471.722312 fail qid=27 error=ExternalServiceError
+1792355471.722395 cache qid=74 result=miss
+1792355471.723641 retrieve qid=74 chunks=2 ctx_bytes=1712 approx_tokens=428
+1792355471.726830 generate qid=72 ms=21.74 answer=#1cda7209
+1792355471.726948 cache qid=29 result=miss
+1792355471.727729 retrieve qid=29 chunks=2 ctx_bytes=1690 approx_tokens=422
+1792355471.727753 fail qid=29 error=ExternalServiceError
+1792355471.727795 cache qid=76 result=miss
+1792355471.728496 retrieve qid=76 chunks=2 ctx_bytes=1641 approx_tokens=410
+1792355471.728518 fail qid=76 error=ExternalServiceError
+1792355471.728563 cache qid=31 result=miss
+1792355471.729328 retrieve qid=31 chunks=2 ctx_bytes=1658 approx_tokens=414
+1792355471.745391 generate qid=74 ms=21.71 answer=#b06257db
+1792355471.745473 cache qid=78 result=miss
+1792355471.746348 retrieve qid=78 chunks=2 ctx_bytes=1693 approx_tokens=423
+1792355471.746372 fail qid=78 error=ExternalServiceError
+1792355471.746413 cache qid=33 result=miss
+1792355471.747082 retrieve qid=33 chunks=2 ctx_bytes=1690 approx_tokens=422
+1792355471.747102 fail qid=33 error=ExternalServiceError
+1792355471.747145 cache qid=80 result=miss
+1792355471.747741 retrieve qid=80 chunks=2 ctx_bytes=1687 approx_tokens=421
+1792355471.751622 generate qid=31 ms=22.25 answer=#63fd85ee
+1792355471.751721 cache qid=35 result=miss
+1792355471.752977 retrieve qid=35 chunks=2 ctx_bytes=1699 approx_tokens=424
+1792355471.753008 fail qid=35 error=ExternalServiceError
+1792355471.753070 cache qid=82 result=miss
+1792355471.753831 retrieve qid=82 chunks=2 ctx_bytes=1718 approx_tokens=429
+1792355471.770559 generate qid=80 ms=22.79 answer=#29c812c6
+1792355471.770664 cache qid=37 result=miss
+1792355471.771557 retrieve qid=37 chunks=2 ctx_bytes=1634 approx_tokens=408
+1792355471.771586 fail qid=37 error=ExternalServiceError
+1792355471.771664 cache qid=84 result=miss
+1792355471.772771 retrieve qid=84 chunks=2 ctx_bytes=1732 approx_tokens=433
+1792355471.775663 generate qid=82 ms=21.80 answer=#e20b9f02
+1792355471.775742 cache qid=39 result=miss
+1792355471.776535 retrieve qid=39 chunks=2 ctx_bytes=1673 approx_tokens=418
+1792355471.795441 generate qid=84 ms=22.63 answer=#0a6c7e3a
+1792355471.795541 cache qid=86 result=miss
+1792355471.796472 retrieve qid=86 chunks=2 ctx_bytes=1680 approx_tokens=420
+1792355471.798123 generate qid=39 ms=21.57 answer=#dc7d09a3
+1792355471.798183 cache qid=88 result=miss
+1792355471.799023 retrieve qid=88 chunks=2 ctx_bytes=1168 approx_tokens=292
+1792355471.818669 generate qid=86 ms=22.16 answer=#a9adab90
+1792355471.818808 cache qid=90 result=miss
+1792355471.819865 retrieve qid=90 chunks=2 ctx_bytes=1640 approx_tokens=410
+1792355471.821101 generate qid=88 ms=22.06 answer=#4142f05c
+1792355471.821174 cache qid=92 result=miss
+1792355471.821990 retrieve qid=92 chunks=2 ctx_bytes=1157 approx_tokens=289
+1792355471.841429 generate qid=90 ms=21.51 answer=#1b3c407b
+1792355471.841511 cache qid=41 result=miss
+1792355471.842324 retrieve qid=41 chunks=2 ctx_bytes=1705 approx_tokens=426
+1792355471.843334 generate qid=92 ms=21.33 answer=#56e05877
+1792355471.843386 cache qid=94 result=miss
+1792355471.844146 retrieve qid=94 chunks=2 ctx_bytes=1720 approx_tokens=430
+1792355471.863922 generate qid=41 ms=21.57 answer=#130854d8
+1792355471.864013 cache qid=43 result=miss
+1792355471.864854 retrieve qid=43 chunks=3 ctx_bytes=1985 approx_tokens=496
+1792355471.866323 generate qid=94 ms=22.16 answer=#381652a1
+1792355471.866374 cache qid=96 result=miss
+1792355471.867108 retrieve qid=96 chunks=3 ctx_bytes=1922 approx_tokens=480
+1792355471.886740 generate qid=43 ms=21.86 answer=#d02d145f
+1792355471.886932 cache qid=45 result=miss
+1792355471.889561 generate qid=96 ms=22.42 answer=#9023a423
+1792355471.889715 cache qid=98 result=miss
+1792355471.889817 retrieve qid=45 chunks=2 ctx_bytes=1702 approx_tokens=425
+1792355471.891122 retrieve qid=98 chunks=2 ctx_bytes=1168 approx_tokens=292
+1792355471.911474 generate qid=45 ms=21.63 answer=#a67209f3
+1792355471.911562 cache qid=47 result=miss
+1792355471.912622 generate qid=98 ms=21.48 answer=#67b914b3
+1792355471.912658 cache qid=100 result=miss
+1792355471.913444 retrieve qid=100 chunks=2 ctx_bytes=1684 approx_tokens=421
+1792355471.913468 fail qid=100 error=ExternalServiceError
+1792355471.913499 cache qid=49 result=miss
+1792355471.914121 retrieve qid=49 chunks=2 ctx_bytes=1701 approx_tokens=425
+1792355471.914142 fail qid=49 error=ExternalServiceError
+1792355471.914174 cache qid=102 result=miss
+1792355471.914849 retrieve qid=102 chunks=2 ctx_bytes=1173 approx_tokens=293
+1792355471.914871 fail qid=102 error=ExternalServiceError
+1792355471.914911 cache qid=51 result=miss
+1792355471.915414 retrieve qid=51 chunks=2 ctx_bytes=1659 approx_tokens=414
+1792355471.915982 retrieve qid=47 chunks=2 ctx_bytes=1626 approx_tokens=406
+1792355471.916004 fail qid=47 error=ExternalServiceError
+1792355471.916044 cache qid=104 result=miss
+1792355471.916708 retrieve qid=104 chunks=2 ctx_bytes=1721 approx_tokens=430
+1792355471.937225 generate qid=51 ms=21.78 answer=#5e4b1d84
+1792355471.937319 cache qid=53 result=miss
+1792355471.938073 retrieve qid=53 chunks=2 ctx_bytes=1646 approx_tokens=411
+1792355471.939724 generate qid=104 ms=22.98 answer=#7f298581
+1792355471.939827 cache qid=106 result=miss
+1792355471.941288 retrieve qid=106 chunks=2 ctx_bytes=1659 approx_tokens=414
+1792355471.959980 generate qid=53 ms=21.87 answer=#6f1fa20f
+1792355471.960083 cache qid=55 result=miss
+1792355471.961050 retrieve qid=55 chunks=2 ctx_bytes=1698 approx_tokens=424
+1792355471.962879 generate qid=106 ms=21.53 answer=#d6dd131f
+1792355471.962956 cache qid=108 result=miss
+1792355471.963632 retrieve qid=108 chunks=2 ctx_bytes=1687 approx_tokens=421
+1792355471.982714 generate qid=55 ms=21.63 answer=#2e1e4d92
+1792355471.982796 cache qid=110 result=miss
+1792355471.983682 retrieve qid=110 chunks=2 ctx_bytes=1221 approx_tokens=305
+1792355471.985408 generate qid=108 ms=21.75 answer=#052c3305
+1792355471.985498 cache qid=112 result=miss
+1792355471.986600 retrieve qid=112 chunks=2 ctx_bytes=1691 approx_tokens=422
+1792355472.004957 generate qid=110 ms=21.23 answer=#5def3093
+1792355472.005040 cache qid=57 result=miss
+1792355472.005910 retrieve qid=57 chunks=2 ctx_bytes=1666 approx_tokens=416
+1792355472.008235 generate qid=112 ms=21.60 answer=#8ea305e0
+1792355472.008299 cache qid=59 result=miss
+1792355472.009104 retrieve qid=59 chunks=2 ctx_bytes=1701 approx_tokens=425
+1792355472.027812 generate qid=57 ms=21.84 answer=#31b7f36b
+1792355472.027925 cache qid=61 result=miss
+1792355472.028710 retrieve qid=61 chunks=2 ctx_bytes=1658 approx_tokens=414
+1792355472.028735 fail qid=61 error=ExternalServiceError
+1792355472.028770 cache qid=114 result=miss
+1792355472.030921 generate qid=59 ms=21.80 answer=#b30f9745
+1792355472.030984 cache qid=116 result=miss
+1792355472.031834 retrieve qid=116 chunks=2 ctx_bytes=1691 approx_tokens=422
+1792355472.032081 retrieve qid=114 chunks=2 ctx_bytes=1712 approx_tokens=428
+1792355472.032102 fail qid=114 error=ExternalServiceError
+1792355472.032136 cache qid=118 result=miss
+1792355472.032768 retrieve qid=118 chunks=2 ctx_bytes=1684 approx_tokens=421
+1792355472.032789 fail qid=118 error=ExternalServiceError
+1792355472.032819 cache qid=63 result=miss
+1792355472.033361 retrieve qid=63 chunks=2 ctx_bytes=1595 approx_tokens=398
+1792355472.053566 generate qid=116 ms=21.71 answer=#cc609cb9
+1792355472.053627 cache qid=65 result=miss
+1792355472.054538 retrieve qid=65 chunks=2 ctx_bytes=1675 approx_tokens=418
+1792355472.056005 generate qid=63 ms=22.63 answer=#eddf8439
+1792355472.056556 cache qid=67 result=miss
+1792355472.057389 retrieve qid=67 chunks=2 ctx_bytes=1725 approx_tokens=431
+1792355472.077961 generate qid=65 ms=21.51 answer=#d77e5407
+1792355472.078028 cache qid=69 result=miss
+1792355472.078792 retrieve qid=69 chunks=2 ctx_bytes=1617 approx_tokens=404
+1792355472.080234 generate qid=67 ms=22.82 answer=#68030cd0
+1792355472.080295 cache qid=71 result=miss
+1792355472.081100 retrieve qid=71 chunks=2 ctx_bytes=1696 approx_tokens=424
+1792355472.081123 fail qid=71 error=ExternalServiceError
+1792355472.081155 cache qid=73 result=miss
+1792355472.081755 retrieve qid=73 chunks=2 ctx_bytes=1727 approx_tokens=431
+1792355472.100424 generate qid=69 ms=21.60 answer=#06cb9634
+1792355472.100509 cache qid=75 result=miss
+1792355472.101642 retrieve qid=75 chunks=2 ctx_bytes=1662 approx_tokens=415
+1792355472.101679 fail qid=75 error=ExternalServiceError
+1792355472.101730 cache qid=77 result=miss
+1792355472.102628 retrieve qid=77 chunks=2 ctx_bytes=1690 approx_tokens=422
+1792355472.102659 fail qid=77 error=ExternalServiceError
+1792355472.102744 cache qid=79 result=miss
+1792355472.103750 retrieve qid=79 chunks=2 ctx_bytes=1672 approx_tokens=418
+1792355472.103793 fail qid=79 error=ExternalServiceError
+1792355472.103845 cache qid=81 result=miss
+1792355472.104777 retrieve qid=81 chunks=2 ctx_bytes=1679 approx_tokens=419
+1792355472.107394 generate qid=73 ms=25.61 answer=#55a0bfc6
+1792355472.107465 cache qid=83 result=miss
+1792355472.108413 retrieve qid=83 chunks=2 ctx_bytes=1648 approx_tokens=412
+1792355472.108446 fail qid=83 error=ExternalServiceError
+1792355472.108492 cache qid=85 result=miss
+1792355472.109311 retrieve qid=85 chunks=2 ctx_bytes=1223 approx_tokens=305
+1792355472.126308 generate qid=81 ms=21.50 answer=#11ff13a5
+1792355472.126366 cache qid=87 result=miss
+1792355472.127316 retrieve qid=87 chunks=2 ctx_bytes=1688 approx_tokens=422
+1792355472.130545 generate qid=85 ms=21.20 answer=#e2cd653b
+1792355472.130602 cache qid=89 result=miss
+1792355472.131405 retrieve qid=89 chunks=2 ctx_bytes=1722 approx_tokens=430
+1792355472.148906 generate qid=87 ms=21.56 answer=#88b72f2c
+1792355472.148956 cache qid=91 result=miss
+1792355472.149857 retrieve qid=91 chunks=3 ctx_bytes=1988 approx_tokens=497
+1792355472.154093 generate qid=89 ms=22.66 answer=#c7eeefc8
+1792355472.154174 cache qid=93 result=miss
+1792355472.155090 retrieve qid=93 chunks=2 ctx_bytes=1684 approx_tokens=421
+1792355472.155118 fail qid=93 error=ExternalServiceError
+1792355472.155159 cache qid=95 result=miss
+1792355472.155829 retrieve qid=95 chunks=2 ctx_bytes=1687 approx_tokens=421
+1792355472.155855 fail qid=95 error=ExternalServiceError
+1792355472.155957 cache qid=97 result=miss
+1792355472.156921 retrieve qid=97 chunks=2 ctx_bytes=1742 approx_tokens=435
+1792355472.156954 fail qid=97 error=ExternalServiceError
+1792355472.157008 cache qid=99 result=miss
+1792355472.157809 retrieve qid=99 chunks=2 ctx_bytes=1731 approx_tokens=432
+1792355472.172873 generate qid=91 ms=22.98 answer=#97977dc5
+1792355472.172964 cache qid=101 result=miss
+1792355472.174017 retrieve qid=101 chunks=2 ctx_bytes=1699 approx_tokens=424
+1792355472.174047 fail qid=101 error=ExternalServiceError
+1792355472.174100 cache qid=103 result=miss
+1792355472.174883 retrieve qid=103 chunks=2 ctx_bytes=1706 approx_tokens=426
+1792355472.179468 generate qid=99 ms=21.64 answer=#55751adf
+1792355472.179609 cache qid=105 result=miss
+1792355472.180468 retrieve qid=105 chunks=2 ctx_bytes=1704 approx_tokens=426
+1792355472.196519 generate qid=103 ms=21.61 answer=#c9c8e08d
+1792355472.196572 cache qid=107 result=miss
+1792355472.197416 retrieve qid=107 chunks=2 ctx_bytes=1669 approx_tokens=417
+1792355472.202165 generate qid=105 ms=21.67 answer=#ca3ccaf9
+1792355472.202230 cache qid=109 result=miss
+1792355472.203272 retrieve qid=109 chunks=2 ctx_bytes=1708 approx_tokens=427
+1792355472.219865 generate qid=107 ms=22.42 answer=#f41a5e7f
+1792355472.220027 cache qid=111 result=miss
+1792355472.221024 retrieve qid=111 chunks=2 ctx_bytes=1699 approx_tokens=424
+1792355472.225011 generate qid=109 ms=21.71 answer=#9131f7fd
+1792355472.225091 cache qid=113 result=miss
+1792355472.226071 retrieve qid=113 chunks=3 ctx_bytes=1967 approx_tokens=491
+1792355472.242658 generate qid=111 ms=21.61 answer=#100d5a66
+1792355472.242722 cache qid=115 result=miss
+1792355472.243563 retrieve qid=115 chunks=3 ctx_bytes=1996 approx_tokens=499
+1792355472.247913 generate qid=113 ms=21.82 answer=#adb39cf6
+1792355472.247978 cache qid=117 result=miss
+1792355472.248691 retrieve qid=117 chunks=2 ctx_bytes=1635 approx_tokens=408
+1792355472.266901 generate qid=115 ms=23.31 answer=#1c0f6fdc
+1792355472.266989 cache qid=119 result=miss
+1792355472.268353 retrieve qid=119 chunks=2 ctx_bytes=1687 approx_tokens=421
+1792355472.270877 generate qid=117 ms=22.16 answer=#069c14cd
+1792355472.291497 generate qid=119 ms=23.10 answer=#f139416b
+1792355472.293099 shutdown requests=120 wall_s=0.965
+1792355629.612797 start workers=2 producers=2 queue=32
+1792355629.621172 cache qid=0 result=miss
+1792355629.621446 cache qid=2 result=miss
+1792355629.630714 retrieve qid=0 chunks=2 ctx_bytes=1671 approx_tokens=417
+1792355629.631826 retrieve qid=2 chunks=2 ctx_bytes=1691 approx_tokens=422
+1792355629.652120 generate qid=0 ms=21.35 answer=#bc304f73
+1792355629.652217 cache qid=4 result=miss
+1792355629.653309 retrieve qid=4 chunks=2 ctx_bytes=1692 approx_tokens=423
+1792355629.653342 fail qid=4 error=ExternalServiceError
+1792355629.653419 cache qid=6 result=miss
+1792355629.654279 retrieve qid=6 chunks=2 ctx_bytes=1741 approx_tokens=435
+1792355629.656455 generate qid=2 ms=24.61 answer=#1d8169b4
+1792355629.656517 cache qid=8 result=miss
+1792355629.657516 retrieve qid=8 chunks=2 ctx_bytes=1669 approx_tokens=417
+1792355629.675654 generate qid=6 ms=21.35 answer=#508c086d
+1792355629.675722 cache qid=10 result=miss
+1792355629.676517 retrieve qid=10 chunks=2 ctx_bytes=1620 approx_tokens=405
+1792355629.678923 generate qid=8 ms=21.39 answer=#7f831a21
+1792355629.678973 cache qid=12 result=miss
+1792355629.679736 retrieve qid=12 chunks=2 ctx_bytes=1691 approx_tokens=422
+1792355629.698763 generate qid=10 ms=22.22 answer=#5f5bd1d3
+1792355629.698878 cache qid=14 result=miss
+1792355629.699871 retrieve qid=14 chunks=3 ctx_bytes=1962 approx_tokens=490
+1792355629.699906 fail qid=14 error=ExternalServiceError
+1792355629.699964 cache qid=16 result=miss
+1792355629.700954 retrieve qid=16 chunks=2 ctx_bytes=1705 approx_tokens=426
+1792355629.702909 generate qid=12 ms=23.15 answer=#6fd1ad80
+1792355629.702997 cache qid=18 result=miss
+1792355629.703900 retrieve qid=18 chunks=3 ctx_bytes=1958 approx_tokens=489
+1792355629.703935 fail qid=18 error=ExternalServiceError
+1792355629.704000 cache qid=20 result=miss
+1792355629.704780 retrieve qid=20 chunks=2 ctx_bytes=1697 approx_tokens=424
+1792355629.704807 fail qid=20 error=ExternalServiceError
+1792355629.704874 cache qid=22 result=miss
+1792355629.705697 retrieve qid=22 chunks=2 ctx_bytes=1732 approx_tokens=433
+1792355629.722997 generate qid=16 ms=22.01 answer=#33c9529b
+1792355629.723142 cache qid=24 result=miss
+1792355629.724192 retrieve qid=24 chunks=3 ctx_bytes=1956 approx_tokens=489
+1792355629.727977 generate qid=22 ms=22.26 answer=#abda7bd3
+1792355629.728046 cache qid=26 result=miss
+1792355629.729089 retrieve qid=26 chunks=2 ctx_bytes=1199 approx_tokens=299
+1792355629.745836 generate qid=24 ms=21.61 answer=#ca879e8e
+1792355629.745936 cache qid=28 result=miss
+1792355629.748196 retrieve qid=28 chunks=3 ctx_bytes=1966 approx_tokens=491
+1792355629.750586 generate qid=26 ms=21.47 answer=#e9001b5a
+1792355629.750689 cache qid=30 result=miss
+1792355629.752252 retrieve qid=30 chunks=2 ctx_bytes=1670 approx_tokens=417
+1792355629.752296 fail qid=30 error=ExternalServiceError
+1792355629.752419 cache qid=32 result=miss
+1792355629.753560 retrieve qid=32 chunks=2 ctx_bytes=1685 approx_tokens=421
+1792355629.753595 fail qid=32 error=ExternalServiceError
+1792355629.753684 cache qid=34 result=miss
+1792355629.754623 retrieve qid=34 chunks=2 ctx_bytes=1689 approx_tokens=422
+1792355629.754650 fail qid=34 error=ExternalServiceError
+1792355629.754720 cache qid=36 result=miss
+1792355629.755975 retrieve qid=36 chunks=2 ctx_bytes=1628 approx_tokens=407
+1792355629.756010 fail qid=36 error=ExternalServiceError
+1792355629.756082 cache qid=38 result=miss
+1792355629.757083 retrieve qid=38 chunks=2 ctx_bytes=1660 approx_tokens=415
+1792355629.770717 generate qid=28 ms=22.49 answer=#4bdb61d7
+1792355629.770848 cache qid=40 result=miss
+1792355629.772162 retrieve qid=40 chunks=2 ctx_bytes=1648 approx_tokens=412
+1792355629.779322 generate qid=38 ms=22.21 answer=#b35e406b
+1792355629.779416 cache qid=42 result=miss
+1792355629.780267 retrieve qid=42 chunks=2 ctx_bytes=1675 approx_tokens=418
+1792355629.780293 fail qid=42 error=ExternalServiceError
+1792355629.780346 cache qid=44 result=miss
+1792355629.781176 retrieve qid=44 chunks=2 ctx_bytes=1681 approx_tokens=420
+1792355629.794262 generate qid=40 ms=22.06 answer=#fb8d589f
+1792355629.794352 cache qid=46 result=miss
+1792355629.795322 retrieve qid=46 chunks=2 ctx_bytes=1194 approx_tokens=298
+1792355629.803596 generate qid=44 ms=22.39 answer=#8e39e191
+1792355629.803715 cache qid=48 result=miss
+1792355629.804666 retrieve qid=48 chunks=2 ctx_bytes=1712 approx_tokens=428
+1792355629.816319 generate qid=46 ms=20.97 answer=#5de8a59b
+1792355629.816415 cache qid=50 result=miss
+1792355629.817441 retrieve qid=50 chunks=2 ctx_bytes=1684 approx_tokens=421
+1792355629.817466 fail qid=50 error=ExternalServiceError
+1792355629.817506 cache qid=52 result=miss
+1792355629.818288 retrieve qid=52 chunks=2 ctx_bytes=1715 approx_tokens=428
+1792355629.826004 generate qid=48 ms=21.31 answer=#6ca67d35
+1792355629.826084 cache qid=54 result=miss
+1792355629.827004 retrieve qid=54 chunks=2 ctx_bytes=1728 approx_tokens=432
+1792355629.827027 fail qid=54 error=ExternalServiceError
+1792355629.827066 cache qid=56 result=miss
+1792355629.827672 retrieve qid=56 chunks=2 ctx_bytes=1649 approx_tokens=412
+1792355629.839676 generate qid=52 ms=21.36 answer=#b0f5842b
+1792355629.839761 cache qid=58 result=miss
+1792355629.840652 retrieve qid=58 chunks=3 ctx_bytes=1978 approx_tokens=494
+1792355629.849008 generate qid=56 ms=21.32 answer=#80fe21ad
+1792355629.849064 cache qid=60 result=miss
+1792355629.849833 retrieve qid=60 chunks=2 ctx_bytes=1667 approx_tokens=416
+1792355629.862387 generate qid=58 ms=21.71 answer=#69588435
+1792355629.862515 cache qid=62 result=miss
+1792355629.863521 retrieve qid=62 chunks=2 ctx_bytes=1723 approx_tokens=430
+1792355629.871894 generate qid=60 ms=22.04 answer=#48b7bd61
+1792355629.871979 cache qid=64 result=miss
+1792355629.873090 retrieve qid=64 chunks=2 ctx_bytes=1661 approx_tokens=415
+1792355629.873125 fail qid=64 error=ExternalServiceError
+1792355629.873178 cache qid=66 result=miss
+1792355629.873918 retrieve qid=66 chunks=3 ctx_bytes=1510 approx_tokens=377
+1792355629.885814 generate qid=62 ms=22.26 answer=#20563ee1
+1792355629.885951 cache qid=1 result=miss
+1792355629.886976 retrieve qid=1 chunks=2 ctx_bytes=1674 approx_tokens=418
+1792355629.895721 generate qid=66 ms=21.77 answer=#774e8ba4
+1792355629.895863 cache qid=3 result=miss
+1792355629.897187 retrieve qid=3 chunks=2 ctx_bytes=1688 approx_tokens=422
+1792355629.908663 generate qid=1 ms=21.65 answer=#b2181f72
+1792355629.908795 cache qid=5 result=miss
+1792355629.909806 retrieve qid=5 chunks=2 ctx_bytes=1709 approx_tokens=427
+1792355629.909844 fail qid=5 error=ExternalServiceError
+1792355629.909914 cache qid=7 result=miss
+1792355629.910769 retrieve qid=7 chunks=2 ctx_bytes=1711 approx_tokens=427
+1792355629.918851 generate qid=3 ms=21.61 answer=#9be5fcb7
+1792355629.919008 cache qid=68 result=miss
+1792355629.920277 retrieve qid=68 chunks=2 ctx_bytes=1646 approx_tokens=411
+1792355629.920329 fail qid=68 error=ExternalServiceError
+1792355629.920419 cache qid=9 result=miss
+1792355629.922270 retrieve qid=9 chunks=2 ctx_bytes=1661 approx_tokens=415
+1792355629.922306 fail qid=9 error=ExternalServiceError
+1792355629.922385 cache qid=70 result=miss
+1792355629.923356 retrieve qid=70 chunks=2 ctx_bytes=1680 approx_tokens=420
+1792355629.933275 generate qid=7 ms=22.48 answer=#1e01000b
+1792355629.933375 cache qid=11 result=miss
+1792355629.934459 retrieve qid=11 chunks=3 ctx_bytes=1507 approx_tokens=376
+1792355629.945432 generate qid=70 ms=22.05 answer=#6bb42c83
+1792355629.945534 cache qid=72 result=miss
+1792355629.946523 retrieve qid=72 chunks=2 ctx_bytes=1672 approx_tokens=418
+1792355629.946558 fail qid=72 error=ExternalServiceError
+1792355629.946615 cache qid=13 result=miss
+1792355629.947379 retrieve qid=13 chunks=2 ctx_bytes=1653 approx_tokens=413
+1792355629.955746 generate qid=11 ms=21.26 answer=#ab196e8a
+1792355629.955830 cache qid=74 result=miss
+1792355629.956745 retrieve qid=74 chunks=2 ctx_bytes=1712 approx_tokens=428
+1792355629.956768 fail qid=74 error=ExternalServiceError
+1792355629.956817 cache qid=15 result=miss
+1792355629.957574 retrieve qid=15 chunks=2 ctx_bytes=1686 approx_tokens=421
+1792355629.969492 generate qid=13 ms=22.09 answer=#69cad98f
+1792355629.969578 cache qid=76 result=miss
+1792355629.970451 retrieve qid=76 chunks=2 ctx_bytes=1641 approx_tokens=410
+1792355629.970941 fail qid=76 error=ExternalServiceError
+1792355629.971006 cache qid=17 result=miss
+1792355629.972222 retrieve qid=17 chunks=2 ctx_bytes=1653 approx_tokens=413
+1792355629.979863 generate qid=15 ms=22.26 answer=#1031412b
+1792355629.979953 cache qid=78 result=miss
+1792355629.981069 retrieve qid=78 chunks=2 ctx_bytes=1693 approx_tokens=423
+1792355629.993566 generate qid=17 ms=21.32 answer=#7c6a429e
+1792355629.993644 cache qid=19 result=miss
+1792355629.994428 retrieve qid=19 chunks=2 ctx_bytes=1661 approx_tokens=415
+1792355630.002626 generate qid=78 ms=21.53 answer=#a984571a
+1792355630.002734 cache qid=80 result=miss
+1792355630.003592 retrieve qid=80 chunks=2 ctx_bytes=1687 approx_tokens=421
+1792355630.003615 fail qid=80 error=ExternalServiceError
+1792355630.003665 cache qid=21 result=miss
+1792355630.004449 retrieve qid=21 chunks=2 ctx_bytes=1678 approx_tokens=419
+1792355630.015718 generate qid=19 ms=21.27 answer=#80b471b9
+1792355630.015792 cache qid=82 result=miss
+1792355630.016664 retrieve qid=82 chunks=2 ctx_bytes=1718 approx_tokens=429
+1792355630.016692 fail qid=82 error=ExternalServiceError
+1792355630.016751 cache qid=23 result=miss
+1792355630.017464 retrieve qid=23 chunks=2 ctx_bytes=1673 approx_tokens=418
+1792355630.017495 fail qid=23 error=ExternalServiceError
+1792355630.017537 cache qid=84 result=miss
+1792355630.018510 retrieve qid=84 chunks=2 ctx_bytes=1732 approx_tokens=433
+1792355630.025995 generate qid=21 ms=21.52 answer=#67e0241a
+1792355630.026083 cache qid=25 result=miss
+1792355630.027534 retrieve qid=25 chunks=2 ctx_bytes=1706 approx_tokens=426
+1792355630.027574 fail qid=25 error=ExternalServiceError
+1792355630.027663 cache qid=86 result=miss
+1792355630.029056 retrieve qid=86 chunks=2 ctx_bytes=1680 approx_tokens=420
+1792355630.029109 fail qid=86 error=ExternalServiceError
+1792355630.029195 cache qid=27 result=miss
+1792355630.030370 retrieve qid=27 chunks=2 ctx_bytes=1623 approx_tokens=405
+1792355630.040869 generate qid=84 ms=22.32 answer=#0a6c7e3a
+1792355630.040952 cache qid=88 result=miss
+1792355630.041752 retrieve qid=88 chunks=2 ctx_bytes=1168 approx_tokens=292
+1792355630.041776 fail qid=88 error=ExternalServiceError
+1792355630.041824 cache qid=29 result=miss
+1792355630.042755 retrieve qid=29 chunks=2 ctx_bytes=1690 approx_tokens=422
+1792355630.052734 generate qid=27 ms=22.32 answer=#e35522c1
+1792355630.052846 cache qid=90 result=miss
+1792355630.053945 retrieve qid=90 chunks=2 ctx_bytes=1640 approx_tokens=410
+1792355630.053989 fail qid=90 error=ExternalServiceError
+1792355630.054060 cache qid=31 result=miss
+1792355630.055347 retrieve qid=31 chunks=2 ctx_bytes=1658 approx_tokens=414
+1792355630.065247 generate qid=29 ms=22.46 answer=#4136afbe
+1792355630.065349 cache qid=92 result=miss
+1792355630.066509 retrieve qid=92 chunks=2 ctx_bytes=1157 approx_tokens=289
+1792355630.077195 generate qid=31 ms=21.80 answer=#63fd85ee
+1792355630.077328 cache qid=33 result=miss
+1792355630.078400 retrieve qid=33 chunks=2 ctx_bytes=1690 approx_tokens=422
+1792355630.088179 generate qid=92 ms=21.63 answer=#56e05877
+1792355630.088309 cache qid=94 result=miss
+1792355630.089241 retrieve qid=94 chunks=2 ctx_bytes=1720 approx_tokens=430
+1792355630.099933 generate qid=33 ms=21.50 answer=#9ba89989
+1792355630.100010 cache qid=35 result=miss
+1792355630.100991 retrieve qid=35 chunks=2 ctx_bytes=1699 approx_tokens=424
+1792355630.111482 generate qid=94 ms=22.20 answer=#381652a1
+1792355630.111608 cache qid=96 result=miss
+1792355630.112936 retrieve qid=96 chunks=3 ctx_bytes=1922 approx_tokens=480
+1792355630.123161 generate qid=35 ms=22.14 answer=#4450cb7e
+1792355630.123299 cache qid=37 result=miss
+1792355630.124434 retrieve qid=37 chunks=2 ctx_bytes=1634 approx_tokens=408
+1792355630.136274 generate qid=96 ms=23.30 answer=#9023a423
+1792355630.136408 cache qid=98 result=miss
+1792355630.138558 retrieve qid=98 chunks=2 ctx_bytes=1168 approx_tokens=292
+1792355630.146744 generate qid=37 ms=22.27 answer=#4684f314
+1792355630.146881 cache qid=39 result=miss
+1792355630.148067 retrieve qid=39 chunks=2 ctx_bytes=1673 approx_tokens=418
+1792355630.160300 generate qid=98 ms=21.69 answer=#67b914b3
+1792355630.160405 cache qid=100 result=miss
+1792355630.161435 retrieve qid=100 chunks=2 ctx_bytes=1684 approx_tokens=421
+1792355630.169919 generate qid=39 ms=21.82 answer=#dc7d09a3
+1792355630.170012 cache qid=41 result=miss
+1792355630.170943 retrieve qid=41 chunks=2 ctx_bytes=1705 approx_tokens=426
+1792355630.183763 generate qid=100 ms=22.30 answer=#526afdfe
+1792355630.183886 cache qid=102 result=miss
+1792355630.184961 retrieve qid=102 chunks=2 ctx_bytes=1173 approx_tokens=293
+1792355630.193213 generate qid=41 ms=22.24 answer=#130854d8
+1792355630.193346 cache qid=43 result=miss
+1792355630.194336 retrieve qid=43 chunks=3 ctx_bytes=1985 approx_tokens=496
+1792355630.194367 fail qid=43 error=ExternalServiceError
+1792355630.194420 cache qid=104 result=miss
+1792355630.195342 retrieve qid=104 chunks=2 ctx_bytes=1721 approx_tokens=430
+1792355630.195373 fail qid=104 error=ExternalServiceError
+1792355630.195458 cache qid=45 result=miss
+1792355630.196435 retrieve qid=45 chunks=2 ctx_bytes=1702 approx_tokens=425
+1792355630.196475 fail qid=45 error=ExternalServiceError
+1792355630.196540 cache qid=106 result=miss
+1792355630.197540 retrieve qid=106 chunks=2 ctx_bytes=1659 approx_tokens=414
+1792355630.206703 generate qid=102 ms=21.70 answer=#d4c6e4b6
+1792355630.206826 cache qid=47 result=miss
+1792355630.207659 retrieve qid=47 chunks=2 ctx_bytes=1626 approx_tokens=406
+1792355630.207693 fail qid=47 error=ExternalServiceError
+1792355630.207729 cache qid=108 result=miss
+1792355630.208456 retrieve qid=108 chunks=2 ctx_bytes=1687 approx_tokens=421
+1792355630.219661 generate qid=106 ms=22.09 answer=#d6dd131f
+1792355630.219772 cache qid=49 result=miss
+1792355630.220993 retrieve qid=49 chunks=2 ctx_bytes=1701 approx_tokens=425
+1792355630.231062 generate qid=108 ms=22.58 answer=#052c3305
+1792355630.231171 cache qid=110 result=miss
+1792355630.232127 retrieve qid=110 chunks=2 ctx_bytes=1221 approx_tokens=305
+1792355630.242381 generate qid=49 ms=21.35 answer=#a5195ca9
+1792355630.242483 cache qid=51 result=miss
+1792355630.243369 retrieve qid=51 chunks=2 ctx_bytes=1659 approx_tokens=414
+1792355630.253851 generate qid=110 ms=21.69 answer=#5def3093
+1792355630.253968 cache qid=112 result=miss
+1792355630.254987 retrieve qid=112 chunks=2 ctx_bytes=1691 approx_tokens=422
+1792355630.265748 generate qid=51 ms=22.35 answer=#5e4b1d84
+1792355630.265840 cache qid=53 result=miss
+1792355630.267090 retrieve qid=53 chunks=2 ctx_bytes=1646 approx_tokens=411
+1792355630.277941 generate qid=112 ms=22.90 answer=#8ea305e0
+1792355630.278084 cache qid=114 result=miss
+1792355630.280218 retrieve qid=114 chunks=2 ctx_bytes=1712 approx_tokens=428
+1792355630.289626 generate qid=53 ms=22.49 answer=#6f1fa20f
+1792355630.289741 cache qid=55 result=miss
+1792355630.290684 retrieve qid=55 chunks=2 ctx_bytes=1698 approx_tokens=424
+1792355630.302510 generate qid=114 ms=22.25 answer=#a125e6c5
+1792355630.302608 cache qid=116 result=miss
+1792355630.303423 retrieve qid=116 chunks=2 ctx_bytes=1691 approx_tokens=422
+1792355630.313089 generate qid=55 ms=22.38 answer=#2e1e4d92
+1792355630.313173 cache qid=57 result=miss
+1792355630.314188 retrieve qid=57 chunks=2 ctx_bytes=1666 approx_tokens=416
+1792355630.314219 fail qid=57 error=ExternalServiceError
+1792355630.314261 cache qid=118 result=miss
+1792355630.315028 retrieve qid=118 chunks=2 ctx_bytes=1684 approx_tokens=421
+1792355630.324798 generate qid=116 ms=21.35 answer=#cc609cb9
+1792355630.324877 cache qid=59 result=miss
+1792355630.325734 retrieve qid=59 chunks=2 ctx_bytes=1701 approx_tokens=425
+1792355630.325760 fail qid=59 error=ExternalServiceError
+1792355630.325804 cache qid=61 result=miss
+1792355630.326677 retrieve qid=61 chunks=2 ctx_bytes=1658 approx_tokens=414
+1792355630.326707 fail qid=61 error=ExternalServiceError
+1792355630.326754 cache qid=63 result=miss
+1792355630.327622 retrieve qid=63 chunks=2 ctx_bytes=1595 approx_tokens=398
+1792355630.337200 generate qid=118 ms=22.14 answer=#c0d11add
+1792355630.337292 cache qid=65 result=miss
+1792355630.339072 retrieve qid=65 chunks=2 ctx_bytes=1675 approx_tokens=418
+1792355630.349312 generate qid=63 ms=21.66 answer=#eddf8439
+1792355630.349371 cache qid=67 result=miss
+1792355630.350181 retrieve qid=67 chunks=2 ctx_bytes=1725 approx_tokens=431
+1792355630.360942 generate qid=65 ms=21.34 answer=#d77e5407
+1792355630.361001 cache qid=69 result=miss
+1792355630.361845 retrieve qid=69 chunks=2 ctx_bytes=1617 approx_tokens=404
+1792355630.371612 generate qid=67 ms=21.41 answer=#68030cd0
+1792355630.371678 cache qid=71 result=miss
+1792355630.372500 retrieve qid=71 chunks=2 ctx_bytes=1696 approx_tokens=424
+1792355630.372525 fail qid=71 error=ExternalServiceError
+1792355630.372592 cache qid=73 result=miss
+1792355630.373290 retrieve qid=73 chunks=2 ctx_bytes=1727 approx_tokens=431
+1792355630.383276 generate qid=69 ms=21.39 answer=#06cb9634
+1792355630.383331 cache qid=75 result=miss
+1792355630.384192 retrieve qid=75 chunks=2 ctx_bytes=1662 approx_tokens=415
+1792355630.384216 fail qid=75 error=ExternalServiceError
+1792355630.384252 cache qid=77 result=miss
+1792355630.385108 retrieve qid=77 chunks=2 ctx_bytes=1690 approx_tokens=422
+1792355630.385152 fail qid=77 error=ExternalServiceError
+1792355630.385202 cache qid=79 result=miss
+1792355630.386213 retrieve qid=79 chunks=2 ctx_bytes=1672 approx_tokens=418
+1792355630.386253 fail qid=79 error=ExternalServiceError
+1792355630.386307 cache qid=81 result=miss
+1792355630.387228 retrieve qid=81 chunks=2 ctx_bytes=1679 approx_tokens=419
+1792355630.394624 generate qid=73 ms=21.31 answer=#55a0bfc6
+1792355630.394675 cache qid=83 result=miss
+1792355630.395662 retrieve qid=83 chunks=2 ctx_bytes=1648 approx_tokens=412
+1792355630.395698 fail qid=83 error=ExternalServiceError
+1792355630.395750 cache qid=85 result=miss
+1792355630.396874 retrieve qid=85 chunks=2 ctx_bytes=1223 approx_tokens=305
+1792355630.408654 generate qid=81 ms=21.40 answer=#11ff13a5
+1792355630.408723 cache qid=87 result=miss
+1792355630.409532 retrieve qid=87 chunks=2 ctx_bytes=1688 approx_tokens=422
+1792355630.417979 generate qid=85 ms=21.06 answer=#e2cd653b
+1792355630.418055 cache qid=89 result=miss
+1792355630.419256 retrieve qid=89 chunks=2 ctx_bytes=1722 approx_tokens=430
+1792355630.431338 generate qid=87 ms=21.78 answer=#88b72f2c
+1792355630.431429 cache qid=91 result=miss
+1792355630.432423 retrieve qid=91 chunks=3 ctx_bytes=1988 approx_tokens=497
+1792355630.440631 generate qid=89 ms=21.34 answer=#c7eeefc8
+1792355630.440687 cache qid=93 result=miss
+1792355630.441531 retrieve qid=93 chunks=2 ctx_bytes=1684 approx_tokens=421
+1792355630.441556 fail qid=93 error=ExternalServiceError
+1792355630.441591 cache qid=95 result=miss
+1792355630.442277 retrieve qid=95 chunks=2 ctx_bytes=1687 approx_tokens=421
+1792355630.442296 fail qid=95 error=ExternalServiceError
+1792355630.442336 cache qid=97 result=miss
+1792355630.443134 retrieve qid=97 chunks=2 ctx_bytes=1742 approx_tokens=435
+1792355630.443162 fail qid=97 error=ExternalServiceError
+1792355630.443218 cache qid=99 result=miss
+1792355630.443959 retrieve qid=99 chunks=2 ctx_bytes=1731 approx_tokens=432
+1792355630.454919 generate qid=91 ms=22.45 answer=#97977dc5
+1792355630.454996 cache qid=101 result=miss
+1792355630.456129 retrieve qid=101 chunks=2 ctx_bytes=1699 approx_tokens=424
+1792355630.456180 fail qid=101 error=ExternalServiceError
+1792355630.456246 cache qid=103 result=miss
+1792355630.457350 retrieve qid=103 chunks=2 ctx_bytes=1706 approx_tokens=426
+1792355630.465518 generate qid=99 ms=21.54 answer=#55751adf
+1792355630.465584 cache qid=105 result=miss
+1792355630.466557 retrieve qid=105 chunks=2 ctx_bytes=1704 approx_tokens=426
+1792355630.479983 generate qid=103 ms=22.60 answer=#c9c8e08d
+1792355630.480050 cache qid=107 result=miss
+1792355630.481019 retrieve qid=107 chunks=2 ctx_bytes=1669 approx_tokens=417
+1792355630.488179 generate qid=105 ms=21.59 answer=#ca3ccaf9
+1792355630.488234 cache qid=109 result=miss
+1792355630.489229 retrieve qid=109 chunks=2 ctx_bytes=1708 approx_tokens=427
+1792355630.503184 generate qid=107 ms=22.12 answer=#f41a5e7f
+1792355630.503263 cache qid=111 result=miss
+1792355630.504107 retrieve qid=111 chunks=2 ctx_bytes=1699 approx_tokens=424
+1792355630.511566 generate qid=109 ms=22.31 answer=#9131f7fd
+1792355630.511637 cache qid=113 result=miss
+1792355630.512606 retrieve qid=113 chunks=3 ctx_bytes=1967 approx_tokens=491
+1792355630.525645 generate qid=111 ms=21.51 answer=#100d5a66
+1792355630.525702 cache qid=115 result=miss
+1792355630.526773 retrieve qid=115 chunks=3 ctx_bytes=1996 approx_tokens=499
+1792355630.535196 generate qid=113 ms=22.55 answer=#adb39cf6
+1792355630.535284 cache qid=117 result=miss
+1792355630.536421 retrieve qid=117 chunks=2 ctx_bytes=1635 approx_tokens=408
+1792355630.549577 generate qid=115 ms=22.75 answer=#1c0f6fdc
+1792355630.549648 cache qid=119 result=miss
+1792355630.550626 retrieve qid=119 chunks=2 ctx_bytes=1687 approx_tokens=421
+1792355630.558865 generate qid=117 ms=22.40 answer=#069c14cd
+1792355630.573125 generate qid=119 ms=22.43 answer=#f139416b
+1792355630.574649 shutdown requests=120 wall_s=0.959

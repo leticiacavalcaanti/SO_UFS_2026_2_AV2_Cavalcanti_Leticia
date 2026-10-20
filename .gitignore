@@ -1,0 +1,18 @@
+__pycache__/
+*.pyc
+.env
+*.env
+.venv/
+# dados gerados (reproduzíveis pelos scripts); só amostras pequenas são versionadas
+/workdata/
+*.npy
+*.gguf
+*.safetensors
+
+# logs de orquestracao local (contem caminhos da maquina)
+results/run_all*.log
+results/run_all*.err
+results/*.done
+
+# roteiro pessoal do video (nao entra no repositorio)
+report/roteiro_video.md

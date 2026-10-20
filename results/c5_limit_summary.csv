@@ -1,0 +1,13 @@
+memory_limit,swap_limit,mode,rep,exit_code,oom_killed
+2048m,2048m,read,1,0,False
+2048m,2048m,read,2,0,False
+2048m,2048m,read,3,0,False
+2048m,2048m,mmap,1,0,False
+2048m,2048m,mmap,2,0,False
+2048m,2048m,mmap,3,0,False
+384m,384m,read,1,137,True
+384m,384m,read,2,137,True
+384m,384m,read,3,137,True
+384m,384m,mmap,1,0,False
+384m,384m,mmap,2,0,False
+384m,384m,mmap,3,0,False

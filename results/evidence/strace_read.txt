@@ -1,0 +1,152 @@
+93    mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f23aa921000
+93    openat(AT_FDCWD, "/usr/local/bin/../lib/glibc-hwcaps/x86-64-v3/libpython3.12.so.1.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+93    openat(AT_FDCWD, "/usr/local/bin/../lib/glibc-hwcaps/x86-64-v2/libpython3.12.so.1.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+93    openat(AT_FDCWD, "/usr/local/bin/../lib/libpython3.12.so.1.0", O_RDONLY|O_CLOEXEC) = 3
+93    read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+93    fstat(3, {st_mode=S_IFREG|0755, st_size=6630672, ...}) = 0
+93    mmap(NULL, 6637848, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f23aa2cc000
+93    mmap(0x7f23aa3cc000, 2224128, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x100000) = 0x7f23aa3cc000
+93    mmap(0x7f23aa5eb000, 1372160, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x31f000) = 0x7f23aa5eb000
+93    mmap(0x7f23aa73a000, 1990656, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x46d000) = 0x7f23aa73a000
+93    mmap(0x7f23aa920000, 2328, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f23aa920000
+93    openat(AT_FDCWD, "/usr/local/bin/../lib/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+93    openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+93    fstat(3, {st_mode=S_IFREG|0644, st_size=5139, ...}) = 0
+93    mmap(NULL, 5139, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f23aa2ca000
+93    openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+93    read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0p\236\2\0\0\0\0\0"..., 832) = 832
+93    pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 840, 64) = 840
+93    fstat(3, {st_mode=S_IFREG|0755, st_size=1995216, ...}) = 0
+93    pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 840, 64) = 840
+93    mmap(NULL, 2047568, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f23aa0d6000
+93    mmap(0x7f23aa0fe000, 1454080, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f23aa0fe000
+93    mmap(0x7f23aa261000, 352256, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x18b000) = 0x7f23aa261000
+93    mmap(0x7f23aa2b7000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e0000) = 0x7f23aa2b7000
+93    mmap(0x7f23aa2bd000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f23aa2bd000
+93    openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+93    read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+93    fstat(3, {st_mode=S_IFREG|0644, st_size=977112, ...}) = 0
+93    mmap(NULL, 978968, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f23a9fe6000
+93    mmap(0x7f23a9ff7000, 512000, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x11000) = 0x7f23a9ff7000
+93    mmap(0x7f23aa074000, 393216, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8e000) = 0x7f23aa074000
+93    mmap(0x7f23aa0d4000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xed000) = 0x7f23aa0d4000
+93    mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f23a9fe4000
+93    munmap(0x7f23aa2ca000, 5139)      = 0
+93    openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+93    openat(AT_FDCWD, "/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+93    openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_CTYPE", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+93    openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_CTYPE", O_RDONLY|O_CLOEXEC) = 3
+93    fstat(3, {st_mode=S_IFREG|0644, st_size=367708, ...}) = 0
+93    mmap(NULL, 367708, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f23a9f8a000
+93    openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY|O_CLOEXEC) = 3
+93    fstat(3, {st_mode=S_IFREG|0644, st_size=27028, ...}) = 0
+93    mmap(NULL, 27028, PROT_READ, MAP_SHARED, 3, 0) = 0x7f23a9f83000
+93    mmap(NULL, 1048576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f23a9e83000
+93    mmap(NULL, 266240, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f23a9e42000
+93    mmap(NULL, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f23a9e21000
+93    mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f23a9e1d000
+93    openat(AT_FDCWD, "/usr/local/pyvenv.cfg", O_RDONLY) = -1 ENOENT (No such file or directory)
+93    openat(AT_FDCWD, "/usr/local/bin/pyvenv.cfg", O_RDONLY) = -1 ENOENT (No such file or directory)
+93    openat(AT_FDCWD, "/usr/local/bin/python._pth", O_RDONLY) = -1 ENOENT (No such file or directory)
+93    openat(AT_FDCWD, "/usr/local/bin/python3.12._pth", O_RDONLY) = -1 ENOENT (No such file or directory)
+93    openat(AT_FDCWD, "/usr/local/bin/pybuilddir.txt", O_RDONLY) = -1 ENOENT (No such file or directory)
+93    openat(AT_FDCWD, "/etc/localtime", O_RDONLY|O_CLOEXEC) = 3
+93    fstat(3, {st_mode=S_IFREG|0644, st_size=114, ...}) = 0
+93    fstat(3, {st_mode=S_IFREG|0644, st_size=114, ...}) = 0
+93    read(3, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 4096) = 114
+93    read(3, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 4096) = 60
+93    openat(AT_FDCWD, "/work", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+93    fstat(3, {st_mode=S_IFDIR|0777, st_size=512, ...}) = 0
+93    openat(AT_FDCWD, "/usr/local/lib/python3.12", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+93    fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+93    openat(AT_FDCWD, "/usr/local/lib/python3.12/encodings/__pycache__/__init__.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+93    fstat(3, {st_mode=S_IFREG|0644, st_size=5781, ...}) = 0
+93    fstat(3, {st_mode=S_IFREG|0644, st_size=5781, ...}) = 0
+93    read(3, "\313\r\r\n\0\0\0\0#W\304j\374\26\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\6\0\0"..., 5782) = 5781
+93    read(3, "", 1)                    = 0
+93    openat(AT_FDCWD, "/usr/local/lib/python3.12/encodings", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+93    fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+93    openat(AT_FDCWD, "/usr/local/lib/python3.12/encodings/__pycache__/aliases.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+93    fstat(3, {st_mode=S_IFREG|0644, st_size=12414, ...}) = 0
+93    fstat(3, {st_mode=S_IFREG|0644, st_size=12414, ...}) = 0
+93    read(3, "\313\r\r\n\0\0\0\0#W\304j==\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0"..., 12415) = 12414
+93    read(3, "", 1)                    = 0
+93    openat(AT_FDCWD, "/usr/local/lib/python3.12/encodings/__pycache__/utf_8.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+93    fstat(3, {st_mode=S_IFREG|0644, st_size=2153, ...}) = 0
+93    fstat(3, {st_mode=S_IFREG|0644, st_size=2153, ...}) = 0
+93    read(3, "\313\r\r\n\0\0\0\0#W\304j\355\3\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0"..., 2154) = 2153
+93    read(3, "", 1)                    = 0
+93    fstat(0, {st_mode=S_IFCHR|0666, st_rdev=makedev(0x1, 0x3), ...}) = 0
+93    fstat(0, {st_mode=S_IFCHR|0666, st_rdev=makedev(0x1, 0x3), ...}) = 0
+93    fstat(1, {st_mode=S_IFCHR|0666, st_rdev=makedev(0x1, 0x3), ...}) = 0
+93    fstat(2, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+93    mmap(NULL, 1048576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f23a9d1d000
+93    openat(AT_FDCWD, "/usr/local/lib/python3.12/site-packages", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+93    fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+93    openat(AT_FDCWD, "/usr/local/lib/python3.12/lib-dynload", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+93    fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+93    openat(AT_FDCWD, "/usr/local/lib/python3.12/site-packages", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+93    fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+93    openat(AT_FDCWD, "/tmp/rd.py", O_RDONLY|O_CLOEXEC) = 3
+93    fstat(3, {st_mode=S_IFREG|0644, st_size=331, ...}) = 0
+93    read(3, "+(1<<20)],a)\nprint(a)\n", 4096) = 22
+93    fstat(3, {st_mode=S_IFREG|0644, st_size=331, ...}) = 0
+93    read(3, "import os,sys,mmap,zlib\np=\"/work"..., 332) = 331
+93    read(3, "", 1)                    = 0
+93    openat(AT_FDCWD, "/tmp/rd.py", O_RDONLY) = 3
+93    fstat(3, {st_mode=S_IFREG|0644, st_size=331, ...}) = 0
+93    fstat(3, {st_mode=S_IFREG|0644, st_size=331, ...}) = 0
+93    read(3, "import os,sys,mmap,zlib\np=\"/work"..., 4096) = 331
+93    read(3, "import os,sys,mmap,zlib\np=\"/work"..., 4096) = 331
+93    read(3, "", 4096)                 = 0
+93    openat(AT_FDCWD, "/tmp", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+93    fstat(3, {st_mode=S_IFDIR|S_ISVTX|0777, st_size=4096, ...}) = 0
+93    openat(AT_FDCWD, "/usr/local/lib/python3.12/lib-dynload/mmap.cpython-312-x86_64-linux-gnu.so", O_RDONLY|O_CLOEXEC) = 3
+93    read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+93    fstat(3, {st_mode=S_IFREG|0755, st_size=32416, ...}) = 0
+93    mmap(NULL, 34600, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f23a9d14000
+93    mmap(0x7f23a9d16000, 12288, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f23a9d16000
+93    mmap(0x7f23a9d19000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x7f23a9d19000
+93    mmap(0x7f23a9d1b000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f23a9d1b000
+93    openat(AT_FDCWD, "/usr/local/lib/python3.12/lib-dynload/zlib.cpython-312-x86_64-linux-gnu.so", O_RDONLY|O_CLOEXEC) = 3
+93    read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+93    fstat(3, {st_mode=S_IFREG|0755, st_size=50192, ...}) = 0
+93    mmap(NULL, 52296, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f23a9d07000
+93    mmap(0x7f23a9d0a000, 20480, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f23a9d0a000
+93    mmap(0x7f23a9d0f000, 12288, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8000) = 0x7f23a9d0f000
+93    mmap(0x7f23a9d12000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xa000) = 0x7f23a9d12000
+93    openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+93    fstat(3, {st_mode=S_IFREG|0644, st_size=5139, ...}) = 0
+93    mmap(NULL, 5139, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f23aa2ca000
+93    openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libz.so.1", O_RDONLY|O_CLOEXEC) = 3
+93    read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+93    fstat(3, {st_mode=S_IFREG|0644, st_size=125376, ...}) = 0
+93    mmap(NULL, 127376, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f23a9ce7000
+93    mmap(0x7f23a9cea000, 81920, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f23a9cea000
+93    mmap(0x7f23a9cfe000, 28672, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7f23a9cfe000
+93    mmap(0x7f23a9d05000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1d000) = 0x7f23a9d05000
+93    munmap(0x7f23aa2ca000, 5139)      = 0
+93    openat(AT_FDCWD, "/workdata/bigfile_16.bin", O_RDONLY|O_CLOEXEC) = 3
+93    mmap(NULL, 1052672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f23a9be6000
+93    read(3, "z\24\34!\275^\177\tY\206m\363\317\303\f\357\355\3434fE\353M\301L!\320\351\22\276\225^"..., 1048576) = 1048576
+93    mmap(NULL, 1052672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f23a9ae5000
+93    read(3, "\273/\352Q\257\246\323\202\203\377\235zj\203\16\371x\22.A\16s\265\215\33\222\2712.\7\200|"..., 1048576) = 1048576
+93    munmap(0x7f23a9be6000, 1052672)   = 0
+93    read(3, "\217\243\371\3665d\267\323ee\304\325\33\376\227\25\v1\315\21\24\343J@\224(\217\250~\346^\202"..., 1048576) = 1048576
+93    munmap(0x7f23a9ae5000, 1052672)   = 0
+93    read(3, "ir\237\354\227D@\264\6l\347o\222\372R\254\372>\21\17n^\f\3\1>Rg\206\256ut"..., 1048576) = 1048576
+93    read(3, "\361\350g\344HRe\351\n\2062\352\376e9\354\v\200\211\345Y\251#i\3058q5\202\372\213-"..., 1048576) = 1048576
+93    read(3, "\240{\300\320\331\345\311J\247\206\305&\6\343M\271-\217\365QZFk\23\206\363k\34\331d\25\2"..., 1048576) = 1048576
+93    read(3, "\327N\252|+E\7\2\267\17\326\335VF\354\374\177)\211\220\242#\272%\267Qg\365\375\2067\377"..., 1048576) = 1048576
+93    read(3, "\236+\214\255h:\367\4d\3228\276\314\274\303Z\343r\21gcM\f\354\243\4:\222\371\240D\303"..., 1048576) = 1048576
+93    read(3, "\r6/\26\20\351I\313\21n\273\372\307D\267Zn#\333\212\210#?\331\265\304\10\230\362\2R\310"..., 1048576) = 1048576
+93    read(3, "\22\251\336z\33\273F\35\240#J\3516}X\343\21\274J\t\311\24\276\7\262iP0\324\276\327\7"..., 1048576) = 1048576
+93    read(3, "\235M\215\326\3\235Z\337\6?\325;\342xmb\225x>\2j\34\367V\272y\365\7\352\22\255\7"..., 1048576) = 1048576
+93    read(3, "\263\344nB\350\2543\270\265K\344\2359\367I\201+\220=\30\210\264\230<\306\365\231\344\313\30H\27"..., 1048576) = 1048576
+93    read(3, "\35\253*\360\233\237\315o\315(\223vM\2008\32\251\nmh\341\303\300\350S$*\326ic\361\220"..., 1048576) = 1048576
+93    read(3, "\264\277\"N=\374\321Ql\213\365\\\376<8\340\236\312_U#\4A\335\257\355QW\\\362\315F"..., 1048576) = 1048576
+93    read(3, "$\10l\363\350\246B\2774\313c\362n\353\327J\31\317]\0\347\275\276q\302[\270,x!\353\360"..., 1048576) = 1048576
+93    read(3, "0\10&>\2677\315P\3064\226\2hSIh\336\367g\336\355\231V\1\345\241\5\335X\357\0062"..., 1048576) = 1048576
+93    read(3, "", 1048576)              = 0
+93    munmap(0x7f23a9e1d000, 16384)     = 0
+93    +++ exited with 0 +++

@@ -1,0 +1,10 @@
+rep,mode,completed,outcome,elapsed_s,thread_states
+1,deadlock,False,DEADLOCK detectado por timeout; processo encerrado (kill),3.0106987953186035,tid=81 state=S (sleeping) wchan=futex_wait_queue | tid=82 state=S (sleeping) wchan=futex_wait_queue | tid=83 state=S (sleeping) wchan=futex_wait_queue | tid=84 state=S (sleeping) wchan=futex_wait_queue | tid=85 state=S (sleeping) wchan=futex_wait_queue | tid=86 state=S (sleeping) wchan=futex_wait_queue
+1,ordered,True,"COMPLETED T1,T2",0.305264949798584,
+1,timeout,True,"COMPLETED T1,T2",0.6014397144317627,
+2,deadlock,False,DEADLOCK detectado por timeout; processo encerrado (kill),3.0110151767730713,tid=169 state=S (sleeping) wchan=futex_wait_queue | tid=170 state=S (sleeping) wchan=futex_wait_queue | tid=171 state=S (sleeping) wchan=futex_wait_queue | tid=172 state=S (sleeping) wchan=futex_wait_queue | tid=173 state=S (sleeping) wchan=futex_wait_queue | tid=174 state=S (sleeping) wchan=futex_wait_queue
+2,ordered,True,"COMPLETED T1,T2",0.30062246322631836,
+2,timeout,True,"COMPLETED T1,T2",0.6010897159576416,
+3,deadlock,False,DEADLOCK detectado por timeout; processo encerrado (kill),3.0136313438415527,tid=257 state=S (sleeping) wchan=futex_wait_queue | tid=258 state=S (sleeping) wchan=futex_wait_queue | tid=259 state=S (sleeping) wchan=futex_wait_queue | tid=260 state=S (sleeping) wchan=futex_wait_queue | tid=261 state=S (sleeping) wchan=futex_wait_queue | tid=262 state=S (sleeping) wchan=futex_wait_queue
+3,ordered,True,"COMPLETED T1,T2",0.3004622459411621,
+3,timeout,True,"COMPLETED T1,T2",0.6026110649108887,

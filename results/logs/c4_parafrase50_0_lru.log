@@ -1,0 +1,1202 @@
+1792354509.261338 start workers=2 producers=2 queue=32
+1792354509.263164 cache qid=0 result=miss
+1792354509.263232 cache qid=2 result=miss
+1792354509.271307 retrieve qid=2 chunks=2 ctx_bytes=1668 approx_tokens=417
+1792354509.271690 retrieve qid=0 chunks=2 ctx_bytes=1623 approx_tokens=405
+1792354509.319846 generate qid=2 ms=48.51 answer=#68fd259d
+1792354509.319930 cache qid=4 result=miss
+1792354509.326254 generate qid=0 ms=54.54 answer=#53e587e6
+1792354509.326318 cache qid=6 result=miss
+1792354509.328375 retrieve qid=4 chunks=2 ctx_bytes=1722 approx_tokens=430
+1792354509.330760 retrieve qid=6 chunks=2 ctx_bytes=1722 approx_tokens=430
+1792354509.371016 generate qid=4 ms=42.62 answer=#516b1719
+1792354509.371089 cache qid=8 result=miss
+1792354509.377679 generate qid=6 ms=46.90 answer=#516b1719
+1792354509.377721 cache qid=10 result=miss
+1792354509.379657 retrieve qid=8 chunks=2 ctx_bytes=1717 approx_tokens=429
+1792354509.381993 retrieve qid=10 chunks=2 ctx_bytes=1717 approx_tokens=429
+1792354509.421941 generate qid=8 ms=42.26 answer=#098377a6
+1792354509.422019 cache qid=12 result=miss
+1792354509.428821 generate qid=10 ms=46.81 answer=#22674ffb
+1792354509.428868 cache qid=14 result=miss
+1792354509.432568 retrieve qid=14 chunks=2 ctx_bytes=1695 approx_tokens=423
+1792354509.432802 retrieve qid=12 chunks=2 ctx_bytes=1695 approx_tokens=423
+1792354509.478463 generate qid=14 ms=45.87 answer=#99764677
+1792354509.478543 cache qid=16 result=miss
+1792354509.480250 generate qid=12 ms=47.43 answer=#99764677
+1792354509.480290 cache qid=18 result=miss
+1792354509.482180 retrieve qid=16 chunks=2 ctx_bytes=1697 approx_tokens=424
+1792354509.484530 retrieve qid=18 chunks=2 ctx_bytes=1722 approx_tokens=430
+1792354509.530725 generate qid=16 ms=48.51 answer=#4e626a23
+1792354509.530821 cache qid=20 result=miss
+1792354509.540961 retrieve qid=20 chunks=2 ctx_bytes=1188 approx_tokens=297
+1792354509.544802 generate qid=18 ms=60.25 answer=#516b1719
+1792354509.544866 cache qid=22 result=miss
+1792354509.546854 retrieve qid=22 chunks=2 ctx_bytes=1662 approx_tokens=415
+1792354509.570839 generate qid=20 ms=29.85 answer=#d738af33
+1792354509.570899 cache qid=24 result=miss
+1792354509.580099 retrieve qid=24 chunks=2 ctx_bytes=1717 approx_tokens=429
+1792354509.586274 generate qid=22 ms=39.40 answer=#d0e96c01
+1792354509.586331 cache qid=26 result=miss
+1792354509.588078 retrieve qid=26 chunks=2 ctx_bytes=1637 approx_tokens=409
+1792354509.614172 generate qid=24 ms=34.05 answer=#22674ffb
+1792354509.614228 cache qid=28 result=miss
+1792354509.626191 retrieve qid=28 chunks=2 ctx_bytes=1687 approx_tokens=421
+1792354509.629465 generate qid=26 ms=41.37 answer=#981cf81e
+1792354509.629519 cache qid=30 result=miss
+1792354509.631322 retrieve qid=30 chunks=2 ctx_bytes=1662 approx_tokens=415
+1792354509.673322 generate qid=28 ms=47.10 answer=#cd017ffb
+1792354509.673428 cache qid=32 result=miss
+1792354509.685657 retrieve qid=32 chunks=2 ctx_bytes=1635 approx_tokens=408
+1792354509.692784 generate qid=30 ms=61.44 answer=#d0e96c01
+1792354509.692875 cache qid=34 result=miss
+1792354509.695496 retrieve qid=34 chunks=2 ctx_bytes=1623 approx_tokens=405
+1792354509.719210 generate qid=32 ms=33.52 answer=#97d2eb51
+1792354509.719286 cache qid=36 result=miss
+1792354509.731304 retrieve qid=36 chunks=2 ctx_bytes=1640 approx_tokens=410
+1792354509.734518 generate qid=34 ms=39.00 answer=#53e587e6
+1792354509.734581 cache qid=38 result=miss
+1792354509.736332 retrieve qid=38 chunks=2 ctx_bytes=1695 approx_tokens=423
+1792354509.778594 generate qid=36 ms=47.26 answer=#6a870614
+1792354509.778677 cache qid=40 result=miss
+1792354509.790917 retrieve qid=40 chunks=2 ctx_bytes=1662 approx_tokens=415
+1792354509.796010 generate qid=38 ms=59.66 answer=#99764677
+1792354509.796085 cache qid=42 result=miss
+1792354509.798691 retrieve qid=42 chunks=2 ctx_bytes=1667 approx_tokens=416
+1792354509.824621 generate qid=40 ms=33.68 answer=#d0e96c01
+1792354509.824705 cache qid=44 result=miss
+1792354509.836185 retrieve qid=44 chunks=2 ctx_bytes=1699 approx_tokens=424
+1792354509.840221 generate qid=42 ms=41.51 answer=#53b2a577
+1792354509.840276 cache qid=46 result=miss
+1792354509.842208 retrieve qid=46 chunks=3 ctx_bytes=1994 approx_tokens=498
+1792354509.879702 generate qid=44 ms=43.49 answer=#a2a9b7b8
+1792354509.879771 cache qid=48 result=miss
+1792354509.890725 retrieve qid=48 chunks=2 ctx_bytes=1684 approx_tokens=421
+1792354509.901110 generate qid=46 ms=58.88 answer=#19f1e1a2
+1792354509.901174 cache qid=50 result=miss
+1792354509.903601 retrieve qid=50 chunks=2 ctx_bytes=1640 approx_tokens=410
+1792354509.931068 generate qid=48 ms=40.32 answer=#f37e62a7
+1792354509.931149 cache qid=52 result=miss
+1792354509.943129 retrieve qid=52 chunks=2 ctx_bytes=1670 approx_tokens=417
+1792354509.946508 generate qid=50 ms=42.88 answer=#6a870614
+1792354509.946562 cache qid=54 result=miss
+1792354509.948526 retrieve qid=54 chunks=3 ctx_bytes=1509 approx_tokens=377
+1792354509.976862 generate qid=52 ms=33.71 answer=#a91ed766
+1792354509.976938 cache qid=56 result=miss
+1792354509.989090 retrieve qid=56 chunks=2 ctx_bytes=1697 approx_tokens=424
+1792354509.999821 generate qid=54 ms=51.27 answer=#3e6ee587
+1792354509.999897 cache qid=58 result=miss
+1792354510.001920 retrieve qid=58 chunks=2 ctx_bytes=1720 approx_tokens=430
+1792354510.023041 generate qid=56 ms=33.93 answer=#4e626a23
+1792354510.023104 cache qid=60 result=miss
+1792354510.036139 retrieve qid=60 chunks=2 ctx_bytes=1188 approx_tokens=297
+1792354510.038939 generate qid=58 ms=37.00 answer=#90f23d90
+1792354510.039001 cache qid=62 result=miss
+1792354510.040910 retrieve qid=62 chunks=2 ctx_bytes=1680 approx_tokens=420
+1792354510.066046 generate qid=60 ms=29.88 answer=#d738af33
+1792354510.066128 cache qid=64 result=miss
+1792354510.078188 retrieve qid=64 chunks=2 ctx_bytes=1720 approx_tokens=430
+1792354510.081687 generate qid=62 ms=40.76 answer=#9d093a90
+1792354510.081741 cache qid=66 result=miss
+1792354510.083606 retrieve qid=66 chunks=2 ctx_bytes=1705 approx_tokens=426
+1792354510.130540 generate qid=64 ms=52.32 answer=#90f23d90
+1792354510.130641 cache qid=1 result=miss
+1792354510.142874 retrieve qid=1 chunks=2 ctx_bytes=1668 approx_tokens=417
+1792354510.147757 generate qid=66 ms=64.12 answer=#6abe5ddf
+1792354510.147855 cache qid=3 result=miss
+1792354510.149977 retrieve qid=3 chunks=2 ctx_bytes=1722 approx_tokens=430
+1792354510.206242 generate qid=3 ms=56.24 answer=#516b1719
+1792354510.206333 cache qid=5 result=miss
+1792354510.207842 generate qid=1 ms=64.94 answer=#68fd259d
+1792354510.207881 cache qid=7 result=miss
+1792354510.209815 retrieve qid=7 chunks=2 ctx_bytes=1697 approx_tokens=424
+1792354510.211566 retrieve qid=5 chunks=2 ctx_bytes=1697 approx_tokens=424
+1792354510.252322 generate qid=7 ms=42.48 answer=#4e626a23
+1792354510.252415 cache qid=68 result=miss
+1792354510.258679 generate qid=5 ms=47.09 answer=#4e626a23
+1792354510.258735 cache qid=70 result=miss
+1792354510.260628 retrieve qid=68 chunks=2 ctx_bytes=1631 approx_tokens=407
+1792354510.262949 retrieve qid=70 chunks=2 ctx_bytes=1717 approx_tokens=429
+1792354510.306586 generate qid=68 ms=45.93 answer=#f4691719
+1792354510.306660 cache qid=72 result=miss
+1792354510.308524 retrieve qid=72 chunks=2 ctx_bytes=1631 approx_tokens=407
+1792354510.311591 generate qid=70 ms=48.61 answer=#098377a6
+1792354510.311669 cache qid=74 result=miss
+1792354510.314330 retrieve qid=74 chunks=3 ctx_bytes=1509 approx_tokens=377
+1792354510.350773 generate qid=72 ms=42.22 answer=#f4691719
+1792354510.350864 cache qid=76 result=miss
+1792354510.360240 retrieve qid=76 chunks=2 ctx_bytes=1631 approx_tokens=407
+1792354510.368083 generate qid=74 ms=53.73 answer=#3e6ee587
+1792354510.368148 cache qid=9 result=miss
+1792354510.370087 retrieve qid=9 chunks=2 ctx_bytes=1668 approx_tokens=417
+1792354510.393684 generate qid=76 ms=33.42 answer=#f4691719
+1792354510.393745 cache qid=78 result=miss
+1792354510.404142 retrieve qid=78 chunks=2 ctx_bytes=1619 approx_tokens=404
+1792354510.409351 generate qid=9 ms=39.24 answer=#68fd259d
+1792354510.409416 cache qid=11 result=miss
+1792354510.411283 retrieve qid=11 chunks=2 ctx_bytes=1727 approx_tokens=431
+1792354510.437943 generate qid=78 ms=33.77 answer=#0be55778
+1792354510.446683 cache qid=80 result=miss
+1792354510.448730 retrieve qid=80 chunks=2 ctx_bytes=1727 approx_tokens=431
+1792354510.464777 generate qid=11 ms=53.47 answer=#7cc7ecfb
+1792354510.464843 cache qid=13 result=miss
+1792354510.466850 retrieve qid=13 chunks=2 ctx_bytes=1667 approx_tokens=416
+1792354510.483226 generate qid=80 ms=34.47 answer=#7cc7ecfb
+1792354510.483284 cache qid=82 result=miss
+1792354510.485363 retrieve qid=82 chunks=2 ctx_bytes=1678 approx_tokens=419
+1792354510.500495 generate qid=13 ms=33.62 answer=#53b2a577
+1792354510.500561 cache qid=15 result=miss
+1792354510.502433 retrieve qid=15 chunks=2 ctx_bytes=1699 approx_tokens=424
+1792354510.522687 generate qid=82 ms=37.30 answer=#b1c8e898
+1792354510.522768 cache qid=84 result=miss
+1792354510.532198 retrieve qid=84 chunks=3 ctx_bytes=1958 approx_tokens=489
+1792354510.542284 generate qid=15 ms=39.83 answer=#a2a9b7b8
+1792354510.542354 cache qid=17 result=miss
+1792354510.544165 retrieve qid=17 chunks=2 ctx_bytes=1697 approx_tokens=424
+1792354510.568757 generate qid=84 ms=36.53 answer=#c6222830
+1792354510.568834 cache qid=86 result=miss
+1792354510.580170 retrieve qid=86 chunks=2 ctx_bytes=1687 approx_tokens=421
+1792354510.585504 generate qid=17 ms=41.32 answer=#4e626a23
+1792354510.585561 cache qid=19 result=miss
+1792354510.587435 retrieve qid=19 chunks=3 ctx_bytes=1994 approx_tokens=498
+1792354510.614491 generate qid=86 ms=34.30 answer=#cd017ffb
+1792354510.614550 cache qid=88 result=miss
+1792354510.626679 retrieve qid=88 chunks=3 ctx_bytes=1938 approx_tokens=484
+1792354510.633407 generate qid=19 ms=45.95 answer=#19f1e1a2
+1792354510.633480 cache qid=21 result=miss
+1792354510.635818 retrieve qid=21 chunks=2 ctx_bytes=1619 approx_tokens=404
+1792354510.663235 generate qid=88 ms=36.53 answer=#a3130fdc
+1792354510.663303 cache qid=90 result=miss
+1792354510.675425 retrieve qid=90 chunks=2 ctx_bytes=1188 approx_tokens=297
+1792354510.682992 generate qid=21 ms=47.15 answer=#5f06e05e
+1792354510.683062 cache qid=23 result=miss
+1792354510.685055 retrieve qid=23 chunks=2 ctx_bytes=1619 approx_tokens=404
+1792354510.705720 generate qid=90 ms=30.27 answer=#d738af33
+1792354510.705784 cache qid=92 result=miss
+1792354510.707654 retrieve qid=92 chunks=2 ctx_bytes=1194 approx_tokens=298
+1792354510.721302 generate qid=23 ms=36.22 answer=#5f06e05e
+1792354510.721375 cache qid=25 result=miss
+1792354510.723229 retrieve qid=25 chunks=2 ctx_bytes=1717 approx_tokens=429
+1792354510.740582 generate qid=92 ms=32.90 answer=#f4eaccdf
+1792354510.740697 cache qid=94 result=miss
+1792354510.743432 retrieve qid=94 chunks=2 ctx_bytes=1671 approx_tokens=417
+1792354510.768993 generate qid=25 ms=45.73 answer=#098377a6
+1792354510.769107 cache qid=27 result=miss
+1792354510.780347 retrieve qid=27 chunks=2 ctx_bytes=1675 approx_tokens=418
+1792354510.789442 generate qid=94 ms=45.99 answer=#c183bd23
+1792354510.789514 cache qid=96 result=miss
+1792354510.791354 retrieve qid=96 chunks=2 ctx_bytes=1686 approx_tokens=421
+1792354510.816344 generate qid=27 ms=35.97 answer=#772db481
+1792354510.816421 cache qid=29 result=miss
+1792354510.828212 retrieve qid=29 chunks=2 ctx_bytes=1637 approx_tokens=409
+1792354510.836888 generate qid=96 ms=45.51 answer=#f95d9096
+1792354510.836948 cache qid=98 result=miss
+1792354510.838828 retrieve qid=98 chunks=2 ctx_bytes=1698 approx_tokens=424
+1792354510.862268 generate qid=29 ms=33.98 answer=#981cf81e
+1792354510.862336 cache qid=31 result=miss
+1792354510.872181 retrieve qid=31 chunks=2 ctx_bytes=1727 approx_tokens=431
+1792354510.878676 generate qid=98 ms=39.83 answer=#6a571cb6
+1792354510.878761 cache qid=100 result=miss
+1792354510.880713 retrieve qid=100 chunks=2 ctx_bytes=1235 approx_tokens=308
+1792354510.912896 generate qid=100 ms=32.16 answer=#2235e7fd
+1792354510.912952 cache qid=33 result=miss
+1792354510.917161 generate qid=31 ms=44.96 answer=#7cc7ecfb
+1792354510.917255 cache qid=35 result=miss
+1792354510.919178 retrieve qid=33 chunks=2 ctx_bytes=1662 approx_tokens=415
+1792354510.920968 retrieve qid=35 chunks=2 ctx_bytes=1694 approx_tokens=423
+1792354510.960689 generate qid=33 ms=41.49 answer=#d0e96c01
+1792354510.960762 cache qid=37 result=miss
+1792354510.967837 generate qid=35 ms=46.85 answer=#c1769036
+1792354510.967888 cache qid=39 result=miss
+1792354510.969758 retrieve qid=37 chunks=2 ctx_bytes=1668 approx_tokens=417
+1792354510.971481 retrieve qid=39 chunks=2 ctx_bytes=1690 approx_tokens=422
+1792354511.011618 generate qid=37 ms=41.84 answer=#68fd259d
+1792354511.011682 cache qid=41 result=miss
+1792354511.017406 generate qid=39 ms=45.91 answer=#380b9fe5
+1792354511.017449 cache qid=43 result=miss
+1792354511.019883 retrieve qid=41 chunks=2 ctx_bytes=1667 approx_tokens=416
+1792354511.021697 retrieve qid=43 chunks=2 ctx_bytes=1619 approx_tokens=404
+1792354511.065726 generate qid=41 ms=45.82 answer=#53b2a577
+1792354511.065810 cache qid=102 result=miss
+1792354511.067056 generate qid=43 ms=45.34 answer=#5f06e05e
+1792354511.067092 cache qid=45 result=miss
+1792354511.069041 retrieve qid=45 chunks=2 ctx_bytes=1687 approx_tokens=421
+1792354511.070952 retrieve qid=102 chunks=2 ctx_bytes=1687 approx_tokens=421
+1792354511.122443 generate qid=45 ms=53.38 answer=#cd017ffb
+1792354511.122522 cache qid=104 result=miss
+1792354511.124572 retrieve qid=104 chunks=2 ctx_bytes=1717 approx_tokens=429
+1792354511.131960 generate qid=102 ms=60.99 answer=#cd017ffb
+1792354511.132024 cache qid=47 result=miss
+1792354511.133842 retrieve qid=47 chunks=2 ctx_bytes=1696 approx_tokens=424
+1792354511.159103 generate qid=104 ms=34.51 answer=#098377a6
+1792354511.159167 cache qid=106 result=miss
+1792354511.171358 retrieve qid=106 chunks=2 ctx_bytes=1745 approx_tokens=436
+1792354511.183900 generate qid=47 ms=50.04 answer=#2b071bfb
+1792354511.183977 cache qid=49 result=miss
+1792354511.186683 retrieve qid=49 chunks=2 ctx_bytes=1667 approx_tokens=416
+1792354511.206054 generate qid=106 ms=34.67 answer=#3e9b58b5
+1792354511.206118 cache qid=108 result=miss
+1792354511.207976 retrieve qid=108 chunks=2 ctx_bytes=1672 approx_tokens=418
+1792354511.222185 generate qid=49 ms=35.48 answer=#53b2a577
+1792354511.222248 cache qid=51 result=miss
+1792354511.224077 retrieve qid=51 chunks=2 ctx_bytes=1635 approx_tokens=408
+1792354511.243385 generate qid=108 ms=35.39 answer=#cfeba788
+1792354511.243491 cache qid=110 result=miss
+1792354511.245609 retrieve qid=110 chunks=2 ctx_bytes=1724 approx_tokens=431
+1792354511.269842 generate qid=51 ms=45.74 answer=#97d2eb51
+1792354511.269912 cache qid=53 result=miss
+1792354511.280459 retrieve qid=53 chunks=2 ctx_bytes=1690 approx_tokens=422
+1792354511.289804 generate qid=110 ms=44.17 answer=#3b8c894f
+1792354511.289871 cache qid=112 result=miss
+1792354511.291729 retrieve qid=112 chunks=2 ctx_bytes=1635 approx_tokens=408
+1792354511.315006 generate qid=53 ms=34.52 answer=#380b9fe5
+1792354511.315074 cache qid=55 result=miss
+1792354511.328150 retrieve qid=55 chunks=2 ctx_bytes=1635 approx_tokens=408
+1792354511.330797 generate qid=112 ms=39.04 answer=#97d2eb51
+1792354511.330857 cache qid=114 result=miss
+1792354511.332697 retrieve qid=114 chunks=2 ctx_bytes=1690 approx_tokens=422
+1792354511.370172 generate qid=55 ms=42.00 answer=#63996e02
+1792354511.370241 cache qid=57 result=miss
+1792354511.376503 generate qid=114 ms=43.79 answer=#cf98b6ce
+1792354511.376550 cache qid=116 result=miss
+1792354511.378845 retrieve qid=57 chunks=2 ctx_bytes=1695 approx_tokens=423
+1792354511.380862 retrieve qid=116 chunks=2 ctx_bytes=1722 approx_tokens=430
+1792354511.424918 generate qid=57 ms=46.04 answer=#99764677
+1792354511.424997 cache qid=59 result=miss
+1792354511.426908 generate qid=116 ms=46.03 answer=#516b1719
+1792354511.426956 cache qid=118 result=miss
+1792354511.428941 retrieve qid=59 chunks=2 ctx_bytes=1662 approx_tokens=415
+1792354511.430816 retrieve qid=118 chunks=2 ctx_bytes=1190 approx_tokens=297
+1792354511.470675 generate qid=59 ms=41.71 answer=#d0e96c01
+1792354511.470734 cache qid=61 result=miss
+1792354511.472502 generate qid=118 ms=41.67 answer=#5196d89e
+1792354511.472548 cache qid=120 result=miss
+1792354511.475642 retrieve qid=61 chunks=3 ctx_bytes=1958 approx_tokens=489
+1792354511.476180 retrieve qid=120 chunks=2 ctx_bytes=1677 approx_tokens=419
+1792354511.523881 generate qid=120 ms=47.27 answer=#7aa82f59
+1792354511.523958 cache qid=63 result=miss
+1792354511.525382 generate qid=61 ms=49.72 answer=#c6222830
+1792354511.525418 cache qid=122 result=miss
+1792354511.527383 retrieve qid=122 chunks=2 ctx_bytes=1710 approx_tokens=427
+1792354511.529337 retrieve qid=63 chunks=2 ctx_bytes=1684 approx_tokens=421
+1792354511.574098 generate qid=122 ms=46.68 answer=#73628ac9
+1792354511.574177 cache qid=65 result=miss
+1792354511.575852 generate qid=63 ms=46.50 answer=#f37e62a7
+1792354511.575889 cache qid=124 result=miss
+1792354511.579714 retrieve qid=65 chunks=2 ctx_bytes=1694 approx_tokens=423
+1792354511.580023 retrieve qid=124 chunks=2 ctx_bytes=1663 approx_tokens=415
+1792354511.636912 generate qid=124 ms=56.87 answer=#c3cb82f3
+1792354511.636980 cache qid=67 result=miss
+1792354511.637846 generate qid=65 ms=58.11 answer=#c1769036
+1792354511.637877 cache qid=126 result=miss
+1792354511.639810 retrieve qid=126 chunks=2 ctx_bytes=1710 approx_tokens=427
+1792354511.641699 retrieve qid=67 chunks=2 ctx_bytes=1690 approx_tokens=422
+1792354511.687649 generate qid=126 ms=47.81 answer=#73628ac9
+1792354511.688960 cache qid=69 result=miss
+1792354511.696874 generate qid=67 ms=55.16 answer=#380b9fe5
+1792354511.696933 cache qid=128 result=miss
+1792354511.699012 retrieve qid=69 chunks=2 ctx_bytes=1658 approx_tokens=414
+1792354511.701530 retrieve qid=128 chunks=2 ctx_bytes=1631 approx_tokens=407
+1792354511.758727 generate qid=69 ms=59.68 answer=#1a184ef8
+1792354511.758816 cache qid=130 result=miss
+1792354511.763800 generate qid=128 ms=62.25 answer=#f4691719
+1792354511.763870 cache qid=132 result=miss
+1792354511.768154 retrieve qid=132 chunks=2 ctx_bytes=1670 approx_tokens=417
+1792354511.768496 retrieve qid=130 chunks=2 ctx_bytes=1642 approx_tokens=410
+1792354511.825343 generate qid=130 ms=56.83 answer=#383ad197
+1792354511.825414 cache qid=71 result=miss
+1792354511.826163 generate qid=132 ms=57.99 answer=#a91ed766
+1792354511.826199 cache qid=73 result=miss
+1792354511.828122 retrieve qid=73 chunks=2 ctx_bytes=1656 approx_tokens=414
+1792354511.830121 retrieve qid=71 chunks=2 ctx_bytes=1649 approx_tokens=412
+1792354511.873732 generate qid=73 ms=45.59 answer=#cf07dae8
+1792354511.873787 cache qid=75 result=miss
+1792354511.875670 retrieve qid=75 chunks=2 ctx_bytes=1662 approx_tokens=415
+1792354511.877684 generate qid=71 ms=47.54 answer=#f33c70d0
+1792354511.877738 cache qid=77 result=miss
+1792354511.879653 retrieve qid=77 chunks=2 ctx_bytes=1671 approx_tokens=417
+1792354511.909313 generate qid=75 ms=33.62 answer=#a0530ef3
+1792354511.909376 cache qid=134 result=miss
+1792354511.924068 retrieve qid=134 chunks=2 ctx_bytes=1745 approx_tokens=436
+1792354511.924989 generate qid=77 ms=45.32 answer=#c183bd23
+1792354511.925043 cache qid=79 result=miss
+1792354511.926902 retrieve qid=79 chunks=2 ctx_bytes=1621 approx_tokens=405
+1792354511.970322 generate qid=134 ms=46.23 answer=#3e9b58b5
+1792354511.970386 cache qid=136 result=miss
+1792354511.972294 retrieve qid=136 chunks=2 ctx_bytes=1235 approx_tokens=308
+1792354511.973738 generate qid=79 ms=46.82 answer=#0d2a2631
+1792354511.973798 cache qid=81 result=miss
+1792354511.975688 retrieve qid=81 chunks=2 ctx_bytes=1679 approx_tokens=419
+1792354512.002574 generate qid=136 ms=30.26 answer=#2235e7fd
+1792354512.014297 cache qid=138 result=miss
+1792354512.016114 retrieve qid=138 chunks=2 ctx_bytes=1669 approx_tokens=417
+1792354512.018301 generate qid=81 ms=42.59 answer=#24136ef6
+1792354512.018355 cache qid=83 result=miss
+1792354512.020127 retrieve qid=83 chunks=2 ctx_bytes=1674 approx_tokens=418
+1792354512.063281 generate qid=138 ms=47.13 answer=#96333e10
+1792354512.063394 cache qid=140 result=miss
+1792354512.075740 retrieve qid=140 chunks=2 ctx_bytes=1681 approx_tokens=420
+1792354512.082011 generate qid=83 ms=61.86 answer=#49e0b577
+1792354512.082116 cache qid=85 result=miss
+1792354512.085320 retrieve qid=85 chunks=2 ctx_bytes=1655 approx_tokens=413
+1792354512.109953 generate qid=140 ms=34.18 answer=#e2b68ad4
+1792354512.110032 cache qid=142 result=miss
+1792354512.122055 retrieve qid=142 chunks=2 ctx_bytes=1684 approx_tokens=421
+1792354512.126097 generate qid=85 ms=40.74 answer=#4afa6f57
+1792354512.126161 cache qid=87 result=miss
+1792354512.128003 retrieve qid=87 chunks=2 ctx_bytes=1711 approx_tokens=427
+1792354512.176274 generate qid=142 ms=54.19 answer=#f37e62a7
+1792354512.176357 cache qid=144 result=miss
+1792354512.186092 generate qid=87 ms=58.06 answer=#283efa12
+1792354512.186204 cache qid=89 result=miss
+1792354512.188278 retrieve qid=144 chunks=2 ctx_bytes=1641 approx_tokens=410
+1792354512.191111 retrieve qid=89 chunks=2 ctx_bytes=1745 approx_tokens=436
+1792354512.240198 generate qid=144 ms=51.88 answer=#a8094487
+1792354512.240287 cache qid=91 result=miss
+1792354512.245162 generate qid=89 ms=54.02 answer=#3e9b58b5
+1792354512.245240 cache qid=93 result=miss
+1792354512.248018 retrieve qid=91 chunks=2 ctx_bytes=1702 approx_tokens=425
+1792354512.250316 retrieve qid=93 chunks=2 ctx_bytes=1656 approx_tokens=414
+1792354512.291331 generate qid=91 ms=43.28 answer=#8251af02
+1792354512.291417 cache qid=95 result=miss
+1792354512.298044 generate qid=93 ms=47.70 answer=#cf07dae8
+1792354512.298094 cache qid=146 result=miss
+1792354512.301593 retrieve qid=146 chunks=2 ctx_bytes=1650 approx_tokens=412
+1792354512.302286 retrieve qid=95 chunks=2 ctx_bytes=1669 approx_tokens=417
+1792354512.344517 generate qid=146 ms=42.89 answer=#68633122
+1792354512.344594 cache qid=97 result=miss
+1792354512.351859 generate qid=95 ms=49.55 answer=#96333e10
+1792354512.351951 cache qid=99 result=miss
+1792354512.354003 retrieve qid=97 chunks=2 ctx_bytes=1674 approx_tokens=418
+1792354512.356385 retrieve qid=99 chunks=2 ctx_bytes=1684 approx_tokens=421
+1792354512.401839 generate qid=97 ms=47.81 answer=#49e0b577
+1792354512.401927 cache qid=148 result=miss
+1792354512.407992 generate qid=99 ms=51.59 answer=#f37e62a7
+1792354512.408050 cache qid=150 result=miss
+1792354512.412507 retrieve qid=150 chunks=2 ctx_bytes=1712 approx_tokens=428
+1792354512.412821 retrieve qid=148 chunks=2 ctx_bytes=1635 approx_tokens=408
+1792354512.470603 generate qid=150 ms=58.07 answer=#f3ca42f6
+1792354512.470681 cache qid=152 result=miss
+1792354512.472751 retrieve qid=152 chunks=2 ctx_bytes=1642 approx_tokens=410
+1792354512.476045 generate qid=148 ms=63.21 answer=#97d2eb51
+1792354512.476108 cache qid=101 result=miss
+1792354512.478029 retrieve qid=101 chunks=2 ctx_bytes=1644 approx_tokens=411
+1792354512.506202 generate qid=152 ms=33.43 answer=#383ad197
+1792354512.516886 cache qid=154 result=miss
+1792354512.518719 retrieve qid=154 chunks=2 ctx_bytes=1675 approx_tokens=418
+1792354512.522089 generate qid=101 ms=44.04 answer=#99b81545
+1792354512.522142 cache qid=156 result=miss
+1792354512.523998 retrieve qid=156 chunks=2 ctx_bytes=1711 approx_tokens=427
+1792354512.552472 generate qid=154 ms=33.73 answer=#772db481
+1792354512.552546 cache qid=158 result=miss
+1792354512.564531 retrieve qid=158 chunks=3 ctx_bytes=1998 approx_tokens=499
+1792354512.568609 generate qid=156 ms=44.59 answer=#283efa12
+1792354512.568682 cache qid=103 result=miss
+1792354512.571211 retrieve qid=103 chunks=2 ctx_bytes=1649 approx_tokens=412
+1792354512.608713 generate qid=158 ms=44.16 answer=#94632caa
+1792354512.608797 cache qid=160 result=miss
+1792354512.614429 generate qid=103 ms=43.20 answer=#f33c70d0
+1792354512.614489 cache qid=162 result=miss
+1792354512.616849 retrieve qid=160 chunks=2 ctx_bytes=1744 approx_tokens=436
+1792354512.618640 retrieve qid=162 chunks=2 ctx_bytes=1668 approx_tokens=417
+1792354512.670810 generate qid=160 ms=53.94 answer=#cd7963a7
+1792354512.670897 cache qid=164 result=miss
+1792354512.678638 generate qid=162 ms=59.98 answer=#68fd259d
+1792354512.678695 cache qid=166 result=miss
+1792354512.680696 retrieve qid=164 chunks=2 ctx_bytes=1202 approx_tokens=300
+1792354512.683364 retrieve qid=166 chunks=3 ctx_bytes=1509 approx_tokens=377
+1792354512.710675 generate qid=164 ms=29.95 answer=#4378d720
+1792354512.710742 cache qid=168 result=miss
+1792354512.722706 retrieve qid=168 chunks=2 ctx_bytes=1662 approx_tokens=415
+1792354512.725045 generate qid=166 ms=41.66 answer=#3e6ee587
+1792354512.725449 cache qid=105 result=miss
+1792354512.727354 retrieve qid=105 chunks=2 ctx_bytes=1663 approx_tokens=415
+1792354512.765911 generate qid=168 ms=43.18 answer=#b91ec9f6
+1792354512.765989 cache qid=170 result=miss
+1792354512.776262 retrieve qid=170 chunks=2 ctx_bytes=1681 approx_tokens=420
+1792354512.782716 generate qid=105 ms=55.34 answer=#c3cb82f3
+1792354512.782792 cache qid=107 result=miss
+1792354512.785361 retrieve qid=107 chunks=2 ctx_bytes=1656 approx_tokens=414
+1792354512.810192 generate qid=170 ms=33.90 answer=#518dd27c
+1792354512.810266 cache qid=172 result=miss
+1792354512.822336 retrieve qid=172 chunks=2 ctx_bytes=1628 approx_tokens=407
+1792354512.825775 generate qid=107 ms=40.39 answer=#cf07dae8
+1792354512.825830 cache qid=109 result=miss
+1792354512.827621 retrieve qid=109 chunks=2 ctx_bytes=1635 approx_tokens=408
+1792354512.868500 generate qid=172 ms=46.13 answer=#95d4fef5
+1792354512.868590 cache qid=174 result=miss
+1792354512.880362 retrieve qid=174 chunks=2 ctx_bytes=1631 approx_tokens=407
+1792354512.885472 generate qid=109 ms=57.83 answer=#97d2eb51
+1792354512.885575 cache qid=111 result=miss
+1792354512.888077 retrieve qid=111 chunks=2 ctx_bytes=1670 approx_tokens=417
+1792354512.913332 generate qid=174 ms=32.94 answer=#f4691719
+1792354512.913392 cache qid=176 result=miss
+1792354512.925341 retrieve qid=176 chunks=2 ctx_bytes=1724 approx_tokens=431
+1792354512.928586 generate qid=111 ms=40.49 answer=#a91ed766
+1792354512.928655 cache qid=113 result=miss
+1792354512.930474 retrieve qid=113 chunks=2 ctx_bytes=1188 approx_tokens=297
+1792354512.967398 generate qid=176 ms=42.03 answer=#3b8c894f
+1792354512.967450 cache qid=178 result=miss
+1792354512.970988 generate qid=113 ms=40.49 answer=#d738af33
+1792354512.971055 cache qid=115 result=miss
+1792354512.972812 retrieve qid=115 chunks=3 ctx_bytes=1962 approx_tokens=490
+1792354512.972905 retrieve qid=178 chunks=2 ctx_bytes=1702 approx_tokens=425
+1792354513.020894 generate qid=115 ms=48.06 answer=#b10f138e
+1792354513.020964 cache qid=117 result=miss
+1792354513.023499 generate qid=178 ms=50.57 answer=#8251af02
+1792354513.023585 cache qid=119 result=miss
+1792354513.025519 retrieve qid=117 chunks=2 ctx_bytes=1675 approx_tokens=418
+1792354513.027478 retrieve qid=119 chunks=2 ctx_bytes=1722 approx_tokens=430
+1792354513.067366 generate qid=117 ms=41.83 answer=#772db481
+1792354513.067426 cache qid=121 result=miss
+1792354513.076880 generate qid=119 ms=49.39 answer=#516b1719
+1792354513.076936 cache qid=123 result=miss
+1792354513.079043 retrieve qid=121 chunks=2 ctx_bytes=1190 approx_tokens=297
+1792354513.080993 retrieve qid=123 chunks=2 ctx_bytes=1740 approx_tokens=435
+1792354513.126987 generate qid=121 ms=47.92 answer=#b7fa4819
+1792354513.127063 cache qid=125 result=miss
+1792354513.136452 generate qid=123 ms=55.44 answer=#8b908682
+1792354513.136502 cache qid=127 result=miss
+1792354513.138440 retrieve qid=125 chunks=2 ctx_bytes=1729 approx_tokens=432
+1792354513.140296 retrieve qid=127 chunks=2 ctx_bytes=1711 approx_tokens=427
+1792354513.184197 generate qid=125 ms=45.73 answer=#b54d8a3b
+1792354513.184263 cache qid=180 result=miss
+1792354513.186196 retrieve qid=180 chunks=2 ctx_bytes=1686 approx_tokens=421
+1792354513.187574 generate qid=127 ms=47.26 answer=#283efa12
+1792354513.187630 cache qid=182 result=miss
+1792354513.189556 retrieve qid=182 chunks=2 ctx_bytes=1669 approx_tokens=417
+1792354513.233002 generate qid=180 ms=46.78 answer=#f95d9096
+1792354513.233105 cache qid=129 result=miss
+1792354513.235216 retrieve qid=129 chunks=2 ctx_bytes=1687 approx_tokens=421
+1792354513.238816 generate qid=182 ms=49.24 answer=#32ad8642
+1792354513.238885 cache qid=131 result=miss
+1792354513.240784 retrieve qid=131 chunks=2 ctx_bytes=1640 approx_tokens=410
+1792354513.268711 generate qid=129 ms=33.47 answer=#cd017ffb
+1792354513.278301 cache qid=133 result=miss
+1792354513.280254 retrieve qid=133 chunks=2 ctx_bytes=1642 approx_tokens=410
+1792354513.283646 generate qid=131 ms=42.84 answer=#6a870614
+1792354513.283701 cache qid=184 result=miss
+1792354513.285492 retrieve qid=184 chunks=2 ctx_bytes=1718 approx_tokens=429
+1792354513.313469 generate qid=133 ms=33.19 answer=#383ad197
+1792354513.313533 cache qid=135 result=miss
+1792354513.324462 retrieve qid=135 chunks=2 ctx_bytes=1682 approx_tokens=420
+1792354513.332929 generate qid=184 ms=47.42 answer=#36e008a4
+1792354513.333003 cache qid=186 result=miss
+1792354513.335044 retrieve qid=186 chunks=2 ctx_bytes=1692 approx_tokens=423
+1792354513.360224 generate qid=135 ms=35.73 answer=#ac53511e
+1792354513.360320 cache qid=137 result=miss
+1792354513.372266 retrieve qid=137 chunks=2 ctx_bytes=1697 approx_tokens=424
+1792354513.385726 generate qid=186 ms=50.66 answer=#6873dfb6
+1792354513.385826 cache qid=188 result=miss
+1792354513.387979 retrieve qid=188 chunks=2 ctx_bytes=1690 approx_tokens=422
+1792354513.410093 generate qid=137 ms=37.80 answer=#4e626a23
+1792354513.410169 cache qid=139 result=miss
+1792354513.412354 retrieve qid=139 chunks=2 ctx_bytes=1184 approx_tokens=296
+1792354513.428609 generate qid=188 ms=40.60 answer=#cf98b6ce
+1792354513.428671 cache qid=190 result=miss
+1792354513.430613 retrieve qid=190 chunks=2 ctx_bytes=1621 approx_tokens=405
+1792354513.449192 generate qid=139 ms=36.80 answer=#5e524cd5
+1792354513.449264 cache qid=141 result=miss
+1792354513.451239 retrieve qid=141 chunks=2 ctx_bytes=1744 approx_tokens=436
+1792354513.475083 generate qid=190 ms=44.45 answer=#0d2a2631
+1792354513.475158 cache qid=192 result=miss
+1792354513.487160 retrieve qid=192 chunks=2 ctx_bytes=1684 approx_tokens=421
+1792354513.491378 generate qid=141 ms=40.12 answer=#cd7963a7
+1792354513.491457 cache qid=143 result=miss
+1792354513.493351 retrieve qid=143 chunks=2 ctx_bytes=1646 approx_tokens=411
+1792354513.529290 generate qid=192 ms=42.10 answer=#23cd8942
+1792354513.529348 cache qid=194 result=miss
+1792354513.534832 generate qid=143 ms=41.46 answer=#69954ace
+1792354513.534876 cache qid=145 result=miss
+1792354513.536776 retrieve qid=194 chunks=2 ctx_bytes=1723 approx_tokens=430
+1792354513.538607 retrieve qid=145 chunks=2 ctx_bytes=1656 approx_tokens=414
+1792354513.582330 generate qid=194 ms=45.53 answer=#374f9400
+1792354513.582389 cache qid=196 result=miss
+1792354513.583990 generate qid=145 ms=45.37 answer=#d5868a68
+1792354513.584033 cache qid=147 result=miss
+1792354513.587386 retrieve qid=196 chunks=2 ctx_bytes=1732 approx_tokens=433
+1792354513.587761 retrieve qid=147 chunks=2 ctx_bytes=1674 approx_tokens=418
+1792354513.633208 generate qid=196 ms=45.79 answer=#4736b752
+1792354513.633276 cache qid=198 result=miss
+1792354513.634824 generate qid=147 ms=47.05 answer=#eb3159d2
+1792354513.634877 cache qid=149 result=miss
+1792354513.636744 retrieve qid=198 chunks=3 ctx_bytes=1934 approx_tokens=483
+1792354513.638614 retrieve qid=149 chunks=2 ctx_bytes=1711 approx_tokens=427
+1792354513.679989 generate qid=198 ms=43.22 answer=#f1c1e9d6
+1792354513.680051 cache qid=200 result=miss
+1792354513.685640 generate qid=149 ms=47.01 answer=#283efa12
+1792354513.685680 cache qid=151 result=miss
+1792354513.687540 retrieve qid=200 chunks=2 ctx_bytes=1183 approx_tokens=295
+1792354513.689393 retrieve qid=151 chunks=2 ctx_bytes=1690 approx_tokens=422
+1792354513.717390 generate qid=200 ms=29.83 answer=#354d4584
+1792354513.717484 cache qid=202 result=miss
+1792354513.729557 retrieve qid=202 chunks=2 ctx_bytes=1711 approx_tokens=427
+1792354513.733322 generate qid=151 ms=43.91 answer=#380b9fe5
+1792354513.733375 cache qid=204 result=miss
+1792354513.735198 retrieve qid=204 chunks=2 ctx_bytes=1681 approx_tokens=420
+1792354513.775641 generate qid=202 ms=46.06 answer=#283efa12
+1792354513.775715 cache qid=206 result=miss
+1792354513.787732 retrieve qid=206 chunks=2 ctx_bytes=1184 approx_tokens=296
+1792354513.793226 generate qid=204 ms=58.01 answer=#518dd27c
+1792354513.793293 cache qid=208 result=miss
+1792354513.795746 retrieve qid=208 chunks=2 ctx_bytes=1710 approx_tokens=427
+1792354513.823041 generate qid=206 ms=35.28 answer=#5e524cd5
+1792354513.823131 cache qid=210 result=miss
+1792354513.835099 retrieve qid=210 chunks=2 ctx_bytes=1678 approx_tokens=419
+1792354513.838606 generate qid=208 ms=42.84 answer=#73628ac9
+1792354513.838665 cache qid=153 result=miss
+1792354513.840998 retrieve qid=153 chunks=3 ctx_bytes=1958 approx_tokens=489
+1792354513.868380 generate qid=210 ms=33.26 answer=#b1c8e898
+1792354513.878283 cache qid=155 result=miss
+1792354513.880129 retrieve qid=155 chunks=2 ctx_bytes=1698 approx_tokens=424
+1792354513.885688 generate qid=153 ms=44.67 answer=#c6222830
+1792354513.885743 cache qid=157 result=miss
+1792354513.887515 retrieve qid=157 chunks=2 ctx_bytes=1681 approx_tokens=420
+1792354513.913496 generate qid=155 ms=33.34 answer=#25dbf33d
+1792354513.913554 cache qid=159 result=miss
+1792354513.925596 retrieve qid=159 chunks=2 ctx_bytes=1682 approx_tokens=420
+1792354513.929447 generate qid=157 ms=41.91 answer=#c8dd0431
+1792354513.929506 cache qid=161 result=miss
+1792354513.931307 retrieve qid=161 chunks=2 ctx_bytes=1628 approx_tokens=407
+1792354513.967432 generate qid=159 ms=41.81 answer=#ac53511e
+1792354513.967488 cache qid=212 result=miss
+1792354513.972360 generate qid=161 ms=41.03 answer=#95d4fef5
+1792354513.972412 cache qid=163 result=miss
+1792354513.974414 retrieve qid=212 chunks=2 ctx_bytes=1681 approx_tokens=420
+1792354513.976240 retrieve qid=163 chunks=2 ctx_bytes=1705 approx_tokens=426
+1792354514.015656 generate qid=212 ms=41.22 answer=#c8dd0431
+1792354514.015719 cache qid=214 result=miss
+1792354514.021626 generate qid=163 ms=45.37 answer=#6abe5ddf
+1792354514.021671 cache qid=165 result=miss
+1792354514.023509 retrieve qid=214 chunks=2 ctx_bytes=1698 approx_tokens=424
+1792354514.025269 retrieve qid=165 chunks=2 ctx_bytes=1628 approx_tokens=407
+1792354514.068920 generate qid=214 ms=45.39 answer=#25dbf33d
+1792354514.068994 cache qid=216 result=miss
+1792354514.071383 retrieve qid=216 chunks=2 ctx_bytes=1740 approx_tokens=435
+1792354514.072428 generate qid=165 ms=47.14 answer=#95d4fef5
+1792354514.072513 cache qid=167 result=miss
+1792354514.075153 retrieve qid=167 chunks=2 ctx_bytes=1667 approx_tokens=416
+1792354514.135992 generate qid=216 ms=64.58 answer=#8b908682
+1792354514.136061 cache qid=218 result=miss
+1792354514.139975 generate qid=167 ms=64.79 answer=#cfbd9601
+1792354514.140110 cache qid=169 result=miss
+1792354514.140512 retrieve qid=218 chunks=2 ctx_bytes=1694 approx_tokens=423
+1792354514.142431 retrieve qid=169 chunks=2 ctx_bytes=1667 approx_tokens=416
+1792354514.183476 generate qid=218 ms=42.94 answer=#c1769036
+1792354514.183579 cache qid=220 result=miss
+1792354514.189830 generate qid=169 ms=47.37 answer=#62ea49cf
+1792354514.189884 cache qid=171 result=miss
+1792354514.191918 retrieve qid=220 chunks=3 ctx_bytes=1990 approx_tokens=497
+1792354514.193867 retrieve qid=171 chunks=2 ctx_bytes=1629 approx_tokens=407
+1792354514.240345 generate qid=220 ms=48.40 answer=#dcb12bb2
+1792354514.240422 cache qid=222 result=miss
+1792354514.242718 generate qid=171 ms=48.83 answer=#833c5cc5
+1792354514.242763 cache qid=173 result=miss
+1792354514.244792 retrieve qid=222 chunks=2 ctx_bytes=1190 approx_tokens=297
+1792354514.246715 retrieve qid=173 chunks=2 ctx_bytes=1723 approx_tokens=430
+1792354514.289012 generate qid=222 ms=44.19 answer=#b7fa4819
+1792354514.289111 cache qid=224 result=miss
+1792354514.302319 generate qid=173 ms=55.58 answer=#374f9400
+1792354514.302415 cache qid=175 result=miss
+1792354514.304886 retrieve qid=175 chunks=2 ctx_bytes=1223 approx_tokens=305
+1792354514.305079 retrieve qid=224 chunks=2 ctx_bytes=1656 approx_tokens=414
+1792354514.362381 generate qid=175 ms=57.46 answer=#3d16141a
+1792354514.362470 cache qid=226 result=miss
+1792354514.364475 retrieve qid=226 chunks=2 ctx_bytes=1682 approx_tokens=420
+1792354514.368612 generate qid=224 ms=63.52 answer=#cf07dae8
+1792354514.368678 cache qid=228 result=miss
+1792354514.370776 retrieve qid=228 chunks=2 ctx_bytes=1660 approx_tokens=415
+1792354514.413108 generate qid=226 ms=48.58 answer=#ac53511e
+1792354514.413253 cache qid=230 result=miss
+1792354514.424391 retrieve qid=230 chunks=2 ctx_bytes=1695 approx_tokens=423
+1792354514.424644 generate qid=228 ms=53.85 answer=#9c1f1d95
+1792354514.424700 cache qid=177 result=miss
+1792354514.426635 retrieve qid=177 chunks=2 ctx_bytes=1641 approx_tokens=410
+1792354514.467394 generate qid=230 ms=42.97 answer=#99764677
+1792354514.467465 cache qid=232 result=miss
+1792354514.473495 generate qid=177 ms=46.84 answer=#a8094487
+1792354514.473540 cache qid=234 result=miss
+1792354514.475675 retrieve qid=232 chunks=2 ctx_bytes=1724 approx_tokens=431
+1792354514.477636 retrieve qid=234 chunks=2 ctx_bytes=1179 approx_tokens=294
+1792354514.516239 generate qid=234 ms=38.57 answer=#fd7f94ea
+1792354514.516304 cache qid=236 result=miss
+1792354514.520416 generate qid=232 ms=44.72 answer=#8a99bfdf
+1792354514.520459 cache qid=238 result=miss
+1792354514.523486 retrieve qid=236 chunks=2 ctx_bytes=1730 approx_tokens=432
+1792354514.524014 retrieve qid=238 chunks=2 ctx_bytes=1686 approx_tokens=421
+1792354514.583141 generate qid=236 ms=59.62 answer=#06eca498
+1792354514.583276 cache qid=240 result=miss
+1792354514.591679 generate qid=238 ms=67.64 answer=#d4a04c42
+1792354514.591767 cache qid=179 result=miss
+1792354514.594254 retrieve qid=240 chunks=2 ctx_bytes=1644 approx_tokens=411
+1792354514.597006 retrieve qid=179 chunks=2 ctx_bytes=1670 approx_tokens=417
+1792354514.652025 generate qid=240 ms=57.73 answer=#99b81545
+1792354514.652139 cache qid=242 result=miss
+1792354514.660136 generate qid=179 ms=63.09 answer=#fb00d76f
+1792354514.660221 cache qid=181 result=miss
+1792354514.660615 retrieve qid=242 chunks=2 ctx_bytes=1659 approx_tokens=414
+1792354514.662760 retrieve qid=181 chunks=2 ctx_bytes=1667 approx_tokens=416
+1792354514.712663 generate qid=242 ms=52.02 answer=#b27efb82
+1792354514.712765 cache qid=244 result=miss
+1792354514.724229 retrieve qid=244 chunks=3 ctx_bytes=1958 approx_tokens=489
+1792354514.727697 generate qid=181 ms=64.91 answer=#53b2a577
+1792354514.727759 cache qid=183 result=miss
+1792354514.729781 retrieve qid=183 chunks=2 ctx_bytes=1658 approx_tokens=414
+1792354514.773898 generate qid=244 ms=49.65 answer=#f5aeccbf
+1792354514.773958 cache qid=246 result=miss
+1792354514.775843 retrieve qid=246 chunks=2 ctx_bytes=1642 approx_tokens=410
+1792354514.778536 generate qid=183 ms=48.74 answer=#a3581156
+1792354514.778597 cache qid=185 result=miss
+1792354514.780451 retrieve qid=185 chunks=2 ctx_bytes=1644 approx_tokens=411
+1792354514.824578 generate qid=246 ms=48.71 answer=#25931ad3
+1792354514.824656 cache qid=248 result=miss
+1792354514.826740 retrieve qid=248 chunks=3 ctx_bytes=1990 approx_tokens=497
+1792354514.840090 generate qid=185 ms=59.61 answer=#99b81545
+1792354514.840251 cache qid=187 result=miss
+1792354514.842450 retrieve qid=187 chunks=2 ctx_bytes=1697 approx_tokens=424
+1792354514.868511 generate qid=248 ms=41.74 answer=#dcb12bb2
+1792354514.868593 cache qid=250 result=miss
+1792354514.880195 retrieve qid=250 chunks=2 ctx_bytes=1747 approx_tokens=436
+1792354514.892242 generate qid=187 ms=49.76 answer=#a9dad385
+1792354514.892319 cache qid=252 result=miss
+1792354514.894336 retrieve qid=252 chunks=2 ctx_bytes=1656 approx_tokens=414
+1792354514.932851 generate qid=250 ms=52.62 answer=#00ab9992
+1792354514.932945 cache qid=254 result=miss
+1792354514.944368 retrieve qid=254 chunks=2 ctx_bytes=1619 approx_tokens=404
+1792354514.953429 generate qid=252 ms=59.07 answer=#d5868a68
+1792354514.953516 cache qid=189 result=miss
+1792354514.955590 retrieve qid=189 chunks=2 ctx_bytes=1723 approx_tokens=430
+1792354514.996472 generate qid=254 ms=52.07 answer=#0be55778
+1792354514.996557 cache qid=256 result=miss
+1792354514.999122 retrieve qid=256 chunks=2 ctx_bytes=1680 approx_tokens=420
+1792354515.004146 generate qid=189 ms=48.53 answer=#374f9400
+1792354515.004220 cache qid=191 result=miss
+1792354515.006214 retrieve qid=191 chunks=3 ctx_bytes=1996 approx_tokens=499
+1792354515.048183 generate qid=256 ms=49.03 answer=#9d093a90
+1792354515.048298 cache qid=193 result=miss
+1792354515.060396 retrieve qid=193 chunks=2 ctx_bytes=1670 approx_tokens=417
+1792354515.066276 generate qid=191 ms=60.04 answer=#f581adc5
+1792354515.066363 cache qid=195 result=miss
+1792354515.068385 retrieve qid=195 chunks=2 ctx_bytes=1702 approx_tokens=425
+1792354515.095243 generate qid=193 ms=34.82 answer=#a91ed766
+1792354515.095319 cache qid=197 result=miss
+1792354515.107163 retrieve qid=197 chunks=2 ctx_bytes=1687 approx_tokens=421
+1792354515.113896 generate qid=195 ms=46.66 answer=#8251af02
+1792354515.113979 cache qid=199 result=miss
+1792354515.115880 retrieve qid=199 chunks=2 ctx_bytes=1775 approx_tokens=443
+1792354515.159431 generate qid=197 ms=45.49 answer=#918e9f3a
+1792354515.159522 cache qid=258 result=miss
+1792354515.168243 retrieve qid=258 chunks=2 ctx_bytes=1719 approx_tokens=429
+1792354515.175190 generate qid=199 ms=59.28 answer=#9905f6ac
+1792354515.175296 cache qid=260 result=miss
+1792354515.177461 retrieve qid=260 chunks=2 ctx_bytes=1696 approx_tokens=424
+1792354515.203192 generate qid=258 ms=34.92 answer=#e0b8f127
+1792354515.203270 cache qid=262 result=miss
+1792354515.215051 retrieve qid=262 chunks=2 ctx_bytes=1722 approx_tokens=430
+1792354515.219695 generate qid=260 ms=42.21 answer=#2b071bfb
+1792354515.219746 cache qid=201 result=miss
+1792354515.222110 retrieve qid=201 chunks=2 ctx_bytes=1248 approx_tokens=312
+1792354515.258687 generate qid=262 ms=43.61 answer=#516b1719
+1792354515.258779 cache qid=264 result=miss
+1792354515.267398 generate qid=201 ms=45.27 answer=#db2b5c89
+1792354515.267452 cache qid=203 result=miss
+1792354515.269389 retrieve qid=264 chunks=3 ctx_bytes=1987 approx_tokens=496
+1792354515.271230 retrieve qid=203 chunks=2 ctx_bytes=1698 approx_tokens=424
+1792354515.337517 generate qid=264 ms=68.11 answer=#9664a4ec
+1792354515.337588 cache qid=266 result=miss
+1792354515.339633 retrieve qid=266 chunks=2 ctx_bytes=1650 approx_tokens=412
+1792354515.341423 generate qid=203 ms=70.17 answer=#25dbf33d
+1792354515.341494 cache qid=205 result=miss
+1792354515.343436 retrieve qid=205 chunks=2 ctx_bytes=1687 approx_tokens=421
+1792354515.385420 generate qid=266 ms=45.76 answer=#68633122
+1792354515.385480 cache qid=268 result=miss
+1792354515.387911 retrieve qid=268 chunks=2 ctx_bytes=1687 approx_tokens=421
+1792354515.390398 generate qid=205 ms=46.94 answer=#cd017ffb
+1792354515.390456 cache qid=270 result=miss
+1792354515.392358 retrieve qid=270 chunks=3 ctx_bytes=1991 approx_tokens=497
+1792354515.433690 generate qid=268 ms=45.75 answer=#918e9f3a
+1792354515.433747 cache qid=272 result=miss
+1792354515.435577 retrieve qid=272 chunks=2 ctx_bytes=1190 approx_tokens=297
+1792354515.439921 generate qid=270 ms=47.54 answer=#4ea11560
+1792354515.439976 cache qid=274 result=miss
+1792354515.442339 retrieve qid=274 chunks=2 ctx_bytes=1711 approx_tokens=427
+1792354515.465397 generate qid=272 ms=29.80 answer=#b7fa4819
+1792354515.465494 cache qid=207 result=miss
+1792354515.479088 retrieve qid=207 chunks=2 ctx_bytes=1640 approx_tokens=410
+1792354515.488869 generate qid=274 ms=46.51 answer=#2bb8413a
+1792354515.488947 cache qid=209 result=miss
+1792354515.491537 retrieve qid=209 chunks=2 ctx_bytes=1679 approx_tokens=419
+1792354515.512928 generate qid=207 ms=33.81 answer=#6a870614
+1792354515.513038 cache qid=211 result=miss
+1792354515.522916 retrieve qid=211 chunks=2 ctx_bytes=1692 approx_tokens=423
+1792354515.531490 generate qid=209 ms=39.93 answer=#24136ef6
+1792354515.531564 cache qid=276 result=miss
+1792354515.533582 retrieve qid=276 chunks=3 ctx_bytes=1509 approx_tokens=377
+1792354515.556684 generate qid=211 ms=33.74 answer=#6873dfb6
+1792354515.556756 cache qid=213 result=miss
+1792354515.566965 retrieve qid=213 chunks=2 ctx_bytes=1684 approx_tokens=421
+1792354515.570986 generate qid=276 ms=37.38 answer=#3e6ee587
+1792354515.571050 cache qid=278 result=miss
+1792354515.573074 retrieve qid=278 chunks=2 ctx_bytes=1226 approx_tokens=306
+1792354515.600843 generate qid=213 ms=33.85 answer=#8697948c
+1792354515.600927 cache qid=215 result=miss
+1792354515.611028 retrieve qid=215 chunks=2 ctx_bytes=1200 approx_tokens=300
+1792354515.613461 generate qid=278 ms=40.36 answer=#11684d77
+1792354515.613515 cache qid=280 result=miss
+1792354515.615335 retrieve qid=280 chunks=2 ctx_bytes=1659 approx_tokens=414
+1792354515.640884 generate qid=215 ms=29.83 answer=#1be41616
+1792354515.640965 cache qid=217 result=miss
+1792354515.652983 retrieve qid=217 chunks=2 ctx_bytes=1642 approx_tokens=410
+1792354515.658801 generate qid=280 ms=43.44 answer=#b4e80a5f
+1792354515.658900 cache qid=282 result=miss
+1792354515.660953 retrieve qid=282 chunks=3 ctx_bytes=1935 approx_tokens=483
+1792354515.686434 generate qid=217 ms=33.43 answer=#25931ad3
+1792354515.686500 cache qid=219 result=miss
+1792354515.698509 retrieve qid=219 chunks=2 ctx_bytes=1706 approx_tokens=426
+1792354515.704294 generate qid=282 ms=43.32 answer=#76a6e61a
+1792354515.704349 cache qid=284 result=miss
+1792354515.706682 retrieve qid=284 chunks=2 ctx_bytes=1649 approx_tokens=412
+1792354515.749439 generate qid=219 ms=50.89 answer=#104e479b
+1792354515.749504 cache qid=221 result=miss
+1792354515.751357 retrieve qid=221 chunks=2 ctx_bytes=1635 approx_tokens=408
+1792354515.752980 generate qid=284 ms=46.28 answer=#f33c70d0
+1792354515.753033 cache qid=286 result=miss
+1792354515.754819 retrieve qid=286 chunks=2 ctx_bytes=1711 approx_tokens=427
+1792354515.784816 generate qid=221 ms=33.43 answer=#63996e02
+1792354515.784876 cache qid=223 result=miss
+1792354515.796809 retrieve qid=223 chunks=2 ctx_bytes=1188 approx_tokens=297
+1792354515.800666 generate qid=286 ms=45.83 answer=#283efa12
+1792354515.800721 cache qid=288 result=miss
+1792354515.802482 retrieve qid=288 chunks=2 ctx_bytes=1677 approx_tokens=419
+1792354515.826630 generate qid=223 ms=29.80 answer=#d738af33
+1792354515.826718 cache qid=225 result=miss
+1792354515.838641 retrieve qid=225 chunks=2 ctx_bytes=1677 approx_tokens=419
+1792354515.842276 generate qid=288 ms=39.78 answer=#1ff39d3c
+1792354515.842336 cache qid=290 result=miss
+1792354515.844111 retrieve qid=290 chunks=2 ctx_bytes=1649 approx_tokens=412
+1792354515.872655 generate qid=225 ms=33.99 answer=#7aa82f59
+1792354515.872729 cache qid=227 result=miss
+1792354515.886955 retrieve qid=227 chunks=2 ctx_bytes=1674 approx_tokens=418
+1792354515.888088 generate qid=290 ms=43.96 answer=#f33c70d0
+1792354515.888140 cache qid=292 result=miss
+1792354515.889987 retrieve qid=292 chunks=2 ctx_bytes=1190 approx_tokens=297
+1792354515.930622 generate qid=227 ms=43.65 answer=#fe43698a
+1792354515.930691 cache qid=229 result=miss
+1792354515.930997 generate qid=292 ms=40.98 answer=#5196d89e
+1792354515.931032 cache qid=294 result=miss
+1792354515.932895 retrieve qid=294 chunks=2 ctx_bytes=1732 approx_tokens=433
+1792354515.934614 retrieve qid=229 chunks=2 ctx_bytes=1188 approx_tokens=297
+1792354515.980746 generate qid=229 ms=46.11 answer=#d738af33
+1792354515.980832 cache qid=231 result=miss
+1792354515.983326 generate qid=294 ms=50.41 answer=#4736b752
+1792354515.983385 cache qid=296 result=miss
+1792354515.985569 retrieve qid=231 chunks=2 ctx_bytes=1650 approx_tokens=412
+1792354515.987550 retrieve qid=296 chunks=2 ctx_bytes=1720 approx_tokens=430
+1792354516.027155 generate qid=231 ms=41.56 answer=#68633122
+1792354516.027228 cache qid=233 result=miss
+1792354516.036962 generate qid=296 ms=49.38 answer=#90f23d90
+1792354516.037030 cache qid=298 result=miss
+1792354516.038858 retrieve qid=298 chunks=2 ctx_bytes=1632 approx_tokens=408
+1792354516.038955 retrieve qid=233 chunks=2 ctx_bytes=1642 approx_tokens=410
+1792354516.084321 generate qid=298 ms=45.43 answer=#77ded104
+1792354516.084403 cache qid=235 result=miss
+1792354516.086453 generate qid=233 ms=47.49 answer=#383ad197
+1792354516.086513 cache qid=300 result=miss
+1792354516.088998 retrieve qid=235 chunks=2 ctx_bytes=1729 approx_tokens=432
+1792354516.090814 retrieve qid=300 chunks=2 ctx_bytes=1190 approx_tokens=297
+1792354516.131303 generate qid=235 ms=42.28 answer=#b62ea782
+1792354516.131373 cache qid=237 result=miss
+1792354516.133344 generate qid=300 ms=42.51 answer=#b7fa4819
+1792354516.133393 cache qid=302 result=miss
+1792354516.135334 retrieve qid=237 chunks=2 ctx_bytes=1670 approx_tokens=417
+1792354516.137662 retrieve qid=302 chunks=2 ctx_bytes=1672 approx_tokens=418
+1792354516.178333 generate qid=237 ms=42.97 answer=#a91ed766
+1792354516.178408 cache qid=239 result=miss
+1792354516.186539 generate qid=302 ms=48.86 answer=#cfeba788
+1792354516.186584 cache qid=304 result=miss
+1792354516.188507 retrieve qid=239 chunks=2 ctx_bytes=1747 approx_tokens=436
+1792354516.190747 retrieve qid=304 chunks=2 ctx_bytes=1740 approx_tokens=435
+1792354516.230670 generate qid=239 ms=42.14 answer=#00ab9992
+1792354516.239120 cache qid=241 result=miss
+1792354516.241156 retrieve qid=241 chunks=2 ctx_bytes=1669 approx_tokens=417
+1792354516.239011 generate qid=304 ms=48.24 answer=#8b908682
+1792354516.241879 cache qid=306 result=miss
+1792354516.243827 retrieve qid=306 chunks=2 ctx_bytes=1687 approx_tokens=421
+1792354516.283033 generate qid=241 ms=41.85 answer=#96333e10
+1792354516.283137 cache qid=243 result=miss
+1792354516.288805 generate qid=306 ms=44.96 answer=#13d2c69e
+1792354516.288851 cache qid=308 result=miss
+1792354516.290809 retrieve qid=243 chunks=2 ctx_bytes=1696 approx_tokens=424
+1792354516.292742 retrieve qid=308 chunks=3 ctx_bytes=1998 approx_tokens=499
+1792354516.336636 generate qid=243 ms=45.80 answer=#4d679353
+1792354516.336708 cache qid=245 result=miss
+1792354516.338601 retrieve qid=245 chunks=2 ctx_bytes=1714 approx_tokens=428
+1792354516.342682 generate qid=308 ms=49.92 answer=#94632caa
+1792354516.342733 cache qid=310 result=miss
+1792354516.345016 retrieve qid=310 chunks=2 ctx_bytes=1183 approx_tokens=295
+1792354516.391002 generate qid=310 ms=45.96 answer=#fa123bbb
+1792354516.391087 cache qid=247 result=miss
+1792354516.393737 generate qid=245 ms=55.12 answer=#99685ea2
+1792354516.393836 cache qid=312 result=miss
+1792354516.398376 retrieve qid=312 chunks=3 ctx_bytes=1997 approx_tokens=499
+1792354516.398763 retrieve qid=247 chunks=2 ctx_bytes=1690 approx_tokens=422
+1792354516.448536 generate qid=312 ms=50.13 answer=#ff12ac24
+1792354516.448611 cache qid=249 result=miss
+1792354516.450386 generate qid=247 ms=51.61 answer=#8d15486f
+1792354516.450441 cache qid=314 result=miss
+1792354516.452433 retrieve qid=249 chunks=2 ctx_bytes=1179 approx_tokens=294
+1792354516.454780 retrieve qid=314 chunks=3 ctx_bytes=1979 approx_tokens=494
+1792354516.482573 generate qid=249 ms=30.12 answer=#fd7f94ea
+1792354516.482637 cache qid=251 result=miss
+1792354516.494670 retrieve qid=251 chunks=2 ctx_bytes=1188 approx_tokens=297
+1792354516.501323 generate qid=314 ms=46.52 answer=#0189ea34
+1792354516.501384 cache qid=316 result=miss
+1792354516.503732 retrieve qid=316 chunks=2 ctx_bytes=1648 approx_tokens=412
+1792354516.524581 generate qid=251 ms=29.89 answer=#d738af33
+1792354516.524646 cache qid=253 result=miss
+1792354516.534968 retrieve qid=253 chunks=2 ctx_bytes=1698 approx_tokens=424
+1792354516.540008 generate qid=316 ms=36.26 answer=#f9857132
+1792354516.540066 cache qid=318 result=miss
+1792354516.541968 retrieve qid=318 chunks=2 ctx_bytes=1175 approx_tokens=293
+1792354516.577121 generate qid=253 ms=42.13 answer=#6a571cb6
+1792354516.577191 cache qid=255 result=miss
+1792354516.579176 retrieve qid=255 chunks=2 ctx_bytes=1704 approx_tokens=426
+1792354516.580876 generate qid=318 ms=38.89 answer=#817da785
+1792354516.580951 cache qid=320 result=miss
+1792354516.582833 retrieve qid=320 chunks=3 ctx_bytes=1979 approx_tokens=494
+1792354516.613055 generate qid=255 ms=33.84 answer=#5432b3e1
+1792354516.625150 cache qid=257 result=miss
+1792354516.627102 retrieve qid=257 chunks=2 ctx_bytes=1681 approx_tokens=420
+1792354516.631515 generate qid=320 ms=48.66 answer=#0189ea34
+1792354516.631568 cache qid=322 result=miss
+1792354516.633448 retrieve qid=322 chunks=3 ctx_bytes=1983 approx_tokens=495
+1792354516.671330 generate qid=257 ms=44.20 answer=#e2b68ad4
+1792354516.671403 cache qid=259 result=miss
+1792354516.679781 generate qid=322 ms=46.31 answer=#b8957ccc
+1792354516.679845 cache qid=324 result=miss
+1792354516.681798 retrieve qid=259 chunks=2 ctx_bytes=1689 approx_tokens=422
+1792354516.683623 retrieve qid=324 chunks=2 ctx_bytes=1687 approx_tokens=421
+1792354516.727245 generate qid=259 ms=45.43 answer=#92bdfbc3
+1792354516.727330 cache qid=261 result=miss
+1792354516.729928 generate qid=324 ms=46.29 answer=#918e9f3a
+1792354516.729982 cache qid=263 result=miss
+1792354516.731886 retrieve qid=261 chunks=2 ctx_bytes=1248 approx_tokens=312
+1792354516.733705 retrieve qid=263 chunks=2 ctx_bytes=1640 approx_tokens=410
+1792354516.770275 generate qid=261 ms=38.36 answer=#db2b5c89
+1792354516.770350 cache qid=265 result=miss
+1792354516.775756 generate qid=263 ms=42.03 answer=#c2d4d613
+1792354516.775801 cache qid=267 result=miss
+1792354516.777705 retrieve qid=265 chunks=2 ctx_bytes=1718 approx_tokens=429
+1792354516.780048 retrieve qid=267 chunks=2 ctx_bytes=1632 approx_tokens=408
+1792354516.823181 generate qid=265 ms=45.45 answer=#36e008a4
+1792354516.823240 cache qid=269 result=miss
+1792354516.825129 retrieve qid=269 chunks=3 ctx_bytes=1958 approx_tokens=489
+1792354516.825842 generate qid=267 ms=45.78 answer=#77ded104
+1792354516.825895 cache qid=326 result=miss
+1792354516.827794 retrieve qid=326 chunks=2 ctx_bytes=1759 approx_tokens=439
+1792354516.872452 generate qid=269 ms=47.30 answer=#f5aeccbf
+1792354516.872509 cache qid=328 result=miss
+1792354516.874283 generate qid=326 ms=46.47 answer=#400312bc
+1792354516.874332 cache qid=330 result=miss
+1792354516.876252 retrieve qid=328 chunks=2 ctx_bytes=1681 approx_tokens=420
+1792354516.878331 retrieve qid=330 chunks=2 ctx_bytes=1619 approx_tokens=404
+1792354516.917620 generate qid=328 ms=41.34 answer=#518dd27c
+1792354516.917688 cache qid=332 result=miss
+1792354516.922621 generate qid=330 ms=44.27 answer=#0be55778
+1792354516.922672 cache qid=334 result=miss
+1792354516.924634 retrieve qid=332 chunks=2 ctx_bytes=1682 approx_tokens=420
+1792354516.926396 retrieve qid=334 chunks=3 ctx_bytes=1980 approx_tokens=495
+1792354516.965991 generate qid=332 ms=41.33 answer=#60c0358a
+1792354516.966049 cache qid=271 result=miss
+1792354516.973596 generate qid=334 ms=47.18 answer=#b8cd822c
+1792354516.973639 cache qid=273 result=miss
+1792354516.975502 retrieve qid=271 chunks=2 ctx_bytes=1716 approx_tokens=429
+1792354516.977384 retrieve qid=273 chunks=3 ctx_bytes=1934 approx_tokens=483
+1792354517.016993 generate qid=271 ms=41.47 answer=#76047b2e
+1792354517.017052 cache qid=275 result=miss
+1792354517.024245 generate qid=273 ms=46.84 answer=#f1c1e9d6
+1792354517.024302 cache qid=336 result=miss
+1792354517.026228 retrieve qid=275 chunks=2 ctx_bytes=1714 approx_tokens=428
+1792354517.028052 retrieve qid=336 chunks=2 ctx_bytes=1652 approx_tokens=413
+1792354517.071717 generate qid=275 ms=45.46 answer=#60bf68e6
+1792354517.071791 cache qid=277 result=miss
+1792354517.073692 retrieve qid=277 chunks=2 ctx_bytes=1689 approx_tokens=422
+1792354517.074738 generate qid=336 ms=46.67 answer=#a1b49e9f
+1792354517.074792 cache qid=279 result=miss
+1792354517.076632 retrieve qid=279 chunks=2 ctx_bytes=1669 approx_tokens=417
+1792354517.127008 generate qid=277 ms=53.29 answer=#d0290287
+1792354517.127107 cache qid=281 result=miss
+1792354517.134601 generate qid=279 ms=57.95 answer=#1223e2db
+1792354517.134665 cache qid=338 result=miss
+1792354517.136670 retrieve qid=281 chunks=2 ctx_bytes=1153 approx_tokens=288
+1792354517.138962 retrieve qid=338 chunks=2 ctx_bytes=1667 approx_tokens=416
+1792354517.175941 generate qid=281 ms=39.24 answer=#a41c1ca4
+1792354517.176050 cache qid=283 result=miss
+1792354517.187079 retrieve qid=283 chunks=3 ctx_bytes=1958 approx_tokens=489
+1792354517.188219 generate qid=338 ms=49.23 answer=#cfbd9601
+1792354517.188290 cache qid=340 result=miss
+1792354517.190747 retrieve qid=340 chunks=2 ctx_bytes=1748 approx_tokens=437
+1792354517.243191 generate qid=283 ms=56.08 answer=#f5aeccbf
+1792354517.251228 generate qid=340 ms=60.45 answer=#34d17f3a
+1792354517.251310 cache qid=285 result=miss
+1792354517.251381 cache qid=287 result=miss
+1792354517.253732 retrieve qid=287 chunks=2 ctx_bytes=1732 approx_tokens=433
+1792354517.255770 retrieve qid=285 chunks=3 ctx_bytes=1998 approx_tokens=499
+1792354517.302573 generate qid=287 ms=48.80 answer=#1516e79c
+1792354517.302692 cache qid=289 result=miss
+1792354517.312990 retrieve qid=289 chunks=2 ctx_bytes=1690 approx_tokens=422
+1792354517.314006 generate qid=285 ms=58.21 answer=#94632caa
+1792354517.314087 cache qid=342 result=miss
+1792354517.316258 retrieve qid=342 chunks=2 ctx_bytes=1676 approx_tokens=419
+1792354517.360969 generate qid=289 ms=47.94 answer=#b6a21a53
+1792354517.361070 cache qid=291 result=miss
+1792354517.368843 generate qid=342 ms=52.55 answer=#14cd558b
+1792354517.368913 cache qid=344 result=miss
+1792354517.370892 retrieve qid=291 chunks=2 ctx_bytes=1682 approx_tokens=420
+1792354517.373330 retrieve qid=344 chunks=3 ctx_bytes=1990 approx_tokens=497
+1792354517.427962 generate qid=291 ms=54.58 answer=#15c7bb54
+1792354517.428087 cache qid=293 result=miss
+1792354517.435317 generate qid=344 ms=61.93 answer=#dcb12bb2
+1792354517.435374 cache qid=346 result=miss
+1792354517.437403 retrieve qid=293 chunks=2 ctx_bytes=1655 approx_tokens=413
+1792354517.439227 retrieve qid=346 chunks=2 ctx_bytes=1692 approx_tokens=423
+1792354517.479206 generate qid=293 ms=41.78 answer=#4afa6f57
+1792354517.479278 cache qid=295 result=miss
+1792354517.485010 generate qid=346 ms=45.76 answer=#6873dfb6
+1792354517.485053 cache qid=348 result=miss
+1792354517.487015 retrieve qid=295 chunks=2 ctx_bytes=1659 approx_tokens=414
+1792354517.489360 retrieve qid=348 chunks=3 ctx_bytes=1934 approx_tokens=483
+1792354517.528630 generate qid=295 ms=41.59 answer=#b27efb82
+1792354517.528700 cache qid=297 result=miss
+1792354517.536576 generate qid=348 ms=47.20 answer=#e7b3b0fe
+1792354517.536624 cache qid=350 result=miss
+1792354517.540350 retrieve qid=297 chunks=2 ctx_bytes=1659 approx_tokens=414
+1792354517.540400 retrieve qid=350 chunks=3 ctx_bytes=1974 approx_tokens=493
+1792354517.585534 generate qid=297 ms=45.16 answer=#b4e80a5f
+1792354517.585591 cache qid=299 result=miss
+1792354517.587425 retrieve qid=299 chunks=4 ctx_bytes=1860 approx_tokens=465
+1792354517.590860 generate qid=350 ms=50.45 answer=#5a166363
+1792354517.590913 cache qid=352 result=miss
+1792354517.593131 retrieve qid=352 chunks=2 ctx_bytes=1665 approx_tokens=416
+1792354517.630086 generate qid=299 ms=42.64 answer=#12248d67
+1792354517.630147 cache qid=301 result=miss
+1792354517.631958 retrieve qid=301 chunks=2 ctx_bytes=1758 approx_tokens=439
+1792354517.638376 generate qid=352 ms=45.22 answer=#29dd4154
+1792354517.638457 cache qid=354 result=miss
+1792354517.640457 retrieve qid=354 chunks=2 ctx_bytes=1659 approx_tokens=414
+1792354517.667059 generate qid=301 ms=35.07 answer=#da2563fc
+1792354517.667135 cache qid=303 result=miss
+1792354517.678971 retrieve qid=303 chunks=2 ctx_bytes=1662 approx_tokens=415
+1792354517.682665 generate qid=354 ms=42.18 answer=#3f1257c5
+1792354517.682734 cache qid=356 result=miss
+1792354517.684619 retrieve qid=356 chunks=2 ctx_bytes=1179 approx_tokens=294
+1792354517.725259 generate qid=303 ms=46.26 answer=#d0e96c01
+1792354517.725325 cache qid=305 result=miss
+1792354517.730569 generate qid=356 ms=45.93 answer=#fd7f94ea
+1792354517.730611 cache qid=307 result=miss
+1792354517.732597 retrieve qid=305 chunks=2 ctx_bytes=1730 approx_tokens=432
+1792354517.734418 retrieve qid=307 chunks=2 ctx_bytes=1717 approx_tokens=429
+1792354517.774657 generate qid=305 ms=42.04 answer=#06eca498
+1792354517.774719 cache qid=309 result=miss
+1792354517.780628 generate qid=307 ms=46.19 answer=#098377a6
+1792354517.780666 cache qid=311 result=miss
+1792354517.782544 retrieve qid=309 chunks=2 ctx_bytes=1661 approx_tokens=415
+1792354517.784670 retrieve qid=311 chunks=2 ctx_bytes=1723 approx_tokens=430
+1792354517.828151 generate qid=309 ms=45.58 answer=#23c4432b
+1792354517.828213 cache qid=358 result=miss
+1792354517.830186 retrieve qid=358 chunks=2 ctx_bytes=1697 approx_tokens=424
+1792354517.833230 generate qid=311 ms=48.53 answer=#07287db8
+1792354517.833323 cache qid=360 result=miss
+1792354517.835378 retrieve qid=360 chunks=3 ctx_bytes=1938 approx_tokens=484
+1792354517.864929 generate qid=358 ms=34.72 answer=#046057c4
+1792354517.865041 cache qid=362 result=miss
+1792354517.877314 retrieve qid=362 chunks=2 ctx_bytes=1655 approx_tokens=413
+1792354517.894894 generate qid=360 ms=59.49 answer=#a3130fdc
+1792354517.895020 cache qid=364 result=miss
+1792354517.897488 retrieve qid=364 chunks=2 ctx_bytes=1701 approx_tokens=425
+1792354517.911010 generate qid=362 ms=33.67 answer=#61b81b5a
+1792354517.911081 cache qid=366 result=miss
+1792354517.912944 retrieve qid=366 chunks=3 ctx_bytes=1935 approx_tokens=483
+1792354517.931743 generate qid=364 ms=34.21 answer=#34376870
+1792354517.931821 cache qid=313 result=miss
+1792354517.933769 retrieve qid=313 chunks=2 ctx_bytes=1689 approx_tokens=422
+1792354517.949494 generate qid=366 ms=36.53 answer=#76a6e61a
+1792354517.949553 cache qid=368 result=miss
+1792354517.951939 retrieve qid=368 chunks=2 ctx_bytes=1709 approx_tokens=427
+1792354517.967609 generate qid=313 ms=33.82 answer=#d0290287
+1792354517.967670 cache qid=370 result=miss
+1792354517.969571 retrieve qid=370 chunks=2 ctx_bytes=1701 approx_tokens=425
+1792354517.985926 generate qid=368 ms=33.96 answer=#566df205
+1792354517.985991 cache qid=372 result=miss
+1792354517.987812 retrieve qid=372 chunks=3 ctx_bytes=1983 approx_tokens=495
+1792354518.024039 generate qid=370 ms=54.44 answer=#1e528beb
+1792354518.024097 cache qid=315 result=miss
+1792354518.025990 retrieve qid=315 chunks=2 ctx_bytes=1175 approx_tokens=293
+1792354518.035573 generate qid=372 ms=47.74 answer=#b8957ccc
+1792354518.035627 cache qid=374 result=miss
+1792354518.037675 retrieve qid=374 chunks=2 ctx_bytes=1618 approx_tokens=404
+1792354518.055710 generate qid=315 ms=29.70 answer=#02524bba
+1792354518.055774 cache qid=317 result=miss
+1792354518.057741 retrieve qid=317 chunks=2 ctx_bytes=1223 approx_tokens=305
+1792354518.071371 generate qid=374 ms=33.67 answer=#f0493a23
+1792354518.071427 cache qid=376 result=miss
+1792354518.073324 retrieve qid=376 chunks=2 ctx_bytes=1156 approx_tokens=289
+1792354518.087882 generate qid=317 ms=30.11 answer=#3d16141a
+1792354518.087944 cache qid=319 result=miss
+1792354518.089845 retrieve qid=319 chunks=2 ctx_bytes=1226 approx_tokens=306
+1792354518.105558 generate qid=376 ms=32.21 answer=#0cf44535
+1792354518.105647 cache qid=378 result=miss
+1792354518.107642 retrieve qid=378 chunks=2 ctx_bytes=1737 approx_tokens=434
+1792354518.120050 generate qid=319 ms=30.18 answer=#11684d77
+1792354518.120113 cache qid=321 result=miss
+1792354518.122499 retrieve qid=321 chunks=2 ctx_bytes=1646 approx_tokens=411
+1792354518.141943 generate qid=378 ms=34.27 answer=#92726944
+1792354518.142020 cache qid=323 result=miss
+1792354518.143897 retrieve qid=323 chunks=2 ctx_bytes=1718 approx_tokens=429
+1792354518.166233 generate qid=321 ms=43.70 answer=#fb1330e6
+1792354518.166338 cache qid=325 result=miss
+1792354518.178474 retrieve qid=325 chunks=2 ctx_bytes=1621 approx_tokens=405
+1792354518.193795 generate qid=323 ms=49.88 answer=#36e008a4
+1792354518.193874 cache qid=327 result=miss
+1792354518.195903 retrieve qid=327 chunks=3 ctx_bytes=1509 approx_tokens=377
+1792354518.221810 generate qid=325 ms=43.29 answer=#c3accad1
+1792354518.221884 cache qid=329 result=miss
+1792354518.233648 retrieve qid=329 chunks=2 ctx_bytes=1663 approx_tokens=415
+1792354518.246460 generate qid=327 ms=50.53 answer=#3e6ee587
+1792354518.246553 cache qid=331 result=miss
+1792354518.248523 retrieve qid=331 chunks=2 ctx_bytes=1694 approx_tokens=423
+1792354518.276428 generate qid=329 ms=42.75 answer=#f1e6d2fd
+1792354518.276520 cache qid=333 result=miss
+1792354518.289263 retrieve qid=333 chunks=3 ctx_bytes=1966 approx_tokens=491
+1792354518.303451 generate qid=331 ms=54.90 answer=#c1769036
+1792354518.303542 cache qid=335 result=miss
+1792354518.305612 retrieve qid=335 chunks=3 ctx_bytes=1958 approx_tokens=489
+1792354518.330217 generate qid=333 ms=40.92 answer=#87fedfc7
+1792354518.330302 cache qid=380 result=miss
+1792354518.343267 retrieve qid=380 chunks=3 ctx_bytes=1985 approx_tokens=496
+1792354518.361262 generate qid=335 ms=55.62 answer=#c6222830
+1792354518.361355 cache qid=382 result=miss
+1792354518.363369 retrieve qid=382 chunks=2 ctx_bytes=1183 approx_tokens=295
+1792354518.399263 generate qid=380 ms=55.96 answer=#c5bb8fa3
+1792354518.399367 cache qid=384 result=miss
+1792354518.410395 generate qid=382 ms=47.00 answer=#fa123bbb
+1792354518.410495 cache qid=386 result=miss
+1792354518.413451 retrieve qid=384 chunks=2 ctx_bytes=1659 approx_tokens=414
+1792354518.415571 retrieve qid=386 chunks=2 ctx_bytes=1706 approx_tokens=426
+1792354518.471576 generate qid=384 ms=58.08 answer=#24fd2617
+1792354518.471659 cache qid=337 result=miss
+1792354518.475055 generate qid=386 ms=59.46 answer=#2267c44b
+1792354518.475108 cache qid=388 result=miss
+1792354518.477646 retrieve qid=337 chunks=2 ctx_bytes=1668 approx_tokens=417
+1792354518.479967 retrieve qid=388 chunks=2 ctx_bytes=1714 approx_tokens=428
+1792354518.526651 generate qid=337 ms=48.97 answer=#68fd259d
+1792354518.526738 cache qid=390 result=miss
+1792354518.529488 generate qid=388 ms=49.12 answer=#60bf68e6
+1792354518.529547 cache qid=392 result=miss
+1792354518.532729 retrieve qid=390 chunks=2 ctx_bytes=1682 approx_tokens=420
+1792354518.533435 retrieve qid=392 chunks=2 ctx_bytes=1635 approx_tokens=408
+1792354518.590414 generate qid=392 ms=56.96 answer=#1a5033dd
+1792354518.590485 cache qid=394 result=miss
+1792354518.593889 generate qid=390 ms=61.14 answer=#60c0358a
+1792354518.593921 cache qid=396 result=miss
+1792354518.595917 retrieve qid=394 chunks=2 ctx_bytes=1778 approx_tokens=444
+1792354518.597713 retrieve qid=396 chunks=2 ctx_bytes=1690 approx_tokens=422
+1792354518.651166 generate qid=394 ms=55.22 answer=#9ec127e7
+1792354518.651252 cache qid=339 result=miss
+1792354518.653236 retrieve qid=339 chunks=2 ctx_bytes=1179 approx_tokens=294
+1792354518.655813 generate qid=396 ms=58.08 answer=#cf98b6ce
+1792354518.655875 cache qid=398 result=miss
+1792354518.657756 retrieve qid=398 chunks=2 ctx_bytes=1662 approx_tokens=415
+1792354518.683474 generate qid=339 ms=30.17 answer=#573ac7fc
+1792354518.683563 cache qid=341 result=miss
+1792354518.695029 retrieve qid=341 chunks=2 ctx_bytes=1621 approx_tokens=405
+1792354518.699327 generate qid=398 ms=41.55 answer=#b91ec9f6
+1792354518.699376 cache qid=343 result=miss
+1792354518.701345 retrieve qid=343 chunks=2 ctx_bytes=1635 approx_tokens=408
+1792354518.741047 generate qid=341 ms=45.99 answer=#c3accad1
+1792354518.741117 cache qid=345 result=miss
+1792354518.751115 retrieve qid=345 chunks=2 ctx_bytes=1692 approx_tokens=423
+1792354518.758697 generate qid=343 ms=57.33 answer=#97d2eb51
+1792354518.758765 cache qid=347 result=miss
+1792354518.761434 retrieve qid=347 chunks=2 ctx_bytes=1702 approx_tokens=425
+1792354518.803309 generate qid=345 ms=52.17 answer=#a3086d74
+1792354518.803366 cache qid=349 result=miss
+1792354518.815629 retrieve qid=349 chunks=2 ctx_bytes=1716 approx_tokens=429
+1792354518.822323 generate qid=347 ms=60.86 answer=#8251af02
+1792354518.822378 cache qid=351 result=miss
+1792354518.824383 retrieve qid=351 chunks=3 ctx_bytes=1979 approx_tokens=494
+1792354518.849578 generate qid=349 ms=33.92 answer=#76047b2e
+1792354518.849635 cache qid=353 result=miss
+1792354518.862901 retrieve qid=353 chunks=2 ctx_bytes=1690 approx_tokens=422
+1792354518.868123 generate qid=351 ms=43.71 answer=#0189ea34
+1792354518.868182 cache qid=355 result=miss
+1792354518.870663 retrieve qid=355 chunks=2 ctx_bytes=1646 approx_tokens=411
+1792354518.896574 generate qid=353 ms=33.65 answer=#8d15486f
+1792354518.896620 cache qid=357 result=miss
+1792354518.910964 retrieve qid=357 chunks=2 ctx_bytes=1151 approx_tokens=287
+1792354518.911906 generate qid=355 ms=41.23 answer=#eb4be81f
+1792354518.911947 cache qid=359 result=miss
+1792354518.913935 retrieve qid=359 chunks=2 ctx_bytes=1694 approx_tokens=423
+1792354518.940497 generate qid=357 ms=29.51 answer=#d73b4080
+1792354518.940570 cache qid=361 result=miss
+1792354518.955020 retrieve qid=361 chunks=2 ctx_bytes=1659 approx_tokens=414
+1792354518.956172 generate qid=359 ms=42.22 answer=#18170905
+1792354518.956217 cache qid=363 result=miss
+1792354518.958072 retrieve qid=363 chunks=2 ctx_bytes=1687 approx_tokens=421
+1792354518.988627 generate qid=361 ms=33.58 answer=#24fd2617
+1792354518.988677 cache qid=365 result=miss
+1792354519.003024 retrieve qid=365 chunks=2 ctx_bytes=1720 approx_tokens=430
+1792354519.004317 generate qid=363 ms=46.23 answer=#1772295c
+1792354519.004357 cache qid=367 result=miss
+1792354519.006153 retrieve qid=367 chunks=2 ctx_bytes=1701 approx_tokens=425
+1792354519.036997 generate qid=365 ms=33.95 answer=#bdaae1e9
+1792354519.037049 cache qid=369 result=miss
+1792354519.051008 retrieve qid=369 chunks=2 ctx_bytes=1656 approx_tokens=414
+1792354519.052859 generate qid=367 ms=46.69 answer=#1e528beb
+1792354519.052909 cache qid=371 result=miss
+1792354519.054760 retrieve qid=371 chunks=3 ctx_bytes=1979 approx_tokens=494
+1792354519.084042 generate qid=369 ms=33.01 answer=#6a58931d
+1792354519.084086 cache qid=373 result=miss
+1792354519.098939 retrieve qid=373 chunks=2 ctx_bytes=1694 approx_tokens=423
+1792354519.102588 generate qid=371 ms=47.80 answer=#1e21923f
+1792354519.102645 cache qid=375 result=miss
+1792354519.104497 retrieve qid=375 chunks=2 ctx_bytes=1696 approx_tokens=424
+1792354519.143018 generate qid=373 ms=44.06 answer=#18170905
+1792354519.143064 cache qid=377 result=miss
+1792354519.147146 generate qid=375 ms=42.63 answer=#2b071bfb
+1792354519.147192 cache qid=379 result=miss
+1792354519.149206 retrieve qid=377 chunks=2 ctx_bytes=1635 approx_tokens=408
+1792354519.149955 retrieve qid=379 chunks=2 ctx_bytes=1663 approx_tokens=415
+1792354519.190176 generate qid=377 ms=40.94 answer=#63996e02
+1792354519.190231 cache qid=381 result=miss
+1792354519.196371 generate qid=379 ms=46.39 answer=#57b06d34
+1792354519.196432 cache qid=383 result=miss
+1792354519.199605 retrieve qid=381 chunks=2 ctx_bytes=1269 approx_tokens=317
+1792354519.202539 retrieve qid=383 chunks=2 ctx_bytes=1723 approx_tokens=430
+1792354519.244040 generate qid=381 ms=44.40 answer=#8a63ca88
+1792354519.244114 cache qid=385 result=miss
+1792354519.255820 retrieve qid=385 chunks=2 ctx_bytes=1725 approx_tokens=431
+1792354519.263714 generate qid=383 ms=61.15 answer=#07287db8
+1792354519.263769 cache qid=387 result=miss
+1792354519.265831 retrieve qid=387 chunks=2 ctx_bytes=1666 approx_tokens=416
+1792354519.289982 generate qid=385 ms=34.13 answer=#b0e3d1ea
+1792354519.290035 cache qid=389 result=miss
+1792354519.303023 retrieve qid=389 chunks=2 ctx_bytes=1729 approx_tokens=432
+1792354519.305621 generate qid=387 ms=39.77 answer=#5fba23a6
+1792354519.305679 cache qid=391 result=miss
+1792354519.307525 retrieve qid=391 chunks=2 ctx_bytes=1672 approx_tokens=418
+1792354519.345175 generate qid=389 ms=42.13 answer=#b54d8a3b
+1792354519.345231 cache qid=393 result=miss
+1792354519.347174 retrieve qid=393 chunks=2 ctx_bytes=1686 approx_tokens=421
+1792354519.352715 generate qid=391 ms=45.17 answer=#cfeba788
+1792354519.352770 cache qid=395 result=miss
+1792354519.354660 retrieve qid=395 chunks=2 ctx_bytes=1649 approx_tokens=412
+1792354519.381030 generate qid=393 ms=33.83 answer=#f95d9096
+1792354519.381108 cache qid=397 result=miss
+1792354519.394977 retrieve qid=397 chunks=2 ctx_bytes=1684 approx_tokens=421
+1792354519.396688 generate qid=395 ms=42.01 answer=#6aa8441f
+1792354519.396741 cache qid=399 result=miss
+1792354519.398567 retrieve qid=399 chunks=2 ctx_bytes=1640 approx_tokens=410
+1792354519.437174 generate qid=397 ms=42.17 answer=#fedc38c9
+1792354519.442818 generate qid=399 ms=44.23 answer=#6a870614
+1792354519.443699 shutdown requests=400 wall_s=10.182

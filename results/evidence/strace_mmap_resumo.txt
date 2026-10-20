@@ -1,0 +1,4 @@
+--- mmap: chamadas relevantes ao arquivo de dados
+read() total: 20
+97    openat(AT_FDCWD, "/workdata/bigfile_16.bin", O_RDONLY|O_CLOEXEC) = 3
+97    mmap(NULL, 16777216, PROT_READ, MAP_SHARED, 3, 0) = 0x7add72c00000
