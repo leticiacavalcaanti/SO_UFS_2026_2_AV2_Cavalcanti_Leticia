@@ -6,7 +6,7 @@ Modalidade individual | Discente: **Leticia Cavalcanti** | 2026.2
 ## Entregáveis
 | Item | Onde |
 |---|---|
-| Relatório técnico (PDF) | [report/relatorio.pdf](report/relatorio.pdf) (fonte: [report/relatorio.md](report/relatorio.md)) |
+| Relatório técnico (PDF) | [report/relatorio.pdf](report/relatorio.pdf) (fonte editável: [report/relatorio.docx](report/relatorio.docx), no modelo de relatório do docente, gerado por `scripts/gerar_docx.py`) |
 | Apresentação (PDF) | [report/apresentacao.pdf](report/apresentacao.pdf) |
 | Vídeo | [https://drive.google.com/file/d/1ZTenxEhflYIi4mIGWAJvMkZqFxuyeKsG/view?usp=sharing](https://drive.google.com/file/d/1ZTenxEhflYIi4mIGWAJvMkZqFxuyeKsG/view?usp=sharing) (também em [VIDEO.md](VIDEO.md)) |
 | Código | [genresearch/](genresearch/) (serviço) e [scripts/](scripts/) (experimentos) |
@@ -41,6 +41,8 @@ python scripts/run_all.py                     # TODOS os experimentos (≈ 1 h);
 python scripts/run_all.py c1c2 c6             # ou apenas alguns: env c1c2 c3c4 c5scale c5limit c6 sync evidence
 docker run --rm -v "$PWD:/work" -v genres_data:/workdata -w /work/scripts genresearch python analyze.py   # gráficos e tabelas
 ```
+Relatório (`.docx`): `pip install python-docx` e `python scripts/gerar_docx.py`; depois converta para PDF no Word ou no LibreOffice.
+
 Variáveis: `REPS` (repetições, padrão 3), `N_REQ` (requisições por execução, padrão 400), `C12_SIZES` (tamanhos de arquivo em MB do C1/C2).
 Os dados são **sintéticos e determinísticos** (semente fixa): `genresearch/corpus.py` gera corpus e consultas; nada é baixado. Corpus e índices ficam no volume Docker `genres_data` (não versionados).
 

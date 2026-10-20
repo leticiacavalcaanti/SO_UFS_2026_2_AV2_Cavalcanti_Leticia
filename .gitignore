@@ -19,3 +19,10 @@ report/roteiro_video.md
 
 # material de estudo pessoal (nao entra no repositorio)
 report/perguntas_banca.md
+
+# modelo de relatorio de outra equipe (contem nomes de colegas; nao publicar)
+report/gessica_santos_*.docx
+
+# em report/ ficam apenas docx, pdf e pptx
+report/*.html
+report/*.md
