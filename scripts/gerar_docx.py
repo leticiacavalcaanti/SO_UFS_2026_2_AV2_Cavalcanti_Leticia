@@ -574,7 +574,7 @@ para("Leticia Cavalcanti – trabalho individual: definição do recorte, desenv
      first=0)
 
 h1("17.  Apoio na elaboração do conteúdo escrito")
-para("Durante o desenvolvimento deste trabalho foi utilizado o Claude Code (Anthropic, modelo Claude Sonnet 5.5) como "
+para("Durante o desenvolvimento deste trabalho foi utilizado o Claude Code (Anthropic, modelo Claude Sonnet 5.5, nível de raciocínio medium) como "
      "ferramenta de apoio para:", first=0, keep_next=True)
 bullets(["Estruturar o repositório e redigir o código do serviço e dos scripts de experimento, executados e conferidos "
          "no ambiente da discente (os números do relatório vêm de `results/`).",
