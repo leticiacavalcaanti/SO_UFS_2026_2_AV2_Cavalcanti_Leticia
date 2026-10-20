@@ -7,5 +7,3 @@
 **O que foi decisão minha:** o escopo e o recorte do trabalho (sistema separado do projeto de referência, com embeddings e geração simulados), o uso do Docker como ambiente Linux, o modelo e a autoria individual do relatório, o conteúdo do repositório, a gravação do vídeo e a publicação no GitHub.
 
 **Verificação:** os números do relatório vêm das execuções reais, gravadas em `results/`. Durante o trabalho foram encontrados e corrigidos problemas metodológicos (por exemplo, o cache de páginas mascarando a pressão de memória no C5 e o RSS contaminado entre configurações).
-
-**Revisão pela discente:** *(descrever, em uma ou duas frases, o que li, executei ou conferi por conta própria)*
