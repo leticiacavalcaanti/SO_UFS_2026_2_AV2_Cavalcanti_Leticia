@@ -221,7 +221,7 @@ def c5():
             ax[1].plot(idx_mb, [sel(d, "os_rss_max_kb") / 1024 for d in docs], color=C[i], marker="o", lw=2, label=lab)
             ax[2].plot(idx_mb, [sel(d, "os_majflt") for d in docs], color=C[i], marker="o", lw=2, label=lab)
         for a, t, y in ((ax[0], "Recuperação (mediana)", "ms"), (ax[1], "RSS máximo do processo", "MB"),
-                        (ax[2], "Faltas de página maiores (1ª leitura fria)", "contagem")):
+                        (ax[2], "Faltas de página maiores", "contagem")):
             a.set_xlabel("tamanho do índice vetorial (MB)")
             a.set_title(t)
             a.set_ylabel(y)

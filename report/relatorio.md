@@ -1,7 +1,7 @@
 # Relatório Técnico — AV2: Memória, armazenamento, sincronização e desempenho em um serviço RAG (GenResearch-Servidor)
 
 **Disciplina:** Sistemas Operacionais — 2026.2 | **Discente:** Leticia Cavalcanti (trabalho individual)
-**Repositório:** `https://github.com/leticiacavalcaanti/SO_UFS_2026_2_AV2_Cavalcanti_Leticia` *(confirmar o nome exigido pelo docente)* | **Commit da entrega:** `PREENCHER (git rev-parse --short HEAD)`
+**Repositório:** `https://github.com/leticiacavalcaanti/SO_UFS_2026_2_AV2_Cavalcanti_Leticia` | **Commit da entrega:** `6a4bcad`
 **Vídeo:** `PREENCHER` (ver VIDEO.md) | **Data das execuções:** 18/10/2026
 
 ## 1. Tabela de contribuição individual
