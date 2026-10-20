@@ -8,7 +8,7 @@ Modalidade individual | Discente: **Leticia Cavalcanti** | 2026.2
 |---|---|
 | Relatório técnico (PDF) | [report/relatorio.pdf](report/relatorio.pdf) (fonte: [report/relatorio.md](report/relatorio.md)) |
 | Apresentação (PDF) | [report/apresentacao.pdf](report/apresentacao.pdf) |
-| Vídeo | URL em [VIDEO.md](VIDEO.md) |
+| Vídeo | [https://drive.google.com/file/d/1ZTenxEhflYIi4mIGWAJvMkZqFxuyeKsG/view?usp=sharing](https://drive.google.com/file/d/1ZTenxEhflYIi4mIGWAJvMkZqFxuyeKsG/view?usp=sharing) (também em [VIDEO.md](VIDEO.md)) |
 | Código | [genresearch/](genresearch/) (serviço) e [scripts/](scripts/) (experimentos) |
 | Resultados brutos, logs, gráficos | [results/](results/) |
 | Declaração de uso de IA | [declaracao_uso_ia.md](declaracao_uso_ia.md) |

@@ -2,7 +2,7 @@
 
 **Disciplina:** Sistemas Operacionais — 2026.2 | **Discente:** Leticia Cavalcanti (trabalho individual)
 **Repositório:** `https://github.com/leticiacavalcaanti/SO_UFS_2026_2_AV2_Cavalcanti_Leticia` | **Commit da entrega:** `6a4bcad`
-**Vídeo:** `PREENCHER` (ver VIDEO.md) | **Data das execuções:** 18/10/2026
+**Vídeo:** https://drive.google.com/file/d/1ZTenxEhflYIi4mIGWAJvMkZqFxuyeKsG/view?usp=sharing (ver VIDEO.md) | **Data das execuções:** 18/10/2026
 
 ## 1. Tabela de contribuição individual
 
